@@ -1,0 +1,27 @@
+{
+  "original_files_preserved": {
+    "assets/zoomer_modular.blend": "1b99efeffe557f26f9a346fbbba804518b21c3899f42ed308e563b48ce2370fe",
+    "zoomer.png": "445109bdb83f1affe416241c2bc3329a2c98d821e8e2b499fe5b4f23018f5a29",
+    "print/modular/plates/XL_main_five_color-v2.3mf": "669fefcb72261c5fad36e7e0a1875c0caa49c26c77169a31fe4554f545d81897"
+  },
+  "files": {
+    "PRINTING.md": "6e89ad3d8343e766e0ba42ac02796d2bbc39fe9a520f277100ded3cd45ba4b05",
+    "assembly.png": "d2a1d0141ce1af7b8afd0d9f1a92896a34c7ace7ef192832946bd472bdd60a80",
+    "section.png": "1970b7de915c23e0b238d8e9d7ae424e46ef8d252d3e5b59c1bc269ddc9531a3",
+    "01_XL_viewing_shell_VASE.3mf": "dd2869f7350a7ac57323e040f56a29c8e32e362441a4e71d9866219548c4c5a4",
+    "02_XL_cap_and_ring_NORMAL.3mf": "8a8844e2b45265f937b1b19b96e0dc5e3ffcfcf331dd5f6bcb88d3d00971a0db",
+    "parts/01_viewing_shell_VASE_SOLID.stl": "0989aeaf9c64ac4935ed4f5023bb09c81459639090e5d6de3ff142698e7f2bab",
+    "parts/02_crown_cap_NORMAL.stl": "cf29184f2377816f0eb98a0d05492ac5acfaaae57c6ef083537876b3402bdcbb",
+    "parts/03_mounting_ring_NORMAL.stl": "7f45da6c44223c8018962a13761e753cafb0ca8b335926ae9c5d3c214413b53a",
+    "profiles/01_XL_viewing_shell_VASE.ini": "ae3149e8824112827ce86beaf211e0417e891a9781ebe0defdbb40837a67e5a9",
+    "profiles/02_XL_cap_and_ring_NORMAL.ini": "01fb8ab2458c3f4525801a68074a39bb1c9e1dbc5714efea47e60bc83cb4b8f7",
+    "inspection_only/crown_cap.stl": "5a4165103772f4c740ad037d170eafb8ef69e87a6be60229ddfbec961d72240a",
+    "inspection_only/mounting_ring.stl": "5646c4e81401cacf2e84f5e11a07542a8bdb321cee483d52a072790c12f86889",
+    "inspection_only/viewing_shell.stl": "d830e7fd1a6c488afc5c980b6cdad6762eb5d86344de708daf52edcc1af990d6",
+    "inspection_only/zoomer_vase_dome.blend": "a2fb693a2a7bec9b14001fb0eab13b4a9f4e0cabe220216efae43fa9215cd50e",
+    "qa/geometry.json": "63138a38477c6444ac93dfea7bf07b6be219dad0afd992570e1ffdb8788fba3e",
+    "qa/validation.json": "e12feed6fb3b3f101b0367b16aa2e53bb24ac5734aebdb28566fb2acfadbf989",
+    "qa/toolpaths.png": "5429cb86640b262871c50679fca98d96dcbab2abb8952b1474efb329d4c77f59",
+    "qa/assembled.png": "6e141dd68cf20eb3e22c697118fcd08761ace70a7797d97ad8cde0307d76a68c"
+  }
+}

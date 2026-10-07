@@ -1,0 +1,48 @@
+{
+  "status": "completed",
+  "algorithm": "PPO residual control",
+  "controller_version": 2,
+  "target": "/Users/dgoldenh/Documents/GitHub/zoomer3D/targets/3201207f878b4707ab8753bffb68dbac.json",
+  "seed": 7,
+  "requested_steps": 8192,
+  "warm_start_steps": 4674,
+  "stages": [
+    "sequence"
+  ],
+  "stage": "sequence",
+  "trained_steps": 8192,
+  "elapsed_s": 624.4,
+  "evaluations": [
+    {
+      "stage": "sequence",
+      "trained_steps": 8192,
+      "success_rate": 0.0,
+      "episodes": [
+        {
+          "phase": "place",
+          "held": "red",
+          "color": "blue",
+          "stroke": 11,
+          "point": 0,
+          "visible": true,
+          "success": false,
+          "failure": "phase_timeout_place",
+          "time_s": 315.0599999994617,
+          "coverage": 0.35568993952721273,
+          "tolerance_m": 0.03,
+          "tracking_tolerance_m": 0.00075,
+          "mse_limit_m2": 0.0009,
+          "mse_m2": 2.0196487794976366e-06,
+          "rmse_m": 0.001421143476042316,
+          "max_error_m": 0.025783041967730923,
+          "target_coverage_1mm": 0.35568993952721273,
+          "ink_precision_1mm": 0.9969230769230769,
+          "shape_rmse_m": null,
+          "max_target_gap_m": null
+        }
+      ]
+    }
+  ],
+  "policy_ready": false,
+  "needs_more_training": "sequence"
+}

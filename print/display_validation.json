@@ -1,0 +1,20 @@
+{
+  "units": "mm",
+  "visual_extent_xyz_mm": [
+    100.00002442748092,
+    72.2761,
+    180.0028666556182
+  ],
+  "static_body_extent_xyz_mm": [
+    100.0002171229795,
+    72.25047708964001,
+    174.09196974014236
+  ],
+  "body_watertight": true,
+  "body_components": 1,
+  "omitted_decorative_components": 16,
+  "omitted_decorative_volume_mm3": 749.5372892693667,
+  "dome_watertight": true,
+  "static_body_requires_supports": true,
+  "full_robot_print_in_place": false
+}

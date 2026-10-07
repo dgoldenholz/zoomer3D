@@ -1,0 +1,732 @@
+[
+  {
+    "body": "base",
+    "material": "blue",
+    "file": "base__blue.obj"
+  },
+  {
+    "body": "base",
+    "material": "red",
+    "file": "base__red.obj"
+  },
+  {
+    "body": "base",
+    "material": "ivory",
+    "file": "base__ivory.obj"
+  },
+  {
+    "body": "base",
+    "material": "metal",
+    "file": "base__metal.obj"
+  },
+  {
+    "body": "base",
+    "material": "cyan",
+    "file": "base__cyan.obj"
+  },
+  {
+    "body": "base",
+    "material": "dark",
+    "file": "base__dark.obj"
+  },
+  {
+    "body": "base",
+    "material": "green",
+    "file": "base__green.obj"
+  },
+  {
+    "body": "base",
+    "material": "rubber",
+    "file": "base__rubber.obj"
+  },
+  {
+    "body": "right_drive",
+    "material": "rubber",
+    "file": "right_drive__rubber.obj"
+  },
+  {
+    "body": "right_drive",
+    "material": "blue",
+    "file": "right_drive__blue.obj"
+  },
+  {
+    "body": "right_drive",
+    "material": "dark",
+    "file": "right_drive__dark.obj"
+  },
+  {
+    "body": "right_idler_1",
+    "material": "rubber",
+    "file": "right_idler_1__rubber.obj"
+  },
+  {
+    "body": "right_idler_1",
+    "material": "blue",
+    "file": "right_idler_1__blue.obj"
+  },
+  {
+    "body": "right_idler_1",
+    "material": "dark",
+    "file": "right_idler_1__dark.obj"
+  },
+  {
+    "body": "right_idler_2",
+    "material": "rubber",
+    "file": "right_idler_2__rubber.obj"
+  },
+  {
+    "body": "right_idler_2",
+    "material": "blue",
+    "file": "right_idler_2__blue.obj"
+  },
+  {
+    "body": "right_idler_2",
+    "material": "dark",
+    "file": "right_idler_2__dark.obj"
+  },
+  {
+    "body": "right_idler_3",
+    "material": "rubber",
+    "file": "right_idler_3__rubber.obj"
+  },
+  {
+    "body": "right_idler_3",
+    "material": "blue",
+    "file": "right_idler_3__blue.obj"
+  },
+  {
+    "body": "right_idler_3",
+    "material": "dark",
+    "file": "right_idler_3__dark.obj"
+  },
+  {
+    "body": "right_idler_4",
+    "material": "rubber",
+    "file": "right_idler_4__rubber.obj"
+  },
+  {
+    "body": "right_idler_4",
+    "material": "blue",
+    "file": "right_idler_4__blue.obj"
+  },
+  {
+    "body": "right_idler_4",
+    "material": "dark",
+    "file": "right_idler_4__dark.obj"
+  },
+  {
+    "body": "right_return_1",
+    "material": "rubber",
+    "file": "right_return_1__rubber.obj"
+  },
+  {
+    "body": "right_return_1",
+    "material": "blue",
+    "file": "right_return_1__blue.obj"
+  },
+  {
+    "body": "right_return_1",
+    "material": "dark",
+    "file": "right_return_1__dark.obj"
+  },
+  {
+    "body": "right_return_2",
+    "material": "rubber",
+    "file": "right_return_2__rubber.obj"
+  },
+  {
+    "body": "right_return_2",
+    "material": "blue",
+    "file": "right_return_2__blue.obj"
+  },
+  {
+    "body": "right_return_2",
+    "material": "dark",
+    "file": "right_return_2__dark.obj"
+  },
+  {
+    "body": "right_return_3",
+    "material": "rubber",
+    "file": "right_return_3__rubber.obj"
+  },
+  {
+    "body": "right_return_3",
+    "material": "blue",
+    "file": "right_return_3__blue.obj"
+  },
+  {
+    "body": "right_return_3",
+    "material": "dark",
+    "file": "right_return_3__dark.obj"
+  },
+  {
+    "body": "left_drive",
+    "material": "rubber",
+    "file": "left_drive__rubber.obj"
+  },
+  {
+    "body": "left_drive",
+    "material": "blue",
+    "file": "left_drive__blue.obj"
+  },
+  {
+    "body": "left_drive",
+    "material": "dark",
+    "file": "left_drive__dark.obj"
+  },
+  {
+    "body": "left_idler_1",
+    "material": "rubber",
+    "file": "left_idler_1__rubber.obj"
+  },
+  {
+    "body": "left_idler_1",
+    "material": "blue",
+    "file": "left_idler_1__blue.obj"
+  },
+  {
+    "body": "left_idler_1",
+    "material": "dark",
+    "file": "left_idler_1__dark.obj"
+  },
+  {
+    "body": "left_idler_2",
+    "material": "rubber",
+    "file": "left_idler_2__rubber.obj"
+  },
+  {
+    "body": "left_idler_2",
+    "material": "blue",
+    "file": "left_idler_2__blue.obj"
+  },
+  {
+    "body": "left_idler_2",
+    "material": "dark",
+    "file": "left_idler_2__dark.obj"
+  },
+  {
+    "body": "left_idler_3",
+    "material": "rubber",
+    "file": "left_idler_3__rubber.obj"
+  },
+  {
+    "body": "left_idler_3",
+    "material": "blue",
+    "file": "left_idler_3__blue.obj"
+  },
+  {
+    "body": "left_idler_3",
+    "material": "dark",
+    "file": "left_idler_3__dark.obj"
+  },
+  {
+    "body": "left_idler_4",
+    "material": "rubber",
+    "file": "left_idler_4__rubber.obj"
+  },
+  {
+    "body": "left_idler_4",
+    "material": "blue",
+    "file": "left_idler_4__blue.obj"
+  },
+  {
+    "body": "left_idler_4",
+    "material": "dark",
+    "file": "left_idler_4__dark.obj"
+  },
+  {
+    "body": "left_return_1",
+    "material": "rubber",
+    "file": "left_return_1__rubber.obj"
+  },
+  {
+    "body": "left_return_1",
+    "material": "blue",
+    "file": "left_return_1__blue.obj"
+  },
+  {
+    "body": "left_return_1",
+    "material": "dark",
+    "file": "left_return_1__dark.obj"
+  },
+  {
+    "body": "left_return_2",
+    "material": "rubber",
+    "file": "left_return_2__rubber.obj"
+  },
+  {
+    "body": "left_return_2",
+    "material": "blue",
+    "file": "left_return_2__blue.obj"
+  },
+  {
+    "body": "left_return_2",
+    "material": "dark",
+    "file": "left_return_2__dark.obj"
+  },
+  {
+    "body": "left_return_3",
+    "material": "rubber",
+    "file": "left_return_3__rubber.obj"
+  },
+  {
+    "body": "left_return_3",
+    "material": "blue",
+    "file": "left_return_3__blue.obj"
+  },
+  {
+    "body": "left_return_3",
+    "material": "dark",
+    "file": "left_return_3__dark.obj"
+  },
+  {
+    "body": "waist_yaw",
+    "material": "dark",
+    "file": "waist_yaw__dark.obj"
+  },
+  {
+    "body": "waist_yaw",
+    "material": "red",
+    "file": "waist_yaw__red.obj"
+  },
+  {
+    "body": "waist_pitch",
+    "material": "metal",
+    "file": "waist_pitch__metal.obj"
+  },
+  {
+    "body": "waist_pitch",
+    "material": "ivory",
+    "file": "waist_pitch__ivory.obj"
+  },
+  {
+    "body": "waist_pitch",
+    "material": "red",
+    "file": "waist_pitch__red.obj"
+  },
+  {
+    "body": "waist_pitch",
+    "material": "dark",
+    "file": "waist_pitch__dark.obj"
+  },
+  {
+    "body": "waist_pitch",
+    "material": "cyan",
+    "file": "waist_pitch__cyan.obj"
+  },
+  {
+    "body": "waist_pitch",
+    "material": "green",
+    "file": "waist_pitch__green.obj"
+  },
+  {
+    "body": "waist_pitch",
+    "material": "blue",
+    "file": "waist_pitch__blue.obj"
+  },
+  {
+    "body": "waist_pitch",
+    "material": "purple",
+    "file": "waist_pitch__purple.obj"
+  },
+  {
+    "body": "head_yaw",
+    "material": "dark",
+    "file": "head_yaw__dark.obj"
+  },
+  {
+    "body": "head_yaw",
+    "material": "metal",
+    "file": "head_yaw__metal.obj"
+  },
+  {
+    "body": "head_yaw",
+    "material": "glass",
+    "file": "head_yaw__glass.obj"
+  },
+  {
+    "body": "head_yaw",
+    "material": "purple",
+    "file": "head_yaw__purple.obj"
+  },
+  {
+    "body": "head_yaw",
+    "material": "green",
+    "file": "head_yaw__green.obj"
+  },
+  {
+    "body": "head_yaw",
+    "material": "blue",
+    "file": "head_yaw__blue.obj"
+  },
+  {
+    "body": "head_yaw",
+    "material": "ivory",
+    "file": "head_yaw__ivory.obj"
+  },
+  {
+    "body": "head_yaw",
+    "material": "red",
+    "file": "head_yaw__red.obj"
+  },
+  {
+    "body": "head_yaw",
+    "material": "cyan",
+    "file": "head_yaw__cyan.obj"
+  },
+  {
+    "body": "head_yaw",
+    "material": "white",
+    "file": "head_yaw__white.obj"
+  },
+  {
+    "body": "right_shoulder_pitch",
+    "material": "dark",
+    "file": "right_shoulder_pitch__dark.obj"
+  },
+  {
+    "body": "right_shoulder_pitch",
+    "material": "metal",
+    "file": "right_shoulder_pitch__metal.obj"
+  },
+  {
+    "body": "right_shoulder_roll",
+    "material": "metal",
+    "file": "right_shoulder_roll__metal.obj"
+  },
+  {
+    "body": "right_shoulder_yaw",
+    "material": "red",
+    "file": "right_shoulder_yaw__red.obj"
+  },
+  {
+    "body": "right_shoulder_yaw",
+    "material": "ivory",
+    "file": "right_shoulder_yaw__ivory.obj"
+  },
+  {
+    "body": "right_shoulder_yaw",
+    "material": "green",
+    "file": "right_shoulder_yaw__green.obj"
+  },
+  {
+    "body": "right_elbow",
+    "material": "green",
+    "file": "right_elbow__green.obj"
+  },
+  {
+    "body": "right_elbow",
+    "material": "metal",
+    "file": "right_elbow__metal.obj"
+  },
+  {
+    "body": "right_forearm_roll",
+    "material": "ivory",
+    "file": "right_forearm_roll__ivory.obj"
+  },
+  {
+    "body": "right_forearm_roll",
+    "material": "purple",
+    "file": "right_forearm_roll__purple.obj"
+  },
+  {
+    "body": "right_forearm_roll",
+    "material": "metal",
+    "file": "right_forearm_roll__metal.obj"
+  },
+  {
+    "body": "right_wrist_pitch",
+    "material": "metal",
+    "file": "right_wrist_pitch__metal.obj"
+  },
+  {
+    "body": "right_wrist_roll",
+    "material": "dark",
+    "file": "right_wrist_roll__dark.obj"
+  },
+  {
+    "body": "right_wrist_roll",
+    "material": "ivory",
+    "file": "right_wrist_roll__ivory.obj"
+  },
+  {
+    "body": "right_wrist_roll",
+    "material": "purple",
+    "file": "right_wrist_roll__purple.obj"
+  },
+  {
+    "body": "right_finger_1_base",
+    "material": "metal",
+    "file": "right_finger_1_base__metal.obj"
+  },
+  {
+    "body": "right_finger_1_base",
+    "material": "ivory",
+    "file": "right_finger_1_base__ivory.obj"
+  },
+  {
+    "body": "right_finger_1_tip",
+    "material": "purple",
+    "file": "right_finger_1_tip__purple.obj"
+  },
+  {
+    "body": "right_finger_1_tip",
+    "material": "metal",
+    "file": "right_finger_1_tip__metal.obj"
+  },
+  {
+    "body": "right_finger_1_tip",
+    "material": "rubber",
+    "file": "right_finger_1_tip__rubber.obj"
+  },
+  {
+    "body": "right_finger_2_base",
+    "material": "metal",
+    "file": "right_finger_2_base__metal.obj"
+  },
+  {
+    "body": "right_finger_2_base",
+    "material": "ivory",
+    "file": "right_finger_2_base__ivory.obj"
+  },
+  {
+    "body": "right_finger_2_tip",
+    "material": "purple",
+    "file": "right_finger_2_tip__purple.obj"
+  },
+  {
+    "body": "right_finger_2_tip",
+    "material": "metal",
+    "file": "right_finger_2_tip__metal.obj"
+  },
+  {
+    "body": "right_finger_2_tip",
+    "material": "rubber",
+    "file": "right_finger_2_tip__rubber.obj"
+  },
+  {
+    "body": "right_finger_3_base",
+    "material": "metal",
+    "file": "right_finger_3_base__metal.obj"
+  },
+  {
+    "body": "right_finger_3_base",
+    "material": "ivory",
+    "file": "right_finger_3_base__ivory.obj"
+  },
+  {
+    "body": "right_finger_3_tip",
+    "material": "purple",
+    "file": "right_finger_3_tip__purple.obj"
+  },
+  {
+    "body": "right_finger_3_tip",
+    "material": "metal",
+    "file": "right_finger_3_tip__metal.obj"
+  },
+  {
+    "body": "right_finger_3_tip",
+    "material": "rubber",
+    "file": "right_finger_3_tip__rubber.obj"
+  },
+  {
+    "body": "right_finger_4_base",
+    "material": "metal",
+    "file": "right_finger_4_base__metal.obj"
+  },
+  {
+    "body": "right_finger_4_base",
+    "material": "ivory",
+    "file": "right_finger_4_base__ivory.obj"
+  },
+  {
+    "body": "right_finger_4_tip",
+    "material": "purple",
+    "file": "right_finger_4_tip__purple.obj"
+  },
+  {
+    "body": "right_finger_4_tip",
+    "material": "metal",
+    "file": "right_finger_4_tip__metal.obj"
+  },
+  {
+    "body": "right_finger_4_tip",
+    "material": "rubber",
+    "file": "right_finger_4_tip__rubber.obj"
+  },
+  {
+    "body": "left_shoulder_pitch",
+    "material": "dark",
+    "file": "left_shoulder_pitch__dark.obj"
+  },
+  {
+    "body": "left_shoulder_pitch",
+    "material": "metal",
+    "file": "left_shoulder_pitch__metal.obj"
+  },
+  {
+    "body": "left_shoulder_roll",
+    "material": "metal",
+    "file": "left_shoulder_roll__metal.obj"
+  },
+  {
+    "body": "left_shoulder_yaw",
+    "material": "red",
+    "file": "left_shoulder_yaw__red.obj"
+  },
+  {
+    "body": "left_shoulder_yaw",
+    "material": "ivory",
+    "file": "left_shoulder_yaw__ivory.obj"
+  },
+  {
+    "body": "left_shoulder_yaw",
+    "material": "green",
+    "file": "left_shoulder_yaw__green.obj"
+  },
+  {
+    "body": "left_elbow",
+    "material": "green",
+    "file": "left_elbow__green.obj"
+  },
+  {
+    "body": "left_elbow",
+    "material": "metal",
+    "file": "left_elbow__metal.obj"
+  },
+  {
+    "body": "left_forearm_roll",
+    "material": "ivory",
+    "file": "left_forearm_roll__ivory.obj"
+  },
+  {
+    "body": "left_forearm_roll",
+    "material": "purple",
+    "file": "left_forearm_roll__purple.obj"
+  },
+  {
+    "body": "left_forearm_roll",
+    "material": "metal",
+    "file": "left_forearm_roll__metal.obj"
+  },
+  {
+    "body": "left_wrist_pitch",
+    "material": "metal",
+    "file": "left_wrist_pitch__metal.obj"
+  },
+  {
+    "body": "left_wrist_roll",
+    "material": "dark",
+    "file": "left_wrist_roll__dark.obj"
+  },
+  {
+    "body": "left_wrist_roll",
+    "material": "ivory",
+    "file": "left_wrist_roll__ivory.obj"
+  },
+  {
+    "body": "left_wrist_roll",
+    "material": "purple",
+    "file": "left_wrist_roll__purple.obj"
+  },
+  {
+    "body": "left_finger_1_base",
+    "material": "metal",
+    "file": "left_finger_1_base__metal.obj"
+  },
+  {
+    "body": "left_finger_1_base",
+    "material": "ivory",
+    "file": "left_finger_1_base__ivory.obj"
+  },
+  {
+    "body": "left_finger_1_tip",
+    "material": "purple",
+    "file": "left_finger_1_tip__purple.obj"
+  },
+  {
+    "body": "left_finger_1_tip",
+    "material": "metal",
+    "file": "left_finger_1_tip__metal.obj"
+  },
+  {
+    "body": "left_finger_1_tip",
+    "material": "rubber",
+    "file": "left_finger_1_tip__rubber.obj"
+  },
+  {
+    "body": "left_finger_2_base",
+    "material": "metal",
+    "file": "left_finger_2_base__metal.obj"
+  },
+  {
+    "body": "left_finger_2_base",
+    "material": "ivory",
+    "file": "left_finger_2_base__ivory.obj"
+  },
+  {
+    "body": "left_finger_2_tip",
+    "material": "purple",
+    "file": "left_finger_2_tip__purple.obj"
+  },
+  {
+    "body": "left_finger_2_tip",
+    "material": "metal",
+    "file": "left_finger_2_tip__metal.obj"
+  },
+  {
+    "body": "left_finger_2_tip",
+    "material": "rubber",
+    "file": "left_finger_2_tip__rubber.obj"
+  },
+  {
+    "body": "left_finger_3_base",
+    "material": "metal",
+    "file": "left_finger_3_base__metal.obj"
+  },
+  {
+    "body": "left_finger_3_base",
+    "material": "ivory",
+    "file": "left_finger_3_base__ivory.obj"
+  },
+  {
+    "body": "left_finger_3_tip",
+    "material": "purple",
+    "file": "left_finger_3_tip__purple.obj"
+  },
+  {
+    "body": "left_finger_3_tip",
+    "material": "metal",
+    "file": "left_finger_3_tip__metal.obj"
+  },
+  {
+    "body": "left_finger_3_tip",
+    "material": "rubber",
+    "file": "left_finger_3_tip__rubber.obj"
+  },
+  {
+    "body": "left_finger_4_base",
+    "material": "metal",
+    "file": "left_finger_4_base__metal.obj"
+  },
+  {
+    "body": "left_finger_4_base",
+    "material": "ivory",
+    "file": "left_finger_4_base__ivory.obj"
+  },
+  {
+    "body": "left_finger_4_tip",
+    "material": "purple",
+    "file": "left_finger_4_tip__purple.obj"
+  },
+  {
+    "body": "left_finger_4_tip",
+    "material": "metal",
+    "file": "left_finger_4_tip__metal.obj"
+  },
+  {
+    "body": "left_finger_4_tip",
+    "material": "rubber",
+    "file": "left_finger_4_tip__rubber.obj"
+  }
+]

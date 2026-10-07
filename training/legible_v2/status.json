@@ -1,0 +1,70 @@
+{
+  "status": "stopped",
+  "algorithm": "PPO residual control",
+  "controller_version": 2,
+  "target": "/Users/dgoldenh/Documents/GitHub/zoomer3D/targets/3201207f878b4707ab8753bffb68dbac.json",
+  "seed": 7,
+  "requested_steps": 8192,
+  "stages": [
+    "navigation",
+    "pickup",
+    "drawing",
+    "sequence"
+  ],
+  "stage": "drawing",
+  "trained_steps": 4674,
+  "elapsed_s": 238.3,
+  "evaluations": [
+    {
+      "stage": "navigation",
+      "trained_steps": 2048,
+      "success_rate": 1.0,
+      "episodes": [
+        {
+          "phase": "done",
+          "held": null,
+          "color": "black",
+          "stroke": 0,
+          "point": 0,
+          "visible": false,
+          "success": true,
+          "failure": null,
+          "time_s": 32.42000000001514,
+          "coverage": 0.0,
+          "tolerance_m": 0.03,
+          "tracking_tolerance_m": 0.00075,
+          "mse_limit_m2": 0.0009,
+          "mse_m2": null,
+          "rmse_m": null,
+          "max_error_m": null
+        }
+      ]
+    },
+    {
+      "stage": "pickup",
+      "trained_steps": 4096,
+      "success_rate": 1.0,
+      "episodes": [
+        {
+          "phase": "done",
+          "held": "black",
+          "color": "black",
+          "stroke": 0,
+          "point": 0,
+          "visible": false,
+          "success": true,
+          "failure": null,
+          "time_s": 0.9200000000000007,
+          "coverage": 0.0,
+          "tolerance_m": 0.03,
+          "tracking_tolerance_m": 0.00075,
+          "mse_limit_m2": 0.0009,
+          "mse_m2": null,
+          "rmse_m": null,
+          "max_error_m": null
+        }
+      ]
+    }
+  ],
+  "policy_ready": false
+}

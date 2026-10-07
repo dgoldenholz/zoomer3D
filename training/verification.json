@@ -1,0 +1,122 @@
+{
+  "training_steps": 4096,
+  "training_wall_time_s": 325.8,
+  "seed": 7,
+  "stage_results": [
+    {
+      "stage": "navigation",
+      "trained_steps": 1024,
+      "success_rate": 1.0,
+      "episodes": [
+        {
+          "phase": "done",
+          "held": null,
+          "color": "black",
+          "stroke": 0,
+          "point": 0,
+          "visible": false,
+          "success": true,
+          "failure": null,
+          "time_s": 33.54000000001253,
+          "coverage": 0.0,
+          "tolerance_m": 0.03,
+          "mse_limit_m2": 0.0009,
+          "mse_m2": null,
+          "rmse_m": null,
+          "max_error_m": null
+        }
+      ]
+    },
+    {
+      "stage": "pickup",
+      "trained_steps": 2048,
+      "success_rate": 1.0,
+      "episodes": [
+        {
+          "phase": "done",
+          "held": "black",
+          "color": "black",
+          "stroke": 0,
+          "point": 0,
+          "visible": false,
+          "success": true,
+          "failure": null,
+          "time_s": 0.9000000000000007,
+          "coverage": 0.0,
+          "tolerance_m": 0.03,
+          "mse_limit_m2": 0.0009,
+          "mse_m2": null,
+          "rmse_m": null,
+          "max_error_m": null
+        }
+      ]
+    },
+    {
+      "stage": "drawing",
+      "trained_steps": 3072,
+      "success_rate": 1.0,
+      "episodes": [
+        {
+          "phase": "done",
+          "held": "black",
+          "color": "black",
+          "stroke": 0,
+          "point": 6,
+          "visible": true,
+          "success": true,
+          "failure": null,
+          "time_s": 0.12000000000000009,
+          "coverage": 0.25,
+          "tolerance_m": 0.03,
+          "mse_limit_m2": 0.0009,
+          "mse_m2": 8.295222953084605e-05,
+          "rmse_m": 0.00910781145670276,
+          "max_error_m": 0.015008065306764939
+        }
+      ]
+    },
+    {
+      "stage": "sequence",
+      "trained_steps": 4096,
+      "success_rate": 1.0,
+      "episodes": [
+        {
+          "phase": "done",
+          "held": null,
+          "color": "green",
+          "stroke": 3,
+          "point": 0,
+          "visible": false,
+          "success": true,
+          "failure": null,
+          "time_s": 398.91999999747867,
+          "coverage": 1.0,
+          "tolerance_m": 0.03,
+          "mse_limit_m2": 0.0009,
+          "mse_m2": 0.00024020560354784666,
+          "rmse_m": 0.015498567790213606,
+          "max_error_m": 0.024526406609730506
+        }
+      ]
+    }
+  ],
+  "full_sequence_pass": true,
+  "scope": "One held-out reset per curriculum stage; not a robustness or generalization benchmark.",
+  "subsequent_run": {
+    "phase": "done",
+    "held": null,
+    "color": "green",
+    "stroke": 3,
+    "point": 0,
+    "visible": false,
+    "success": true,
+    "failure": null,
+    "time_s": 399.41999999746685,
+    "coverage": 1.0,
+    "tolerance_m": 0.03,
+    "mse_limit_m2": 0.0009,
+    "mse_m2": 0.0002454015793318785,
+    "rmse_m": 0.015665298571424627,
+    "max_error_m": 0.02456035983730091
+  }
+}

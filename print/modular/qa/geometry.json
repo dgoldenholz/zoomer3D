@@ -1,0 +1,289 @@
+{
+  "units": "mm",
+  "physical_print_test": "not performed",
+  "parts": {
+    "torso": {
+      "watertight": true,
+      "components": 1,
+      "volume_mm3": 106588.02114436145,
+      "print_dimensions_mm": [
+        84.0,
+        80.0,
+        22.10000038146973
+      ],
+      "assembled_bounds_mm": [
+        [
+          -42.0,
+          -12.100000381469727,
+          65.0
+        ],
+        [
+          42.0,
+          10.0,
+          145.0
+        ]
+      ],
+      "bed_contact_area_mm2": 5328.0
+    },
+    "base_deck": {
+      "watertight": true,
+      "components": 1,
+      "volume_mm3": 46185.1625622918,
+      "print_dimensions_mm": [
+        60.0,
+        46.0,
+        21.0
+      ],
+      "assembled_bounds_mm": [
+        [
+          -30.0,
+          -23.0,
+          20.0
+        ],
+        [
+          30.0,
+          23.0,
+          41.0
+        ]
+      ],
+      "bed_contact_area_mm2": 2506.560025634768
+    },
+    "right_track": {
+      "watertight": true,
+      "components": 1,
+      "volume_mm3": 12118.590594131674,
+      "print_dimensions_mm": [
+        23.000000000000004,
+        54.0,
+        13.350000381469727
+      ],
+      "assembled_bounds_mm": [
+        [
+          -31.350000381469727,
+          -26.0,
+          0.0
+        ],
+        [
+          -18.0,
+          28.0,
+          23.0
+        ]
+      ],
+      "bed_contact_area_mm2": 985.3250110764143
+    },
+    "left_track": {
+      "watertight": true,
+      "components": 1,
+      "volume_mm3": 12118.589366788941,
+      "print_dimensions_mm": [
+        23.000000000000004,
+        54.0,
+        13.350000381469727
+      ],
+      "assembled_bounds_mm": [
+        [
+          18.0,
+          -26.0,
+          0.0
+        ],
+        [
+          31.350000381469727,
+          28.0,
+          23.0
+        ]
+      ],
+      "bed_contact_area_mm2": 985.3250110764142
+    },
+    "waist_column": {
+      "watertight": true,
+      "components": 1,
+      "volume_mm3": 4714.6545257408525,
+      "print_dimensions_mm": [
+        16.0,
+        61.0,
+        11.000000000000004
+      ],
+      "assembled_bounds_mm": [
+        [
+          -8.0,
+          -8.0,
+          34.0
+        ],
+        [
+          8.0,
+          3.0,
+          95.0
+        ]
+      ],
+      "bed_contact_area_mm2": 568.528096012451
+    },
+    "right_arm": {
+      "watertight": true,
+      "components": 1,
+      "volume_mm3": 20662.396261781396,
+      "print_dimensions_mm": [
+        26.0,
+        105.0,
+        16.350000381469734
+      ],
+      "assembled_bounds_mm": [
+        [
+          -68.5999984741211,
+          -9.850000381469727,
+          40.0
+        ],
+        [
+          -42.599998474121094,
+          6.5,
+          145.0
+        ]
+      ],
+      "bed_contact_area_mm2": 1619.5239852964878
+    },
+    "right_shoulder_pin": {
+      "watertight": true,
+      "components": 1,
+      "volume_mm3": 1939.9234102828896,
+      "print_dimensions_mm": [
+        12.0,
+        12.0,
+        36.300003051757805
+      ],
+      "assembled_bounds_mm": [
+        [
+          -70.30000305175781,
+          -6.0,
+          128.0
+        ],
+        [
+          -34.0,
+          6.0,
+          140.0
+        ]
+      ],
+      "bed_contact_area_mm2": 112.91576086180066
+    },
+    "left_arm": {
+      "watertight": true,
+      "components": 1,
+      "volume_mm3": 20662.343374164775,
+      "print_dimensions_mm": [
+        26.0,
+        105.0,
+        16.350000381469734
+      ],
+      "assembled_bounds_mm": [
+        [
+          42.599998474121094,
+          -9.850000381469727,
+          40.0
+        ],
+        [
+          68.5999984741211,
+          6.5,
+          145.0
+        ]
+      ],
+      "bed_contact_area_mm2": 1619.5239852964878
+    },
+    "left_shoulder_pin": {
+      "watertight": true,
+      "components": 1,
+      "volume_mm3": 1939.9234102828896,
+      "print_dimensions_mm": [
+        12.0,
+        12.0,
+        36.300003051757805
+      ],
+      "assembled_bounds_mm": [
+        [
+          34.0,
+          -6.0,
+          128.0
+        ],
+        [
+          70.30000305175781,
+          6.0,
+          140.0
+        ]
+      ],
+      "bed_contact_area_mm2": 112.91576086180066
+    },
+    "head": {
+      "watertight": true,
+      "components": 1,
+      "volume_mm3": 15590.330115628652,
+      "print_dimensions_mm": [
+        59.0,
+        59.0,
+        27.400009155273438
+      ],
+      "assembled_bounds_mm": [
+        [
+          -29.5,
+          -29.5,
+          145.39999389648438
+        ],
+        [
+          29.5,
+          29.5,
+          172.8000030517578
+        ]
+      ],
+      "bed_contact_area_mm2": 2671.586565763766
+    },
+    "head_peg": {
+      "watertight": true,
+      "components": 1,
+      "volume_mm3": 594.9718747286997,
+      "print_dimensions_mm": [
+        8.0,
+        8.0,
+        12.0
+      ],
+      "assembled_bounds_mm": [
+        [
+          -4.0,
+          -4.0,
+          136.5
+        ],
+        [
+          4.0,
+          4.0,
+          148.5
+        ]
+      ],
+      "bed_contact_area_mm2": 50.18477506374256
+    },
+    "dome": {
+      "watertight": true,
+      "components": 1,
+      "volume_mm3": 7944.988037887165,
+      "print_dimensions_mm": [
+        59.0,
+        59.0,
+        33.399993896484375
+      ],
+      "assembled_bounds_mm": [
+        [
+          -29.5,
+          -29.5,
+          146.60000610351562
+        ],
+        [
+          29.5,
+          29.5,
+          180.0
+        ]
+      ],
+      "bed_contact_area_mm2": 253.23630544839307
+    }
+  },
+  "intersections": [],
+  "assembled_dimensions_mm": [
+    140.60000610351562,
+    59.0,
+    180.0
+  ],
+  "mesh_pass": true
+}

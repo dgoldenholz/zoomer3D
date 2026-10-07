@@ -1,0 +1,17 @@
+{
+  "status": "stopped",
+  "algorithm": "PPO residual control",
+  "controller_version": 3,
+  "target": "/Users/dgoldenh/Documents/GitHub/zoomer3D/targets/3201207f878b4707ab8753bffb68dbac.json",
+  "seed": 7,
+  "requested_steps": 2048,
+  "warm_start_steps": 12866,
+  "stages": [
+    "sequence"
+  ],
+  "stage": "sequence",
+  "trained_steps": 780,
+  "elapsed_s": 87.9,
+  "evaluations": [],
+  "policy_ready": false
+}

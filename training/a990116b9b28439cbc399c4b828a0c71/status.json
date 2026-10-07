@@ -1,0 +1,17 @@
+{
+  "status": "stopped",
+  "algorithm": "PPO residual control",
+  "seed": 7,
+  "requested_steps": 4096,
+  "stages": [
+    "navigation",
+    "pickup",
+    "drawing",
+    "sequence"
+  ],
+  "stage": "navigation",
+  "trained_steps": 82,
+  "elapsed_s": 6.0,
+  "evaluations": [],
+  "policy_ready": false
+}

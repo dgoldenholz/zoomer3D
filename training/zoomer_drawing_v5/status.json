@@ -1,0 +1,78 @@
+{
+  "status": "completed",
+  "algorithm": "PPO residual control",
+  "controller_version": 3,
+  "target": "/Users/dgoldenh/Documents/GitHub/zoomer3D/targets/3201207f878b4707ab8753bffb68dbac.json",
+  "seed": 7,
+  "requested_steps": 1024,
+  "warm_start_steps": 18766,
+  "stages": [
+    "drawing",
+    "sequence"
+  ],
+  "stage": "sequence",
+  "trained_steps": 1024,
+  "elapsed_s": 80.8,
+  "evaluations": [
+    {
+      "stage": "drawing",
+      "trained_steps": 512,
+      "success_rate": 1.0,
+      "episodes": [
+        {
+          "phase": "done",
+          "held": "black",
+          "color": "black",
+          "stroke": 0,
+          "point": 130,
+          "visible": true,
+          "success": true,
+          "failure": null,
+          "time_s": 2.8199999999998004,
+          "coverage": 1.0,
+          "tolerance_m": 0.03,
+          "tracking_tolerance_m": 0.00075,
+          "mse_limit_m2": 0.0009,
+          "mse_m2": 1.5267449086012682e-07,
+          "rmse_m": 0.0003907358325776212,
+          "max_error_m": 0.00048208036552641786,
+          "target_coverage_1mm": 1.0,
+          "ink_precision_1mm": 1.0,
+          "shape_rmse_m": 0.0002333952304669675,
+          "max_target_gap_m": 0.0004365044608760847
+        }
+      ]
+    },
+    {
+      "stage": "sequence",
+      "trained_steps": 1024,
+      "success_rate": 0.0,
+      "episodes": [
+        {
+          "phase": "navigate_pick",
+          "held": null,
+          "color": "black",
+          "stroke": 0,
+          "point": 0,
+          "visible": false,
+          "success": false,
+          "failure": "phase_timeout_navigate_pick",
+          "time_s": 60.01999999995082,
+          "coverage": 0.0,
+          "tolerance_m": 0.03,
+          "tracking_tolerance_m": 0.00075,
+          "mse_limit_m2": 0.0009,
+          "mse_m2": null,
+          "rmse_m": null,
+          "max_error_m": null,
+          "target_coverage_1mm": 0.0,
+          "ink_precision_1mm": 0.0,
+          "shape_rmse_m": null,
+          "max_target_gap_m": null
+        }
+      ]
+    }
+  ],
+  "policy_ready": false,
+  "needs_more_training": "sequence"
+}

@@ -1,0 +1,361 @@
+{
+  "physical_print_test": "not performed",
+  "geometry_pass": true,
+  "color_volume_checks": {
+    "right_arm__blue": {
+      "watertight": true,
+      "volume_mm3": 120.0
+    },
+    "left_arm__green": {
+      "watertight": true,
+      "volume_mm3": 104.0
+    },
+    "right_shoulder_pin__red": {
+      "watertight": true,
+      "volume_mm3": 1939.9234102828896
+    },
+    "torso__dark": {
+      "watertight": true,
+      "volume_mm3": 1135.907609221614
+    },
+    "right_track__blue": {
+      "watertight": true,
+      "volume_mm3": 500.2336353745022
+    },
+    "base_deck__ivory": {
+      "watertight": true,
+      "volume_mm3": 4969.148682821581
+    },
+    "waist_column__blue": {
+      "watertight": true,
+      "volume_mm3": 3170.8899045312196
+    },
+    "torso__green": {
+      "watertight": true,
+      "volume_mm3": 81.03994671048359
+    },
+    "right_arm__green": {
+      "watertight": true,
+      "volume_mm3": 104.0
+    },
+    "head__blue": {
+      "watertight": true,
+      "volume_mm3": 5017.20002746582
+    },
+    "head_peg__ivory": {
+      "watertight": true,
+      "volume_mm3": 594.9718747286997
+    },
+    "head__dark": {
+      "watertight": true,
+      "volume_mm3": 8.855009336468356
+    },
+    "left_arm__red": {
+      "watertight": true,
+      "volume_mm3": 154.0
+    },
+    "right_track__dark": {
+      "watertight": true,
+      "volume_mm3": 11618.567098296517
+    },
+    "torso__blue": {
+      "watertight": true,
+      "volume_mm3": 14.477556793264439
+    },
+    "head__green": {
+      "watertight": true,
+      "volume_mm3": 4316.366896528659
+    },
+    "right_arm__dark": {
+      "watertight": true,
+      "volume_mm3": 152.37976448057452
+    },
+    "head__red": {
+      "watertight": true,
+      "volume_mm3": 22.27115380731601
+    },
+    "base_deck__blue": {
+      "watertight": true,
+      "volume_mm3": 28121.509161495214
+    },
+    "head__ivory": {
+      "watertight": true,
+      "volume_mm3": 6225.640950924478
+    },
+    "waist_column__red": {
+      "watertight": true,
+      "volume_mm3": 1543.8407785946147
+    },
+    "left_track__blue": {
+      "watertight": true,
+      "volume_mm3": 500.2340258901275
+    },
+    "left_arm__blue": {
+      "watertight": true,
+      "volume_mm3": 120.0
+    },
+    "left_shoulder_pin__red": {
+      "watertight": true,
+      "volume_mm3": 1939.9234102828896
+    },
+    "left_arm__dark": {
+      "watertight": true,
+      "volume_mm3": 152.37976448057452
+    },
+    "right_arm__ivory": {
+      "watertight": true,
+      "volume_mm3": 20132.016526206615
+    },
+    "torso__ivory": {
+      "watertight": true,
+      "volume_mm3": 104208.79236998771
+    },
+    "left_track__dark": {
+      "watertight": true,
+      "volume_mm3": 11618.566905845122
+    },
+    "base_deck__red": {
+      "watertight": true,
+      "volume_mm3": 12288.97999660492
+    },
+    "base_deck__green": {
+      "watertight": true,
+      "volume_mm3": 805.524721370085
+    },
+    "torso__red": {
+      "watertight": true,
+      "volume_mm3": 1147.8399304717448
+    },
+    "right_arm__red": {
+      "watertight": true,
+      "volume_mm3": 153.99999942779505
+    },
+    "left_arm__ivory": {
+      "watertight": true,
+      "volume_mm3": 20131.96360936301
+    },
+    "dome__clear": {
+      "watertight": true,
+      "volume_mm3": 7944.988037887165
+    }
+  },
+  "motion_sweeps": [
+    {
+      "part": "left_arm",
+      "axis": "X",
+      "sample_angles_deg": [
+        -75,
+        -70,
+        -65,
+        -60,
+        -55,
+        -50,
+        -45,
+        -40,
+        -35,
+        -30,
+        -25,
+        -20,
+        -15,
+        -10,
+        -5,
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55,
+        60,
+        65,
+        70,
+        75
+      ],
+      "max_overlap_mm3": 0
+    },
+    {
+      "part": "right_arm",
+      "axis": "X",
+      "sample_angles_deg": [
+        -75,
+        -70,
+        -65,
+        -60,
+        -55,
+        -50,
+        -45,
+        -40,
+        -35,
+        -30,
+        -25,
+        -20,
+        -15,
+        -10,
+        -5,
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55,
+        60,
+        65,
+        70,
+        75
+      ],
+      "max_overlap_mm3": 0
+    },
+    {
+      "part": "head",
+      "axis": "Z",
+      "sample_angles_deg": [
+        -180,
+        -170,
+        -160,
+        -150,
+        -140,
+        -130,
+        -120,
+        -110,
+        -100,
+        -90,
+        -80,
+        -70,
+        -60,
+        -50,
+        -40,
+        -30,
+        -20,
+        -10,
+        0,
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        70,
+        80,
+        90,
+        100,
+        110,
+        120,
+        130,
+        140,
+        150,
+        160,
+        170,
+        180
+      ],
+      "max_overlap_mm3": 0
+    }
+  ],
+  "profiles": {
+    "main_single_material": {
+      "printer_model": "XL5IS",
+      "nozzle_diameter": "0.4,0.4,0.4,0.4,0.4",
+      "layer_height": "0.15",
+      "perimeters": "4",
+      "fill_density": "20%",
+      "support_material": "0",
+      "brim_width": "3",
+      "filament_type": "PLA;PLA;PLA;PLA;PLA"
+    },
+    "main_five_color": {
+      "printer_model": "XL5IS",
+      "nozzle_diameter": "0.4,0.4,0.4,0.4,0.4",
+      "layer_height": "0.15",
+      "perimeters": "4",
+      "fill_density": "20%",
+      "support_material": "0",
+      "brim_width": "3",
+      "filament_type": "PLA;PLA;PLA;PLA;PLA"
+    },
+    "fit_coupons": {
+      "printer_model": "XL5IS",
+      "nozzle_diameter": "0.4,0.4,0.4,0.4,0.4",
+      "layer_height": "0.15",
+      "perimeters": "4",
+      "fill_density": "100%",
+      "support_material": "0",
+      "brim_width": "3",
+      "filament_type": "PLA;PLA;PLA;PLA;PLA"
+    },
+    "dome": {
+      "printer_model": "XL5IS",
+      "nozzle_diameter": "0.4,0.4,0.4,0.4,0.4",
+      "layer_height": "0.15",
+      "perimeters": "3",
+      "fill_density": "0%",
+      "support_material": "1",
+      "brim_width": "4",
+      "filament_type": "PETG;PETG;PETG;PETG;PETG"
+    }
+  },
+  "slices": {
+    "main_single_material": {
+      "stats": {
+        "total filament used [g]": "141.50",
+        "total filament used for wipe tower [g]": "0.00",
+        "estimated printing time (normal mode)": "11h 56m 15s",
+        "estimated printing time (silent mode)": "12h 52m 33s"
+      },
+      "warnings": "",
+      "gcode_sha256": "0a51cfd9f0aee7f4c6468f57a995ecadbeed0552c00b4532d4172d5c14fc1974",
+      "project_sha256": "ef30ad1ba84ccf40400b808a5ba3959548d6b3d64bbaa43d49daa24bef39ab6c",
+      "support_toolpaths": 0,
+      "layers": 242
+    },
+    "main_five_color": {
+      "stats": {
+        "total filament used [g]": "165.29",
+        "total filament used for wipe tower [g]": "22.04",
+        "total toolchanges": "573",
+        "estimated printing time (normal mode)": "14h 55m 14s",
+        "estimated printing time (silent mode)": "16h 9m 39s"
+      },
+      "warnings": "",
+      "gcode_sha256": "6d433d548456889281ead940a831626a932cc6946352a7cdba6f8959736c3710",
+      "project_sha256": "d2f001d6840a0ed15344dd188ca322fff9ee46e611a5a4cbc2d1cc0595c8c4ec",
+      "support_toolpaths": 0,
+      "layers": 242
+    },
+    "fit_coupons": {
+      "stats": {
+        "total filament used [g]": "11.83",
+        "total filament used for wipe tower [g]": "0.00",
+        "estimated printing time (normal mode)": "1h 32m 54s",
+        "estimated printing time (silent mode)": "1h 37m 49s"
+      },
+      "warnings": "",
+      "gcode_sha256": "d6aab702de53b60e49d57fd2b5f2d0d927030d551188abf89a940c19ce7fe81b",
+      "project_sha256": "cd49f925bddb838bc17e57ba3e6d52d1d844b9ed2613a6c615c87cad068b8525",
+      "support_toolpaths": 0,
+      "layers": 100
+    },
+    "dome": {
+      "stats": {
+        "total filament used [g]": "15.42",
+        "total filament used for wipe tower [g]": "0.00",
+        "estimated printing time (normal mode)": "1h 21m 47s",
+        "estimated printing time (silent mode)": "1h 23m 13s"
+      },
+      "warnings": "",
+      "gcode_sha256": "d9aede656c6ea950af1c80f33f4addd7d883ebd289a8fe373f6f77f55a9e130e",
+      "project_sha256": "f36640ecc887ab0e859b373f0356d06b1669738e06c587bcbee2fd095c056a3b",
+      "support_toolpaths": 170,
+      "layers": 304
+    }
+  }
+}

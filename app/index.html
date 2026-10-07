@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Zoomer drawing studio</title><link rel="stylesheet" href="style.css"></head>
+<body><main>
+<header><a class="wordmark" href="/">ZOOMER <span>XTI-30</span></a><span class="status"><i></i> Drawing studio</span></header>
+<section class="intro"><p class="eyebrow">TEACH A ROBOT TO DRAW</p><h1>Start with a line.</h1><p>Draw in four colors. Zoomer follows your stroke order, collecting and returning markers along the way.</p></section>
+<section class="workspace">
+<div class="canvas-panel"><div class="toolbar"><div id="palette" role="group" aria-label="Marker color"></div><span class="pen-size">1.5 mm marker</span><div class="tools"><button id="undo" title="Undo last stroke">Undo</button><button id="clear">Clear</button></div></div>
+<div class="canvas-wrap"><canvas id="drawing" width="1500" height="300" aria-label="Target drawing canvas. Draw with a mouse, touch or pen."></canvas><span id="hint">Your whiteboard starts here</span></div>
+<div class="canvas-footer"><span>30 × 6 cm drawing area</span><span id="stroke-count">0 strokes</span></div>
+<div class="playback"><button id="replay">Replay strokes</button><input id="scrub" aria-label="Stroke playback position" type="range" min="0" max="100" value="100"><span id="duration">0.0 s</span></div></div>
+<aside><h2>Robot training</h2><label for="name">Drawing name</label><input id="name" maxlength="100" value="My first drawing"><label for="tolerance">Allowed position error</label><div class="number"><input id="tolerance" type="number" min="0.05" max="10" step="0.05" value="3"><span>cm RMS</span></div><p class="helper">Default: 3 cm RMS overall. The robot aims for 0.75 mm stroke accuracy to preserve lettering, then favors speed once that accuracy is met.</p><p class="metric" id="mse">MSE limit: 0.0009 m²</p>
+<button id="save" class="primary">Save target</button><div class="file-actions"><button id="export">Export JSON</button><label class="button" for="import">Import JSON</label><input id="import" type="file" accept="application/json,.json" hidden></div>
+<label for="budget">Training steps</label><select id="budget"><option value="4096">4,096 · smoke test</option><option value="100000" selected>100,000 · first training run</option><option value="1000000">1,000,000 · longer run</option></select><button id="train">Train this drawing</button><button id="stop" hidden>Stop and save checkpoint</button><p id="message" role="status" aria-live="polite">Save a drawing to begin.</p></aside></section>
+<section class="sequence"><div><p class="eyebrow">RECORDED SEQUENCE</p><h2>Every stroke, in order.</h2></div><ol id="strokes"></ol><p id="empty">Your strokes will appear here. Changing color sends Zoomer back to the marker table.</p></section>
+<section id="run" hidden><h2>Training progress</h2><pre id="run-status"></pre></section>
+<footer>Eye visibility is required for target actions. Training uses a staged curriculum and rewards shorter completion time.</footer>
+</main><script src="app.js?v=3"></script></body></html>

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "main_single_material",
+    "file": "/Users/dgoldenh/Documents/GitHub/zoomer3D/print/modular/plates/XL_main_single_material.3mf"
+  },
+  {
+    "name": "main_five_color",
+    "file": "/Users/dgoldenh/Documents/GitHub/zoomer3D/print/modular/plates/XL_main_five_color.3mf"
+  },
+  {
+    "name": "fit_coupons",
+    "file": "/Users/dgoldenh/Documents/GitHub/zoomer3D/print/modular/plates/XL_fit_coupons.3mf"
+  },
+  {
+    "name": "dome",
+    "file": "/Users/dgoldenh/Documents/GitHub/zoomer3D/print/modular/plates/XL_dome_PETG.3mf"
+  }
+]

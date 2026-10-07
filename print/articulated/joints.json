@@ -1,0 +1,2785 @@
+[
+  {
+    "name": "waist_yaw",
+    "parent": "base",
+    "type": "continuous",
+    "origin_mm": [
+      0.0,
+      0.0,
+      90.0
+    ],
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "limits_deg": [
+      -180,
+      180
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 5.6000000000000005,
+    "retention_overlap_mm": 1.7499999999999991
+  },
+  {
+    "name": "waist_pitch",
+    "parent": "waist_yaw",
+    "type": "hinge",
+    "origin_mm": [
+      0.0,
+      0.0,
+      101.0
+    ],
+    "axis": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "limits_deg": [
+      -25,
+      25
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 2.5,
+    "retention_overlap_mm": 0.29999999999999993
+  },
+  {
+    "name": "head_yaw",
+    "parent": "waist_pitch",
+    "type": "continuous",
+    "origin_mm": [
+      0.0,
+      0.0,
+      150.0
+    ],
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "limits_deg": [
+      -180,
+      180
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 5.44,
+    "retention_overlap_mm": 1.6899999999999995
+  },
+  {
+    "name": "right_shoulder_pitch",
+    "parent": "waist_pitch",
+    "type": "hinge",
+    "origin_mm": [
+      -43.0,
+      0.0,
+      137.0
+    ],
+    "axis": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "limits_deg": [
+      -125,
+      25
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 2.5,
+    "retention_overlap_mm": 0.29999999999999993
+  },
+  {
+    "name": "right_shoulder_roll",
+    "parent": "right_shoulder_pitch",
+    "type": "hinge",
+    "origin_mm": [
+      -43.0,
+      0.0,
+      126.0
+    ],
+    "axis": [
+      0.0,
+      -1.0,
+      0.0
+    ],
+    "limits_deg": [
+      -55,
+      55
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 2.125,
+    "retention_overlap_mm": 0.2025
+  },
+  {
+    "name": "right_shoulder_yaw",
+    "parent": "right_shoulder_roll",
+    "type": "continuous",
+    "origin_mm": [
+      -43.0,
+      0.0,
+      115.0
+    ],
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "limits_deg": [
+      -180,
+      180
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 3.6799999999999997,
+    "retention_overlap_mm": 1.0299999999999998
+  },
+  {
+    "name": "right_elbow",
+    "parent": "right_shoulder_yaw",
+    "type": "hinge",
+    "origin_mm": [
+      -43.0,
+      0.0,
+      103.0
+    ],
+    "axis": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "limits_deg": [
+      -125,
+      0
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 2.125,
+    "retention_overlap_mm": 0.2025
+  },
+  {
+    "name": "right_forearm_roll",
+    "parent": "right_elbow",
+    "type": "continuous",
+    "origin_mm": [
+      -43.0,
+      0.0,
+      92.0
+    ],
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "limits_deg": [
+      -180,
+      180
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 3.6799999999999997,
+    "retention_overlap_mm": 1.0299999999999998
+  },
+  {
+    "name": "right_wrist_pitch",
+    "parent": "right_forearm_roll",
+    "type": "hinge",
+    "origin_mm": [
+      -43.0,
+      0.0,
+      81.0
+    ],
+    "axis": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "limits_deg": [
+      -50,
+      50
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.75,
+    "retention_overlap_mm": 0.20000000000000007
+  },
+  {
+    "name": "right_wrist_roll",
+    "parent": "right_wrist_pitch",
+    "type": "hinge",
+    "origin_mm": [
+      -43.0,
+      0.0,
+      72.0
+    ],
+    "axis": [
+      0.0,
+      -1.0,
+      0.0
+    ],
+    "limits_deg": [
+      -30,
+      30
+    ],
+    "radial_gap_mm": 0.3,
+    "axial_gap_mm": 0.3,
+    "pin_diameter_mm": 1.5,
+    "retention_overlap_mm": 0.25000000000000006
+  },
+  {
+    "name": "right_finger_1_base",
+    "parent": "right_wrist_roll",
+    "type": "hinge",
+    "origin_mm": [
+      -39.46446609406726,
+      3.5355339059327373,
+      62.0
+    ],
+    "axis": [
+      -0.7071067811865475,
+      0.7071067811865476,
+      0.0
+    ],
+    "limits_deg": [
+      -15,
+      50
+    ],
+    "radial_gap_mm": 0.3,
+    "axial_gap_mm": 0.3,
+    "pin_diameter_mm": 1.0,
+    "retention_overlap_mm": 0.25000000000000006
+  },
+  {
+    "name": "right_finger_1_tip",
+    "parent": "right_finger_1_base",
+    "type": "hinge",
+    "origin_mm": [
+      -38.757359312880716,
+      4.242640687119285,
+      55.5
+    ],
+    "axis": [
+      -0.7071067811865475,
+      0.7071067811865476,
+      0.0
+    ],
+    "limits_deg": [
+      -10,
+      60
+    ],
+    "radial_gap_mm": 0.3,
+    "axial_gap_mm": 0.3,
+    "pin_diameter_mm": 0.95,
+    "retention_overlap_mm": 0.24999999999999994
+  },
+  {
+    "name": "right_finger_2_base",
+    "parent": "right_wrist_roll",
+    "type": "hinge",
+    "origin_mm": [
+      -46.53553390593274,
+      3.5355339059327378,
+      62.0
+    ],
+    "axis": [
+      -0.7071067811865476,
+      -0.7071067811865475,
+      0.0
+    ],
+    "limits_deg": [
+      -15,
+      50
+    ],
+    "radial_gap_mm": 0.3,
+    "axial_gap_mm": 0.3,
+    "pin_diameter_mm": 1.0,
+    "retention_overlap_mm": 0.25000000000000006
+  },
+  {
+    "name": "right_finger_2_tip",
+    "parent": "right_finger_2_base",
+    "type": "hinge",
+    "origin_mm": [
+      -47.242640687119284,
+      4.242640687119286,
+      55.5
+    ],
+    "axis": [
+      -0.7071067811865476,
+      -0.7071067811865475,
+      0.0
+    ],
+    "limits_deg": [
+      -10,
+      60
+    ],
+    "radial_gap_mm": 0.3,
+    "axial_gap_mm": 0.3,
+    "pin_diameter_mm": 0.95,
+    "retention_overlap_mm": 0.24999999999999994
+  },
+  {
+    "name": "right_finger_3_base",
+    "parent": "right_wrist_roll",
+    "type": "hinge",
+    "origin_mm": [
+      -46.53553390593274,
+      -3.5355339059327373,
+      62.0
+    ],
+    "axis": [
+      0.7071067811865475,
+      -0.7071067811865477,
+      0.0
+    ],
+    "limits_deg": [
+      -15,
+      50
+    ],
+    "radial_gap_mm": 0.3,
+    "axial_gap_mm": 0.3,
+    "pin_diameter_mm": 1.0,
+    "retention_overlap_mm": 0.25000000000000006
+  },
+  {
+    "name": "right_finger_3_tip",
+    "parent": "right_finger_3_base",
+    "type": "hinge",
+    "origin_mm": [
+      -47.242640687119284,
+      -4.242640687119285,
+      55.5
+    ],
+    "axis": [
+      0.7071067811865475,
+      -0.7071067811865477,
+      0.0
+    ],
+    "limits_deg": [
+      -10,
+      60
+    ],
+    "radial_gap_mm": 0.3,
+    "axial_gap_mm": 0.3,
+    "pin_diameter_mm": 0.95,
+    "retention_overlap_mm": 0.24999999999999994
+  },
+  {
+    "name": "right_finger_4_base",
+    "parent": "right_wrist_roll",
+    "type": "hinge",
+    "origin_mm": [
+      -39.46446609406726,
+      -3.5355339059327386,
+      62.0
+    ],
+    "axis": [
+      0.7071067811865477,
+      0.7071067811865474,
+      0.0
+    ],
+    "limits_deg": [
+      -15,
+      50
+    ],
+    "radial_gap_mm": 0.3,
+    "axial_gap_mm": 0.3,
+    "pin_diameter_mm": 1.0,
+    "retention_overlap_mm": 0.25000000000000006
+  },
+  {
+    "name": "right_finger_4_tip",
+    "parent": "right_finger_4_base",
+    "type": "hinge",
+    "origin_mm": [
+      -38.757359312880716,
+      -4.242640687119286,
+      55.5
+    ],
+    "axis": [
+      0.7071067811865477,
+      0.7071067811865474,
+      0.0
+    ],
+    "limits_deg": [
+      -10,
+      60
+    ],
+    "radial_gap_mm": 0.3,
+    "axial_gap_mm": 0.3,
+    "pin_diameter_mm": 0.95,
+    "retention_overlap_mm": 0.24999999999999994
+  },
+  {
+    "name": "left_shoulder_pitch",
+    "parent": "waist_pitch",
+    "type": "hinge",
+    "origin_mm": [
+      43.0,
+      0.0,
+      137.0
+    ],
+    "axis": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "limits_deg": [
+      -125,
+      25
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 2.5,
+    "retention_overlap_mm": 0.29999999999999993
+  },
+  {
+    "name": "left_shoulder_roll",
+    "parent": "left_shoulder_pitch",
+    "type": "hinge",
+    "origin_mm": [
+      43.0,
+      0.0,
+      126.0
+    ],
+    "axis": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "limits_deg": [
+      -55,
+      55
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 2.125,
+    "retention_overlap_mm": 0.2025
+  },
+  {
+    "name": "left_shoulder_yaw",
+    "parent": "left_shoulder_roll",
+    "type": "continuous",
+    "origin_mm": [
+      43.0,
+      0.0,
+      115.0
+    ],
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "limits_deg": [
+      -180,
+      180
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 3.6799999999999997,
+    "retention_overlap_mm": 1.0299999999999998
+  },
+  {
+    "name": "left_elbow",
+    "parent": "left_shoulder_yaw",
+    "type": "hinge",
+    "origin_mm": [
+      43.0,
+      0.0,
+      103.0
+    ],
+    "axis": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "limits_deg": [
+      -125,
+      0
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 2.125,
+    "retention_overlap_mm": 0.2025
+  },
+  {
+    "name": "left_forearm_roll",
+    "parent": "left_elbow",
+    "type": "continuous",
+    "origin_mm": [
+      43.0,
+      0.0,
+      92.0
+    ],
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "limits_deg": [
+      -180,
+      180
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 3.6799999999999997,
+    "retention_overlap_mm": 1.0299999999999998
+  },
+  {
+    "name": "left_wrist_pitch",
+    "parent": "left_forearm_roll",
+    "type": "hinge",
+    "origin_mm": [
+      43.0,
+      0.0,
+      81.0
+    ],
+    "axis": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "limits_deg": [
+      -50,
+      50
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.75,
+    "retention_overlap_mm": 0.20000000000000007
+  },
+  {
+    "name": "left_wrist_roll",
+    "parent": "left_wrist_pitch",
+    "type": "hinge",
+    "origin_mm": [
+      43.0,
+      0.0,
+      72.0
+    ],
+    "axis": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "limits_deg": [
+      -30,
+      30
+    ],
+    "radial_gap_mm": 0.3,
+    "axial_gap_mm": 0.3,
+    "pin_diameter_mm": 1.5,
+    "retention_overlap_mm": 0.25000000000000006
+  },
+  {
+    "name": "left_finger_1_base",
+    "parent": "left_wrist_roll",
+    "type": "hinge",
+    "origin_mm": [
+      46.53553390593274,
+      3.5355339059327373,
+      62.0
+    ],
+    "axis": [
+      -0.7071067811865475,
+      0.7071067811865476,
+      0.0
+    ],
+    "limits_deg": [
+      -15,
+      50
+    ],
+    "radial_gap_mm": 0.3,
+    "axial_gap_mm": 0.3,
+    "pin_diameter_mm": 1.0,
+    "retention_overlap_mm": 0.25000000000000006
+  },
+  {
+    "name": "left_finger_1_tip",
+    "parent": "left_finger_1_base",
+    "type": "hinge",
+    "origin_mm": [
+      47.242640687119284,
+      4.242640687119285,
+      55.5
+    ],
+    "axis": [
+      -0.7071067811865475,
+      0.7071067811865476,
+      0.0
+    ],
+    "limits_deg": [
+      -10,
+      60
+    ],
+    "radial_gap_mm": 0.3,
+    "axial_gap_mm": 0.3,
+    "pin_diameter_mm": 0.95,
+    "retention_overlap_mm": 0.24999999999999994
+  },
+  {
+    "name": "left_finger_2_base",
+    "parent": "left_wrist_roll",
+    "type": "hinge",
+    "origin_mm": [
+      39.46446609406726,
+      3.5355339059327378,
+      62.0
+    ],
+    "axis": [
+      -0.7071067811865476,
+      -0.7071067811865475,
+      0.0
+    ],
+    "limits_deg": [
+      -15,
+      50
+    ],
+    "radial_gap_mm": 0.3,
+    "axial_gap_mm": 0.3,
+    "pin_diameter_mm": 1.0,
+    "retention_overlap_mm": 0.25000000000000006
+  },
+  {
+    "name": "left_finger_2_tip",
+    "parent": "left_finger_2_base",
+    "type": "hinge",
+    "origin_mm": [
+      38.757359312880716,
+      4.242640687119286,
+      55.5
+    ],
+    "axis": [
+      -0.7071067811865476,
+      -0.7071067811865475,
+      0.0
+    ],
+    "limits_deg": [
+      -10,
+      60
+    ],
+    "radial_gap_mm": 0.3,
+    "axial_gap_mm": 0.3,
+    "pin_diameter_mm": 0.95,
+    "retention_overlap_mm": 0.24999999999999994
+  },
+  {
+    "name": "left_finger_3_base",
+    "parent": "left_wrist_roll",
+    "type": "hinge",
+    "origin_mm": [
+      39.46446609406726,
+      -3.5355339059327373,
+      62.0
+    ],
+    "axis": [
+      0.7071067811865475,
+      -0.7071067811865477,
+      0.0
+    ],
+    "limits_deg": [
+      -15,
+      50
+    ],
+    "radial_gap_mm": 0.3,
+    "axial_gap_mm": 0.3,
+    "pin_diameter_mm": 1.0,
+    "retention_overlap_mm": 0.25000000000000006
+  },
+  {
+    "name": "left_finger_3_tip",
+    "parent": "left_finger_3_base",
+    "type": "hinge",
+    "origin_mm": [
+      38.757359312880716,
+      -4.242640687119285,
+      55.5
+    ],
+    "axis": [
+      0.7071067811865475,
+      -0.7071067811865477,
+      0.0
+    ],
+    "limits_deg": [
+      -10,
+      60
+    ],
+    "radial_gap_mm": 0.3,
+    "axial_gap_mm": 0.3,
+    "pin_diameter_mm": 0.95,
+    "retention_overlap_mm": 0.24999999999999994
+  },
+  {
+    "name": "left_finger_4_base",
+    "parent": "left_wrist_roll",
+    "type": "hinge",
+    "origin_mm": [
+      46.53553390593274,
+      -3.5355339059327386,
+      62.0
+    ],
+    "axis": [
+      0.7071067811865477,
+      0.7071067811865474,
+      0.0
+    ],
+    "limits_deg": [
+      -15,
+      50
+    ],
+    "radial_gap_mm": 0.3,
+    "axial_gap_mm": 0.3,
+    "pin_diameter_mm": 1.0,
+    "retention_overlap_mm": 0.25000000000000006
+  },
+  {
+    "name": "left_finger_4_tip",
+    "parent": "left_finger_4_base",
+    "type": "hinge",
+    "origin_mm": [
+      47.242640687119284,
+      -4.242640687119286,
+      55.5
+    ],
+    "axis": [
+      0.7071067811865477,
+      0.7071067811865474,
+      0.0
+    ],
+    "limits_deg": [
+      -10,
+      60
+    ],
+    "radial_gap_mm": 0.3,
+    "axial_gap_mm": 0.3,
+    "pin_diameter_mm": 0.95,
+    "retention_overlap_mm": 0.24999999999999994
+  },
+  {
+    "name": "right_wheel_0",
+    "parent": "base",
+    "type": "continuous",
+    "origin_mm": [
+      -29.0,
+      -25.71079778689987,
+      8.397170396586656
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -180,
+      180
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 2.25,
+    "pin_diameter_mm": 2.2,
+    "retention_overlap_mm": 0.45
+  },
+  {
+    "name": "right_wheel_1",
+    "parent": "base",
+    "type": "continuous",
+    "origin_mm": [
+      -29.0,
+      -10.53721220774585,
+      8.005788228870383
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -180,
+      180
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 2.25,
+    "pin_diameter_mm": 2.2,
+    "retention_overlap_mm": 0.45
+  },
+  {
+    "name": "right_wheel_2",
+    "parent": "base",
+    "type": "continuous",
+    "origin_mm": [
+      -29.0,
+      2.1074424415491704,
+      8.984243648161065
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -180,
+      180
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 2.25,
+    "pin_diameter_mm": 2.2,
+    "retention_overlap_mm": 0.45
+  },
+  {
+    "name": "right_wheel_3",
+    "parent": "base",
+    "type": "continuous",
+    "origin_mm": [
+      -29.0,
+      14.330608602534358,
+      8.984243648161065
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -180,
+      180
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 2.25,
+    "pin_diameter_mm": 2.2,
+    "retention_overlap_mm": 0.45
+  },
+  {
+    "name": "right_wheel_4",
+    "parent": "base",
+    "type": "continuous",
+    "origin_mm": [
+      -29.0,
+      26.76451900767446,
+      10.7454634028843
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -180,
+      180
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 2.25,
+    "pin_diameter_mm": 2.2,
+    "retention_overlap_mm": 0.45
+  },
+  {
+    "name": "right_wheel_5",
+    "parent": "base",
+    "type": "continuous",
+    "origin_mm": [
+      -29.0,
+      -18.334749241477777,
+      19.551562176500475
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -180,
+      180
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 2.25,
+    "pin_diameter_mm": 2.2,
+    "retention_overlap_mm": 0.45
+  },
+  {
+    "name": "right_wheel_6",
+    "parent": "base",
+    "type": "continuous",
+    "origin_mm": [
+      -29.0,
+      -6.1115830804925935,
+      19.355871092642335
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -180,
+      180
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 2.25,
+    "pin_diameter_mm": 2.2,
+    "retention_overlap_mm": 0.45
+  },
+  {
+    "name": "right_wheel_7",
+    "parent": "base",
+    "type": "continuous",
+    "origin_mm": [
+      -29.0,
+      6.533071568802427,
+      19.747253260358615
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -180,
+      180
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 2.25,
+    "pin_diameter_mm": 2.2,
+    "retention_overlap_mm": 0.45
+  },
+  {
+    "name": "right_tread_00",
+    "parent": "right_tread_35",
+    "type": "chain_pin",
+    "origin_mm": [
+      -29.0,
+      -25.71079778689987,
+      26.009367943819004
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "right_tread_01",
+    "parent": "right_tread_00",
+    "type": "chain_pin",
+    "origin_mm": [
+      -29.0,
+      -21.230007334592457,
+      26.00885707621367
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "right_tread_02",
+    "parent": "right_tread_01",
+    "type": "chain_pin",
+    "origin_mm": [
+      -29.0,
+      -16.749217713104752,
+      26.00616872257944
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "right_tread_03",
+    "parent": "right_tread_02",
+    "type": "chain_pin",
+    "origin_mm": [
+      -29.0,
+      -12.268431277870844,
+      26.000230550403753
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "right_tread_04",
+    "parent": "right_tread_03",
+    "type": "chain_pin",
+    "origin_mm": [
+      -29.0,
+      -7.787652553480431,
+      25.990051779534813
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "right_tread_05",
+    "parent": "right_tread_04",
+    "type": "chain_pin",
+    "origin_mm": [
+      -29.0,
+      -3.3068900246680153,
+      25.9743257347391
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "right_tread_06",
+    "parent": "right_tread_05",
+    "type": "chain_pin",
+    "origin_mm": [
+      -29.0,
+      1.173839305680288,
+      25.951056386225524
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "right_tread_07",
+    "parent": "right_tread_06",
+    "type": "chain_pin",
+    "origin_mm": [
+      -29.0,
+      5.6544965321884035,
+      25.916730778584547
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "right_tread_08",
+    "parent": "right_tread_07",
+    "type": "chain_pin",
+    "origin_mm": [
+      -29.0,
+      10.13496639450338,
+      25.863646309932488
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "right_tread_09",
+    "parent": "right_tread_08",
+    "type": "chain_pin",
+    "origin_mm": [
+      -29.0,
+      14.408213257463395,
+      24.985525961505395
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "right_tread_10",
+    "parent": "right_tread_09",
+    "type": "chain_pin",
+    "origin_mm": [
+      -29.0,
+      18.429795680006524,
+      23.01021280855099
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "right_tread_11",
+    "parent": "right_tread_10",
+    "type": "chain_pin",
+    "origin_mm": [
+      -29.0,
+      22.50582561569694,
+      21.149350425977484
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "right_tread_12",
+    "parent": "right_tread_11",
+    "type": "chain_pin",
+    "origin_mm": [
+      -29.0,
+      26.605821628463726,
+      19.34174399386001
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "right_tread_13",
+    "parent": "right_tread_12",
+    "type": "chain_pin",
+    "origin_mm": [
+      -29.0,
+      30.701586698263615,
+      17.52464124883619
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "right_tread_14",
+    "parent": "right_tread_13",
+    "type": "chain_pin",
+    "origin_mm": [
+      -29.0,
+      33.3291558338714,
+      14.040554142541769
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "right_tread_15",
+    "parent": "right_tread_14",
+    "type": "chain_pin",
+    "origin_mm": [
+      -29.0,
+      34.11773637693734,
+      9.6898101912067
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "right_tread_16",
+    "parent": "right_tread_15",
+    "type": "chain_pin",
+    "origin_mm": [
+      -29.0,
+      31.78120415914367,
+      6.004188612048775
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "right_tread_17",
+    "parent": "right_tread_16",
+    "type": "chain_pin",
+    "origin_mm": [
+      -29.0,
+      27.766447293041253,
+      4.070882453760195
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "right_tread_18",
+    "parent": "right_tread_17",
+    "type": "chain_pin",
+    "origin_mm": [
+      -29.0,
+      23.365756568997853,
+      3.3011612667442773
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "right_tread_19",
+    "parent": "right_tread_18",
+    "type": "chain_pin",
+    "origin_mm": [
+      -29.0,
+      18.901153591406082,
+      2.921040205854591
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "right_tread_20",
+    "parent": "right_tread_19",
+    "type": "chain_pin",
+    "origin_mm": [
+      -29.0,
+      14.431987033630653,
+      2.598897951083282
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "right_tread_21",
+    "parent": "right_tread_20",
+    "type": "chain_pin",
+    "origin_mm": [
+      -29.0,
+      9.959340860926515,
+      2.3292616716624313
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "right_tread_22",
+    "parent": "right_tread_21",
+    "type": "chain_pin",
+    "origin_mm": [
+      -29.0,
+      5.484057579755022,
+      2.107570901943207
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "right_tread_23",
+    "parent": "right_tread_22",
+    "type": "chain_pin",
+    "origin_mm": [
+      -29.0,
+      1.0068286211496782,
+      1.9293611310188568
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "right_tread_24",
+    "parent": "right_tread_23",
+    "type": "chain_pin",
+    "origin_mm": [
+      -29.0,
+      -3.471791280337986,
+      1.7903354770136997
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "right_tread_25",
+    "parent": "right_tread_24",
+    "type": "chain_pin",
+    "origin_mm": [
+      -29.0,
+      -7.951369312892777,
+      1.686552951733599
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "right_tread_26",
+    "parent": "right_tread_25",
+    "type": "chain_pin",
+    "origin_mm": [
+      -29.0,
+      -12.431570349023671,
+      1.614381379281035
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "right_tread_27",
+    "parent": "right_tread_26",
+    "type": "chain_pin",
+    "origin_mm": [
+      -29.0,
+      -16.91213486125663,
+      1.5700329998597384
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "right_tread_28",
+    "parent": "right_tread_27",
+    "type": "chain_pin",
+    "origin_mm": [
+      -29.0,
+      -21.392875677006653,
+      1.55
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "right_tread_29",
+    "parent": "right_tread_28",
+    "type": "chain_pin",
+    "origin_mm": [
+      -29.0,
+      -25.866184974611706,
+      1.7154073936176333
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "right_tread_30",
+    "parent": "right_tread_29",
+    "type": "chain_pin",
+    "origin_mm": [
+      -29.0,
+      -30.185713536704025,
+      2.856370040843946
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "right_tread_31",
+    "parent": "right_tread_30",
+    "type": "chain_pin",
+    "origin_mm": [
+      -29.0,
+      -33.635685510190996,
+      5.593647615237895
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "right_tread_32",
+    "parent": "right_tread_31",
+    "type": "chain_pin",
+    "origin_mm": [
+      -29.0,
+      -33.65043343477686,
+      9.973887899763985
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "right_tread_33",
+    "parent": "right_tread_32",
+    "type": "chain_pin",
+    "origin_mm": [
+      -29.0,
+      -31.966263284347395,
+      14.118233230281872
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "right_tread_34",
+    "parent": "right_tread_33",
+    "type": "chain_pin",
+    "origin_mm": [
+      -29.0,
+      -29.743368924355224,
+      18.00754147942381
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "right_tread_35",
+    "parent": "right_tread_34",
+    "type": "chain_pin",
+    "origin_mm": [
+      -29.0,
+      -27.678092356828564,
+      21.983565219040823
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "left_wheel_0",
+    "parent": "base",
+    "type": "continuous",
+    "origin_mm": [
+      29.0,
+      -25.71079778689987,
+      8.397170396586656
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -180,
+      180
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 2.25,
+    "pin_diameter_mm": 2.2,
+    "retention_overlap_mm": 0.45
+  },
+  {
+    "name": "left_wheel_1",
+    "parent": "base",
+    "type": "continuous",
+    "origin_mm": [
+      29.0,
+      -10.53721220774585,
+      8.005788228870383
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -180,
+      180
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 2.25,
+    "pin_diameter_mm": 2.2,
+    "retention_overlap_mm": 0.45
+  },
+  {
+    "name": "left_wheel_2",
+    "parent": "base",
+    "type": "continuous",
+    "origin_mm": [
+      29.0,
+      2.1074424415491704,
+      8.984243648161065
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -180,
+      180
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 2.25,
+    "pin_diameter_mm": 2.2,
+    "retention_overlap_mm": 0.45
+  },
+  {
+    "name": "left_wheel_3",
+    "parent": "base",
+    "type": "continuous",
+    "origin_mm": [
+      29.0,
+      14.330608602534358,
+      8.984243648161065
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -180,
+      180
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 2.25,
+    "pin_diameter_mm": 2.2,
+    "retention_overlap_mm": 0.45
+  },
+  {
+    "name": "left_wheel_4",
+    "parent": "base",
+    "type": "continuous",
+    "origin_mm": [
+      29.0,
+      26.76451900767446,
+      10.7454634028843
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -180,
+      180
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 2.25,
+    "pin_diameter_mm": 2.2,
+    "retention_overlap_mm": 0.45
+  },
+  {
+    "name": "left_wheel_5",
+    "parent": "base",
+    "type": "continuous",
+    "origin_mm": [
+      29.0,
+      -18.334749241477777,
+      19.551562176500475
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -180,
+      180
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 2.25,
+    "pin_diameter_mm": 2.2,
+    "retention_overlap_mm": 0.45
+  },
+  {
+    "name": "left_wheel_6",
+    "parent": "base",
+    "type": "continuous",
+    "origin_mm": [
+      29.0,
+      -6.1115830804925935,
+      19.355871092642335
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -180,
+      180
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 2.25,
+    "pin_diameter_mm": 2.2,
+    "retention_overlap_mm": 0.45
+  },
+  {
+    "name": "left_wheel_7",
+    "parent": "base",
+    "type": "continuous",
+    "origin_mm": [
+      29.0,
+      6.533071568802427,
+      19.747253260358615
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -180,
+      180
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 2.25,
+    "pin_diameter_mm": 2.2,
+    "retention_overlap_mm": 0.45
+  },
+  {
+    "name": "left_tread_00",
+    "parent": "left_tread_35",
+    "type": "chain_pin",
+    "origin_mm": [
+      29.0,
+      -25.71079778689987,
+      26.009367943819004
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "left_tread_01",
+    "parent": "left_tread_00",
+    "type": "chain_pin",
+    "origin_mm": [
+      29.0,
+      -21.230007334592457,
+      26.00885707621367
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "left_tread_02",
+    "parent": "left_tread_01",
+    "type": "chain_pin",
+    "origin_mm": [
+      29.0,
+      -16.749217713104752,
+      26.00616872257944
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "left_tread_03",
+    "parent": "left_tread_02",
+    "type": "chain_pin",
+    "origin_mm": [
+      29.0,
+      -12.268431277870844,
+      26.000230550403753
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "left_tread_04",
+    "parent": "left_tread_03",
+    "type": "chain_pin",
+    "origin_mm": [
+      29.0,
+      -7.787652553480431,
+      25.990051779534813
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "left_tread_05",
+    "parent": "left_tread_04",
+    "type": "chain_pin",
+    "origin_mm": [
+      29.0,
+      -3.3068900246680153,
+      25.9743257347391
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "left_tread_06",
+    "parent": "left_tread_05",
+    "type": "chain_pin",
+    "origin_mm": [
+      29.0,
+      1.173839305680288,
+      25.951056386225524
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "left_tread_07",
+    "parent": "left_tread_06",
+    "type": "chain_pin",
+    "origin_mm": [
+      29.0,
+      5.6544965321884035,
+      25.916730778584547
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "left_tread_08",
+    "parent": "left_tread_07",
+    "type": "chain_pin",
+    "origin_mm": [
+      29.0,
+      10.13496639450338,
+      25.863646309932488
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "left_tread_09",
+    "parent": "left_tread_08",
+    "type": "chain_pin",
+    "origin_mm": [
+      29.0,
+      14.408213257463395,
+      24.985525961505395
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "left_tread_10",
+    "parent": "left_tread_09",
+    "type": "chain_pin",
+    "origin_mm": [
+      29.0,
+      18.429795680006524,
+      23.01021280855099
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "left_tread_11",
+    "parent": "left_tread_10",
+    "type": "chain_pin",
+    "origin_mm": [
+      29.0,
+      22.50582561569694,
+      21.149350425977484
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "left_tread_12",
+    "parent": "left_tread_11",
+    "type": "chain_pin",
+    "origin_mm": [
+      29.0,
+      26.605821628463726,
+      19.34174399386001
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "left_tread_13",
+    "parent": "left_tread_12",
+    "type": "chain_pin",
+    "origin_mm": [
+      29.0,
+      30.701586698263615,
+      17.52464124883619
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "left_tread_14",
+    "parent": "left_tread_13",
+    "type": "chain_pin",
+    "origin_mm": [
+      29.0,
+      33.3291558338714,
+      14.040554142541769
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "left_tread_15",
+    "parent": "left_tread_14",
+    "type": "chain_pin",
+    "origin_mm": [
+      29.0,
+      34.11773637693734,
+      9.6898101912067
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "left_tread_16",
+    "parent": "left_tread_15",
+    "type": "chain_pin",
+    "origin_mm": [
+      29.0,
+      31.78120415914367,
+      6.004188612048775
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "left_tread_17",
+    "parent": "left_tread_16",
+    "type": "chain_pin",
+    "origin_mm": [
+      29.0,
+      27.766447293041253,
+      4.070882453760195
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "left_tread_18",
+    "parent": "left_tread_17",
+    "type": "chain_pin",
+    "origin_mm": [
+      29.0,
+      23.365756568997853,
+      3.3011612667442773
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "left_tread_19",
+    "parent": "left_tread_18",
+    "type": "chain_pin",
+    "origin_mm": [
+      29.0,
+      18.901153591406082,
+      2.921040205854591
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "left_tread_20",
+    "parent": "left_tread_19",
+    "type": "chain_pin",
+    "origin_mm": [
+      29.0,
+      14.431987033630653,
+      2.598897951083282
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "left_tread_21",
+    "parent": "left_tread_20",
+    "type": "chain_pin",
+    "origin_mm": [
+      29.0,
+      9.959340860926515,
+      2.3292616716624313
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "left_tread_22",
+    "parent": "left_tread_21",
+    "type": "chain_pin",
+    "origin_mm": [
+      29.0,
+      5.484057579755022,
+      2.107570901943207
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "left_tread_23",
+    "parent": "left_tread_22",
+    "type": "chain_pin",
+    "origin_mm": [
+      29.0,
+      1.0068286211496782,
+      1.9293611310188568
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "left_tread_24",
+    "parent": "left_tread_23",
+    "type": "chain_pin",
+    "origin_mm": [
+      29.0,
+      -3.471791280337986,
+      1.7903354770136997
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "left_tread_25",
+    "parent": "left_tread_24",
+    "type": "chain_pin",
+    "origin_mm": [
+      29.0,
+      -7.951369312892777,
+      1.686552951733599
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "left_tread_26",
+    "parent": "left_tread_25",
+    "type": "chain_pin",
+    "origin_mm": [
+      29.0,
+      -12.431570349023671,
+      1.614381379281035
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "left_tread_27",
+    "parent": "left_tread_26",
+    "type": "chain_pin",
+    "origin_mm": [
+      29.0,
+      -16.91213486125663,
+      1.5700329998597384
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "left_tread_28",
+    "parent": "left_tread_27",
+    "type": "chain_pin",
+    "origin_mm": [
+      29.0,
+      -21.392875677006653,
+      1.55
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "left_tread_29",
+    "parent": "left_tread_28",
+    "type": "chain_pin",
+    "origin_mm": [
+      29.0,
+      -25.866184974611706,
+      1.7154073936176333
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "left_tread_30",
+    "parent": "left_tread_29",
+    "type": "chain_pin",
+    "origin_mm": [
+      29.0,
+      -30.185713536704025,
+      2.856370040843946
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "left_tread_31",
+    "parent": "left_tread_30",
+    "type": "chain_pin",
+    "origin_mm": [
+      29.0,
+      -33.635685510190996,
+      5.593647615237895
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "left_tread_32",
+    "parent": "left_tread_31",
+    "type": "chain_pin",
+    "origin_mm": [
+      29.0,
+      -33.65043343477686,
+      9.973887899763985
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "left_tread_33",
+    "parent": "left_tread_32",
+    "type": "chain_pin",
+    "origin_mm": [
+      29.0,
+      -31.966263284347395,
+      14.118233230281872
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "left_tread_34",
+    "parent": "left_tread_33",
+    "type": "chain_pin",
+    "origin_mm": [
+      29.0,
+      -29.743368924355224,
+      18.00754147942381
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  },
+  {
+    "name": "left_tread_35",
+    "parent": "left_tread_34",
+    "type": "chain_pin",
+    "origin_mm": [
+      29.0,
+      -27.678092356828564,
+      21.983565219040823
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -35,
+      35
+    ],
+    "radial_gap_mm": 0.35,
+    "axial_gap_mm": 0.35,
+    "pin_diameter_mm": 1.2,
+    "retention_overlap_mm": 0.2
+  }
+]

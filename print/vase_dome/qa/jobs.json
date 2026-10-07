@@ -1,0 +1,12 @@
+[
+  {
+    "name": "01_XL_viewing_shell_VASE",
+    "project": "print/vase_dome/01_XL_viewing_shell_VASE.3mf",
+    "profile": "print/vase_dome/profiles/01_XL_viewing_shell_VASE.ini"
+  },
+  {
+    "name": "02_XL_cap_and_ring_NORMAL",
+    "project": "print/vase_dome/02_XL_cap_and_ring_NORMAL.3mf",
+    "profile": "print/vase_dome/profiles/02_XL_cap_and_ring_NORMAL.ini"
+  }
+]

@@ -1,0 +1,64 @@
+{
+  "overlaps": {
+    "faceted_shell": 0.0,
+    "shared_cap": 0.0,
+    "shared_adapter": 0.001736881513627172,
+    "sheet_hood": 0.0,
+    "clear_sheet_NOT_FOR_PRINTING": 0.0,
+    "sheet_retainer": 0.0,
+    "faceted_shell/shared_adapter": -1.556046957951196e-15,
+    "faceted_shell/shared_cap": 0.0,
+    "shared_adapter/shared_cap": 0.0,
+    "sheet_hood/clear_sheet_NOT_FOR_PRINTING": 0.0,
+    "sheet_hood/sheet_retainer": 0.0,
+    "sheet_hood/shared_adapter": -6.192962809237201e-16,
+    "sheet_hood/shared_cap": 0.0,
+    "clear_sheet_NOT_FOR_PRINTING/sheet_retainer": 0.0,
+    "clear_sheet_NOT_FOR_PRINTING/shared_adapter": 0.0,
+    "clear_sheet_NOT_FOR_PRINTING/shared_cap": 0.0,
+    "sheet_retainer/shared_adapter": 0.0,
+    "sheet_retainer/shared_cap": 0.0
+  },
+  "visibility": [
+    {
+      "feature": "left eye outer top",
+      "plane_offset_mm": -0.5,
+      "visible": true
+    },
+    {
+      "feature": "left eye outer top",
+      "plane_offset_mm": 1.1,
+      "visible": true
+    },
+    {
+      "feature": "right eye outer top",
+      "plane_offset_mm": -0.5,
+      "visible": true
+    },
+    {
+      "feature": "right eye outer top",
+      "plane_offset_mm": 1.1,
+      "visible": true
+    },
+    {
+      "feature": "mouth lower left",
+      "plane_offset_mm": -0.5,
+      "visible": true
+    },
+    {
+      "feature": "mouth lower left",
+      "plane_offset_mm": 1.1,
+      "visible": true
+    },
+    {
+      "feature": "mouth lower right",
+      "plane_offset_mm": -0.5,
+      "visible": true
+    },
+    {
+      "feature": "mouth lower right",
+      "plane_offset_mm": 1.1,
+      "visible": true
+    }
+  ]
+}

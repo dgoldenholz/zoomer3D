@@ -1,0 +1,41 @@
+{
+  "files": {
+    "PRINTING.md": "6011d82b946c3f48e0134249b551543ae7af62557ea471626448c753eb44d69a",
+    "designs.png": "9b65ae2cdeabb1218ea9805c49a31c76a8d7710eb7716ed3aa508ae5e40848a8",
+    "assembly.png": "c0c48d9d35eb1146362390bc5066c1a3dca5072ae81bb8f891b2c845a936a890",
+    "01_XL_flat_wall_test_VASE.3mf": "7f35056c46adcbf653f51ea7c8790959623ed9ff54a2a2b181dfd0398053e344",
+    "02_XL_faceted_shell_VASE.3mf": "4d321fee49ba9a0140d4d318ab7dc4bc799967ebacc55224c046083c69d23e3c",
+    "03_XL_shared_cap_and_adapter_NORMAL.3mf": "518a787763ec9daddde68544df26707f524b6ef95eed921b594dc8104058012a",
+    "04_XL_sheet_hood_and_retainer_NORMAL.3mf": "b212ceba3ae18cb86754f459fd5221cb990ae55447f6a9a747d7fa92bde2626c",
+    "parts/01_flat_wall_test_VASE_SOLID.stl": "cdf7d772d5f448bb0dceb233e943e1b8bc971ac60aacd02249fa72a5a169aa98",
+    "parts/02_faceted_shell_VASE_SOLID.stl": "a60e2181380988c9cd5561b376fe9f99771b10d0b9bf9281b35a39d15768a332",
+    "parts/03_shared_cap_NORMAL.stl": "1b2164020f07b2e15c2c372933dd79a5aa2cbf05a19739d503c3a5b97621db53",
+    "parts/04_shared_adapter_NORMAL.stl": "9a6c37cd7082c078c324f0395e4d5f22d5f5e4fe85c8d304d8642913ebcc0ab7",
+    "parts/05_sheet_window_hood_NORMAL.stl": "b8890898aa54bf108b27894415dcbd30f4f4aff3a8017edd8d00014b85882a58",
+    "parts/06_sheet_retainer_NORMAL.stl": "0aab1b5766a8ea755dce0ca7082ab29b4deddd26856626b9e185194cb6c85043",
+    "profiles/01_XL_flat_wall_test_VASE.ini": "a9577eb4ba7cad5e9bbccfd8358c56630aa3a23d1b84a96177d81efb413a4482",
+    "profiles/02_XL_faceted_shell_VASE.ini": "024c9be37a4c0d650624f55bc359f7e0b2307ada7b8966e1b5acf0b73247cb4b",
+    "profiles/03_XL_shared_cap_and_adapter_NORMAL.ini": "6f3b6e54d3b775725cc3c0ffeb9be5cdca21e25f412e6f48ec0713098296a75d",
+    "profiles/04_XL_sheet_hood_and_retainer_NORMAL.ini": "a7a354e6507c6fa4c746cb3e23b922bb2961d68914dbb99a10ede52284a426ab",
+    "templates/clear_sheet_cutting_template.pdf": "392554c5d7b4174d22ef1f8a11d73efcd598664be68cb6d59647e0a76e86b683",
+    "templates/clear_sheet_outline.svg": "d462d53daf4a901ab567dae7b2ea2eecc6e12cbbe0d18e0bdccf9bead0c53af7",
+    "inspection_only/clear_sheet_NOT_FOR_PRINTING.stl": "5432afde5f6913d3cdd2e2708e43fa1dcbcd4eb36b0f2d7a89f14fc6bf75bf7e",
+    "inspection_only/faceted_shell.stl": "7f6e320dbdda3896d19133152dfc0c13d36abbd6cc7e2b509cbc115227aa6709",
+    "inspection_only/flat_wall_test.stl": "010760c9e824371740740ae76b74d63fb4d398c86701a6467ecccfcf778df9a0",
+    "inspection_only/shared_adapter.stl": "7174413f4751c4d30cdba3c0793b6dda8fccae5157d61a89e683afa97204b9f6",
+    "inspection_only/shared_cap.stl": "0a590129972b32beffb01e38c1561a807bf7ec2a9d7a0969464fcb010e714bf5",
+    "inspection_only/sheet_hood.stl": "05bccce4154acc60a9af5949a08933dcdaf524b4623e23a3cc3449fc265681be",
+    "inspection_only/sheet_retainer.stl": "7ebac15808ee0f922087835b7547f115ca1b88ecdf2350bc6f6be810617442f5",
+    "inspection_only/zoomer_faceted_dome.blend": "15a78973c72a1eca9feac6852867eb66842c6bbdc77625aa3d43543b8e75d01d",
+    "inspection_only/zoomer_sheet_window_dome.blend": "707b7f99d2b1b66802429fcb6426ddcd42f1c00dd8a851f4b513da7ea5e465de",
+    "qa/geometry.json": "2cd9c72acf4b7c05cf375b1b327bedebb803fb1f11124a0e60b3ce0a0aa0b29c",
+    "qa/validation.json": "394f752fd99564c93a3632ac4ed333102092602b18b3ba3b1e37c47ae165a5cb",
+    "qa/blender.json": "27ca3a6fdd290df4cff3f1ff543a44ced23d1503e2b0ea3a081b86c44352ca75",
+    "qa/toolpaths.png": "ca9e05ae6b0ac71cc4c3f5e181b45d176a69654a3fee9783e090207486ca765f"
+  },
+  "original_head_model_drawing_preserved": {
+    "assets/zoomer_modular.blend": "1b99efeffe557f26f9a346fbbba804518b21c3899f42ed308e563b48ce2370fe",
+    "zoomer.png": "445109bdb83f1affe416241c2bc3329a2c98d821e8e2b499fe5b4f23018f5a29",
+    "print/modular/assembled/head.stl": "0fbe37a81d93730ae701bf340463cc046d4857f14c4b5f130a302357ac1541bb"
+  }
+}

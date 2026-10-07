@@ -1,0 +1,7 @@
+{
+  "phases": 12,
+  "max_pin_misalignment_mm": 0.006424708985138687,
+  "collisions": [],
+  "pin_clearance_mm": 0.35,
+  "pass": true
+}

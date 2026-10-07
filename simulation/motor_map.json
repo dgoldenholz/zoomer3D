@@ -1,0 +1,445 @@
+[
+  {
+    "name": "right_drive",
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": null,
+    "torque_Nm": 0.063
+  },
+  {
+    "name": "left_drive",
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": null,
+    "torque_Nm": 0.063
+  },
+  {
+    "name": "waist_yaw",
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "limits_deg": null,
+    "torque_Nm": 0.23399999999999999
+  },
+  {
+    "name": "waist_pitch",
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -25,
+      25
+    ],
+    "torque_Nm": 0.288
+  },
+  {
+    "name": "head_yaw",
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "limits_deg": null,
+    "torque_Nm": 0.0144
+  },
+  {
+    "name": "right_shoulder_pitch",
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -165,
+      60
+    ],
+    "torque_Nm": 0.11699999999999999
+  },
+  {
+    "name": "right_shoulder_roll",
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "limits_deg": [
+      -95,
+      95
+    ],
+    "torque_Nm": 0.11699999999999999
+  },
+  {
+    "name": "right_shoulder_yaw",
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "limits_deg": [
+      -110,
+      110
+    ],
+    "torque_Nm": 0.0576
+  },
+  {
+    "name": "right_elbow",
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -145,
+      0
+    ],
+    "torque_Nm": 0.081
+  },
+  {
+    "name": "right_forearm_roll",
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "limits_deg": [
+      -180,
+      180
+    ],
+    "torque_Nm": 0.0252
+  },
+  {
+    "name": "right_wrist_pitch",
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -70,
+      70
+    ],
+    "torque_Nm": 0.0162
+  },
+  {
+    "name": "right_wrist_roll",
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "limits_deg": [
+      -40,
+      40
+    ],
+    "torque_Nm": 0.0126
+  },
+  {
+    "name": "right_finger_1_base",
+    "axis": [
+      -0.7071067811865475,
+      0.7071067811865476,
+      0
+    ],
+    "limits_deg": [
+      -25,
+      55
+    ],
+    "torque_Nm": 0.0036
+  },
+  {
+    "name": "right_finger_1_tip",
+    "axis": [
+      -0.7071067811865475,
+      0.7071067811865476,
+      0
+    ],
+    "limits_deg": [
+      -10,
+      70
+    ],
+    "torque_Nm": 0.0018
+  },
+  {
+    "name": "right_finger_2_base",
+    "axis": [
+      -0.7071067811865476,
+      -0.7071067811865475,
+      0
+    ],
+    "limits_deg": [
+      -25,
+      55
+    ],
+    "torque_Nm": 0.0036
+  },
+  {
+    "name": "right_finger_2_tip",
+    "axis": [
+      -0.7071067811865476,
+      -0.7071067811865475,
+      0
+    ],
+    "limits_deg": [
+      -10,
+      70
+    ],
+    "torque_Nm": 0.0018
+  },
+  {
+    "name": "right_finger_3_base",
+    "axis": [
+      0.7071067811865475,
+      -0.7071067811865477,
+      0
+    ],
+    "limits_deg": [
+      -25,
+      55
+    ],
+    "torque_Nm": 0.0036
+  },
+  {
+    "name": "right_finger_3_tip",
+    "axis": [
+      0.7071067811865475,
+      -0.7071067811865477,
+      0
+    ],
+    "limits_deg": [
+      -10,
+      70
+    ],
+    "torque_Nm": 0.0018
+  },
+  {
+    "name": "right_finger_4_base",
+    "axis": [
+      0.7071067811865477,
+      0.7071067811865474,
+      0
+    ],
+    "limits_deg": [
+      -25,
+      55
+    ],
+    "torque_Nm": 0.0036
+  },
+  {
+    "name": "right_finger_4_tip",
+    "axis": [
+      0.7071067811865477,
+      0.7071067811865474,
+      0
+    ],
+    "limits_deg": [
+      -10,
+      70
+    ],
+    "torque_Nm": 0.0018
+  },
+  {
+    "name": "left_shoulder_pitch",
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -165,
+      60
+    ],
+    "torque_Nm": 0.11699999999999999
+  },
+  {
+    "name": "left_shoulder_roll",
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "limits_deg": [
+      -95,
+      95
+    ],
+    "torque_Nm": 0.11699999999999999
+  },
+  {
+    "name": "left_shoulder_yaw",
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "limits_deg": [
+      -110,
+      110
+    ],
+    "torque_Nm": 0.0576
+  },
+  {
+    "name": "left_elbow",
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -145,
+      0
+    ],
+    "torque_Nm": 0.081
+  },
+  {
+    "name": "left_forearm_roll",
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "limits_deg": [
+      -180,
+      180
+    ],
+    "torque_Nm": 0.0252
+  },
+  {
+    "name": "left_wrist_pitch",
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "limits_deg": [
+      -70,
+      70
+    ],
+    "torque_Nm": 0.0162
+  },
+  {
+    "name": "left_wrist_roll",
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "limits_deg": [
+      -40,
+      40
+    ],
+    "torque_Nm": 0.0126
+  },
+  {
+    "name": "left_finger_1_base",
+    "axis": [
+      -0.7071067811865475,
+      0.7071067811865476,
+      0
+    ],
+    "limits_deg": [
+      -25,
+      55
+    ],
+    "torque_Nm": 0.0036
+  },
+  {
+    "name": "left_finger_1_tip",
+    "axis": [
+      -0.7071067811865475,
+      0.7071067811865476,
+      0
+    ],
+    "limits_deg": [
+      -10,
+      70
+    ],
+    "torque_Nm": 0.0018
+  },
+  {
+    "name": "left_finger_2_base",
+    "axis": [
+      -0.7071067811865476,
+      -0.7071067811865475,
+      0
+    ],
+    "limits_deg": [
+      -25,
+      55
+    ],
+    "torque_Nm": 0.0036
+  },
+  {
+    "name": "left_finger_2_tip",
+    "axis": [
+      -0.7071067811865476,
+      -0.7071067811865475,
+      0
+    ],
+    "limits_deg": [
+      -10,
+      70
+    ],
+    "torque_Nm": 0.0018
+  },
+  {
+    "name": "left_finger_3_base",
+    "axis": [
+      0.7071067811865475,
+      -0.7071067811865477,
+      0
+    ],
+    "limits_deg": [
+      -25,
+      55
+    ],
+    "torque_Nm": 0.0036
+  },
+  {
+    "name": "left_finger_3_tip",
+    "axis": [
+      0.7071067811865475,
+      -0.7071067811865477,
+      0
+    ],
+    "limits_deg": [
+      -10,
+      70
+    ],
+    "torque_Nm": 0.0018
+  },
+  {
+    "name": "left_finger_4_base",
+    "axis": [
+      0.7071067811865477,
+      0.7071067811865474,
+      0
+    ],
+    "limits_deg": [
+      -25,
+      55
+    ],
+    "torque_Nm": 0.0036
+  },
+  {
+    "name": "left_finger_4_tip",
+    "axis": [
+      0.7071067811865477,
+      0.7071067811865474,
+      0
+    ],
+    "limits_deg": [
+      -10,
+      70
+    ],
+    "torque_Nm": 0.0018
+  }
+]

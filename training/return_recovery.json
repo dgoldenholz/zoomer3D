@@ -1,0 +1,18 @@
+{
+  "phase": "lift",
+  "held": "blue",
+  "color": "blue",
+  "stroke": 11,
+  "point": 0,
+  "visible": true,
+  "success": false,
+  "failure": null,
+  "time_s": 28.32000000001163,
+  "coverage": 0.0,
+  "tolerance_m": 0.03,
+  "tracking_tolerance_m": 0.00075,
+  "mse_limit_m2": 0.0009,
+  "mse_m2": null,
+  "rmse_m": null,
+  "max_error_m": null
+}

@@ -1,0 +1,655 @@
+{
+  "controller": "Saved residual PPO with task controller",
+  "seed": 7,
+  "result": {
+    "phase": "done",
+    "held": null,
+    "color": "green",
+    "stroke": 3,
+    "point": 0,
+    "visible": false,
+    "success": true,
+    "failure": null,
+    "time_s": 399.41999999746685,
+    "coverage": 1.0,
+    "tolerance_m": 0.03,
+    "mse_limit_m2": 0.0009,
+    "mse_m2": 0.0002454015793318785,
+    "rmse_m": 0.015665298571424627,
+    "max_error_m": 0.02456035983730091
+  },
+  "events": [
+    {
+      "time_s": 0.0,
+      "phase": "navigate_pick",
+      "color": "black",
+      "stroke": 0
+    },
+    {
+      "time_s": 33.960000000011554,
+      "phase": "reach_pick",
+      "color": "black",
+      "stroke": 0
+    },
+    {
+      "time_s": 34.40000000001053,
+      "phase": "close",
+      "color": "black",
+      "stroke": 0
+    },
+    {
+      "time_s": 34.620000000010016,
+      "phase": "lift",
+      "color": "black",
+      "stroke": 0
+    },
+    {
+      "time_s": 34.82000000000955,
+      "phase": "navigate_board",
+      "color": "black",
+      "stroke": 0
+    },
+    {
+      "time_s": 68.11999999996121,
+      "phase": "draw",
+      "color": "black",
+      "stroke": 0
+    },
+    {
+      "time_s": 68.39999999996255,
+      "phase": "retract",
+      "color": "black",
+      "stroke": 0
+    },
+    {
+      "time_s": 68.89999999996493,
+      "phase": "navigate_return",
+      "color": "black",
+      "stroke": 1
+    },
+    {
+      "time_s": 104.28000000013387,
+      "phase": "place",
+      "color": "black",
+      "stroke": 1
+    },
+    {
+      "time_s": 104.82000000013645,
+      "phase": "release",
+      "color": "black",
+      "stroke": 1
+    },
+    {
+      "time_s": 105.4400000001394,
+      "phase": "navigate_pick",
+      "color": "red",
+      "stroke": 1
+    },
+    {
+      "time_s": 133.8600000002751,
+      "phase": "reach_pick",
+      "color": "red",
+      "stroke": 1
+    },
+    {
+      "time_s": 134.3200000002773,
+      "phase": "close",
+      "color": "red",
+      "stroke": 1
+    },
+    {
+      "time_s": 134.54000000027835,
+      "phase": "lift",
+      "color": "red",
+      "stroke": 1
+    },
+    {
+      "time_s": 134.7600000002794,
+      "phase": "navigate_board",
+      "color": "red",
+      "stroke": 1
+    },
+    {
+      "time_s": 167.30000000043478,
+      "phase": "draw",
+      "color": "red",
+      "stroke": 1
+    },
+    {
+      "time_s": 167.6000000004362,
+      "phase": "retract",
+      "color": "red",
+      "stroke": 1
+    },
+    {
+      "time_s": 168.1000000004386,
+      "phase": "navigate_return",
+      "color": "red",
+      "stroke": 2
+    },
+    {
+      "time_s": 203.28000000060658,
+      "phase": "place",
+      "color": "red",
+      "stroke": 2
+    },
+    {
+      "time_s": 204.0800000006104,
+      "phase": "release",
+      "color": "red",
+      "stroke": 2
+    },
+    {
+      "time_s": 204.70000000061336,
+      "phase": "navigate_pick",
+      "color": "blue",
+      "stroke": 2
+    },
+    {
+      "time_s": 233.14000000074915,
+      "phase": "reach_pick",
+      "color": "blue",
+      "stroke": 2
+    },
+    {
+      "time_s": 233.60000000075135,
+      "phase": "close",
+      "color": "blue",
+      "stroke": 2
+    },
+    {
+      "time_s": 233.8200000007524,
+      "phase": "lift",
+      "color": "blue",
+      "stroke": 2
+    },
+    {
+      "time_s": 234.04000000075345,
+      "phase": "navigate_board",
+      "color": "blue",
+      "stroke": 2
+    },
+    {
+      "time_s": 266.5200000006095,
+      "phase": "draw",
+      "color": "blue",
+      "stroke": 2
+    },
+    {
+      "time_s": 266.78000000060337,
+      "phase": "retract",
+      "color": "blue",
+      "stroke": 2
+    },
+    {
+      "time_s": 267.28000000059154,
+      "phase": "navigate_return",
+      "color": "blue",
+      "stroke": 3
+    },
+    {
+      "time_s": 301.5199999997819,
+      "phase": "place",
+      "color": "blue",
+      "stroke": 3
+    },
+    {
+      "time_s": 301.979999999771,
+      "phase": "release",
+      "color": "blue",
+      "stroke": 3
+    },
+    {
+      "time_s": 302.59999999975634,
+      "phase": "navigate_pick",
+      "color": "green",
+      "stroke": 3
+    },
+    {
+      "time_s": 331.0799999990829,
+      "phase": "reach_pick",
+      "color": "green",
+      "stroke": 3
+    },
+    {
+      "time_s": 331.51999999907247,
+      "phase": "close",
+      "color": "green",
+      "stroke": 3
+    },
+    {
+      "time_s": 331.73999999906727,
+      "phase": "lift",
+      "color": "green",
+      "stroke": 3
+    },
+    {
+      "time_s": 331.95999999906206,
+      "phase": "navigate_board",
+      "color": "green",
+      "stroke": 3
+    },
+    {
+      "time_s": 363.9199999983063,
+      "phase": "draw",
+      "color": "green",
+      "stroke": 3
+    },
+    {
+      "time_s": 364.23999999829874,
+      "phase": "retract",
+      "color": "green",
+      "stroke": 3
+    },
+    {
+      "time_s": 364.7399999982869,
+      "phase": "navigate_return",
+      "color": "green",
+      "stroke": 3
+    },
+    {
+      "time_s": 398.31999999749286,
+      "phase": "place",
+      "color": "green",
+      "stroke": 3
+    },
+    {
+      "time_s": 398.779999997482,
+      "phase": "release",
+      "color": "green",
+      "stroke": 3
+    },
+    {
+      "time_s": 399.3999999974673,
+      "phase": "done",
+      "color": "green",
+      "stroke": 3
+    }
+  ],
+  "ink": [
+    {
+      "time_s": 68.27999999996197,
+      "color": "black",
+      "stroke": 0,
+      "point": 0,
+      "position": [
+        -0.02455249447208602,
+        -0.435317327236321,
+        0.14203093155810992
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 68.29999999996207,
+      "color": "black",
+      "stroke": 0,
+      "point": 1,
+      "position": [
+        -0.024438372467770822,
+        -0.43512914389320634,
+        0.14229512220426396
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 68.31999999996216,
+      "color": "black",
+      "stroke": 0,
+      "point": 2,
+      "position": [
+        -0.02442591755705554,
+        -0.4350046006050323,
+        0.1423387168870067
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 68.33999999996226,
+      "color": "black",
+      "stroke": 0,
+      "point": 3,
+      "position": [
+        -0.02441824109826608,
+        -0.43500047223135546,
+        0.14236504172602676
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 68.35999999996235,
+      "color": "black",
+      "stroke": 0,
+      "point": 4,
+      "position": [
+        -0.024394201790890798,
+        -0.4349708421411326,
+        0.1423915679990499
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 68.39999999996255,
+      "color": "black",
+      "stroke": 0,
+      "point": 5,
+      "position": [
+        -0.022817127675880355,
+        -0.43496371775412657,
+        0.14242589191050486
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 167.46000000043554,
+      "color": "red",
+      "stroke": 1,
+      "point": 0,
+      "position": [
+        -0.02323705001881137,
+        -0.4353640372792006,
+        0.13297946769746988
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 167.48000000043564,
+      "color": "red",
+      "stroke": 1,
+      "point": 1,
+      "position": [
+        -0.023158899745606816,
+        -0.4351464258259725,
+        0.13314380268994955
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 167.50000000043573,
+      "color": "red",
+      "stroke": 1,
+      "point": 2,
+      "position": [
+        -0.023144775479067875,
+        -0.4350136785595353,
+        0.13317639510277754
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 167.52000000043583,
+      "color": "red",
+      "stroke": 1,
+      "point": 3,
+      "position": [
+        -0.02313465116489759,
+        -0.43500507731353977,
+        0.1331965381492371
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 167.54000000043592,
+      "color": "red",
+      "stroke": 1,
+      "point": 4,
+      "position": [
+        -0.023117255122384894,
+        -0.43498580086378225,
+        0.1332126977285423
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 167.6000000004362,
+      "color": "red",
+      "stroke": 1,
+      "point": 5,
+      "position": [
+        -0.021280982911229554,
+        -0.4349592544195098,
+        0.13319871305399175
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 266.68000000060573,
+      "color": "blue",
+      "stroke": 2,
+      "point": 0,
+      "position": [
+        -0.02077962120220455,
+        -0.4353789598748264,
+        0.12365225252432793
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 266.70000000060526,
+      "color": "blue",
+      "stroke": 2,
+      "point": 1,
+      "position": [
+        -0.020747718580992756,
+        -0.43510915822201746,
+        0.12367517662273785
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 266.7200000006048,
+      "color": "blue",
+      "stroke": 2,
+      "point": 2,
+      "position": [
+        -0.020736332621904656,
+        -0.4350120538236308,
+        0.12370213030410324
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 266.7400000006043,
+      "color": "blue",
+      "stroke": 2,
+      "point": 3,
+      "position": [
+        -0.02072742172738028,
+        -0.4350065868417827,
+        0.12371714170378652
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 266.76000000060384,
+      "color": "blue",
+      "stroke": 2,
+      "point": 4,
+      "position": [
+        -0.020712892940990612,
+        -0.4349936668036632,
+        0.12372735495065076
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 266.78000000060337,
+      "color": "blue",
+      "stroke": 2,
+      "point": 5,
+      "position": [
+        -0.020681285175490196,
+        -0.43497239179503183,
+        0.12373090189770289
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 364.1199999983016,
+      "color": "green",
+      "stroke": 3,
+      "point": 0,
+      "position": [
+        -0.03964393772469191,
+        -0.4351645699888744,
+        0.12099438841537305
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 364.1399999983011,
+      "color": "green",
+      "stroke": 3,
+      "point": 1,
+      "position": [
+        -0.03875955661232795,
+        -0.43498601178263174,
+        0.12110524142612898
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 364.15999999830063,
+      "color": "green",
+      "stroke": 3,
+      "point": 2,
+      "position": [
+        -0.037192569148936816,
+        -0.4348635469731147,
+        0.12127624118756816
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 364.17999999830016,
+      "color": "green",
+      "stroke": 3,
+      "point": 3,
+      "position": [
+        -0.03543056714207421,
+        -0.43489652478720653,
+        0.12149838841115372
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 364.1999999982997,
+      "color": "green",
+      "stroke": 3,
+      "point": 4,
+      "position": [
+        -0.0335517179210514,
+        -0.4349321290184216,
+        0.12173767406831675
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 364.23999999829874,
+      "color": "green",
+      "stroke": 3,
+      "point": 5,
+      "position": [
+        -0.0294505019106895,
+        -0.4349443603791059,
+        0.12194845401996361
+      ],
+      "visible": true,
+      "contact": true
+    }
+  ],
+  "drawing": {
+    "version": 1,
+    "name": "Four-color line study",
+    "width_m": 0.3,
+    "height_m": 0.06,
+    "marker_width_m": 0.0015,
+    "tolerance_m": 0.03,
+    "strokes": [
+      {
+        "color": "black",
+        "points": [
+          {
+            "x": 0.43,
+            "y": 0.25,
+            "t_ms": 0.0
+          },
+          {
+            "x": 0.48,
+            "y": 0.25,
+            "t_ms": 700.0
+          }
+        ]
+      },
+      {
+        "color": "red",
+        "points": [
+          {
+            "x": 0.43,
+            "y": 0.41000000000000003,
+            "t_ms": 0.0
+          },
+          {
+            "x": 0.48,
+            "y": 0.41000000000000003,
+            "t_ms": 700.0
+          }
+        ]
+      },
+      {
+        "color": "blue",
+        "points": [
+          {
+            "x": 0.43,
+            "y": 0.5700000000000001,
+            "t_ms": 0.0
+          },
+          {
+            "x": 0.48,
+            "y": 0.5700000000000001,
+            "t_ms": 700.0
+          }
+        ]
+      },
+      {
+        "color": "green",
+        "points": [
+          {
+            "x": 0.43,
+            "y": 0.73,
+            "t_ms": 0.0
+          },
+          {
+            "x": 0.48,
+            "y": 0.73,
+            "t_ms": 700.0
+          }
+        ]
+      }
+    ]
+  },
+  "state_interval_s": 0.02,
+  "poses": "Measured MuJoCo states, without interpolation or animation edits"
+}

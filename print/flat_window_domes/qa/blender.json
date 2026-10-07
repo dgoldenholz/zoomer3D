@@ -1,0 +1,22 @@
+{
+  "faceted": {
+    "parts": [
+      "faceted_shell",
+      "shared_cap",
+      "shared_adapter"
+    ],
+    "parent": "Head yaw",
+    "saved_scene": "assets/zoomer_faceted_dome.blend"
+  },
+  "sheet_window": {
+    "parts": [
+      "sheet_hood",
+      "shared_cap",
+      "shared_adapter",
+      "sheet_retainer",
+      "clear_sheet_NOT_FOR_PRINTING"
+    ],
+    "parent": "Head yaw",
+    "saved_scene": "assets/zoomer_sheet_window_dome.blend"
+  }
+}

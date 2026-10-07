@@ -1,0 +1,57 @@
+{
+  "units": "mm",
+  "physical_print_test": "not performed",
+  "hinges": [
+    {
+      "radial_gap_mm": 0.25,
+      "axial_gap_mm": 0.25,
+      "overlap_volume_mm3": 0.0,
+      "rotor_volume_mm3": 452.2736283184501,
+      "socket_volume_mm3": 1142.0748308250845,
+      "watertight": true,
+      "sweep_overlap_mm3": 0.0
+    },
+    {
+      "radial_gap_mm": 0.3,
+      "axial_gap_mm": 0.3,
+      "overlap_volume_mm3": 0.0,
+      "rotor_volume_mm3": 452.2736283184501,
+      "socket_volume_mm3": 1133.4298407541119,
+      "watertight": true,
+      "sweep_overlap_mm3": 0.0
+    },
+    {
+      "radial_gap_mm": 0.35,
+      "axial_gap_mm": 0.35,
+      "overlap_volume_mm3": 0.0,
+      "rotor_volume_mm3": 452.2736283184501,
+      "socket_volume_mm3": 1124.6137571642475,
+      "watertight": true,
+      "sweep_overlap_mm3": 0.0
+    },
+    {
+      "radial_gap_mm": 0.4,
+      "axial_gap_mm": 0.4,
+      "overlap_volume_mm3": 0.0,
+      "rotor_volume_mm3": 452.2736283184501,
+      "socket_volume_mm3": 1115.6265875431855,
+      "watertight": true,
+      "sweep_overlap_mm3": 0.0
+    },
+    {
+      "radial_gap_mm": 0.45,
+      "axial_gap_mm": 0.45,
+      "overlap_volume_mm3": 0.0,
+      "rotor_volume_mm3": 452.2736283184501,
+      "socket_volume_mm3": 1106.4683144740945,
+      "watertight": true,
+      "sweep_overlap_mm3": 0.0
+    }
+  ],
+  "ball_joint": {
+    "gap_mm": 0.35,
+    "watertight": true,
+    "internal_support_required": true,
+    "overlap_volume_mm3": 0.0
+  }
+}

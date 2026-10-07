@@ -1,0 +1,63 @@
+{
+  "source": "media/zoomer-drawing.mp4",
+  "frames": [
+    {
+      "slug": "collect",
+      "label": "Collect a marker",
+      "time_s": 5.4,
+      "simulation_time_s": 30.54000000001434,
+      "phase": "lift",
+      "color": "black",
+      "file": "assets/drawing-stills/collect.jpg",
+      "timestamp": "0:05"
+    },
+    {
+      "slug": "black",
+      "label": "Draw in black",
+      "time_s": 24.56,
+      "simulation_time_s": 97.68000000010235,
+      "phase": "draw",
+      "color": "black",
+      "file": "assets/drawing-stills/black.jpg",
+      "timestamp": "0:24"
+    },
+    {
+      "slug": "red",
+      "label": "Switch to red",
+      "time_s": 64.68,
+      "simulation_time_s": 279.92000000029265,
+      "phase": "draw",
+      "color": "red",
+      "file": "assets/drawing-stills/red.jpg",
+      "timestamp": "1:04"
+    },
+    {
+      "slug": "blue",
+      "label": "Add blue letters",
+      "time_s": 105.64,
+      "simulation_time_s": 412.6199999971547,
+      "phase": "draw",
+      "color": "blue",
+      "file": "assets/drawing-stills/blue.jpg",
+      "timestamp": "1:45"
+    },
+    {
+      "slug": "green",
+      "label": "Finish in green",
+      "time_s": 164.56,
+      "simulation_time_s": 672.2399999910156,
+      "phase": "draw",
+      "color": "green",
+      "file": "assets/drawing-stills/green.jpg",
+      "timestamp": "2:44"
+    },
+    {
+      "slug": "result",
+      "label": "Compare target and ink",
+      "time_s": 199.0,
+      "phase": "recorded result",
+      "file": "assets/drawing-stills/result.jpg",
+      "timestamp": "3:19"
+    }
+  ]
+}

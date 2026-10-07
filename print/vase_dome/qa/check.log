@@ -1,0 +1,70 @@
+{
+  "physical_print_test": "Not performed",
+  "slicer": "PrusaSlicer 2.9.6",
+  "jobs": {
+    "window": {
+      "layer_count": 111,
+      "stats": {
+        "filament used [mm]": "1101.90, 0.00, 0.00, 0.00, 0.00",
+        "filament used [cm3]": "2.65, 0.00, 0.00, 0.00, 0.00",
+        "filament used [g]": "3.37, 0.00, 0.00, 0.00, 0.00",
+        "total filament used [g]": "3.37",
+        "total filament used for wipe tower [g]": "0.00",
+        "estimated printing time (normal mode)": "22m 16s",
+        "estimated printing time (silent mode)": "22m 18s"
+      },
+      "warnings": [],
+      "extrusion_features": {
+        "External perimeter": 14343
+      },
+      "path_z_min_max_mm": [
+        0.25,
+        27.5
+      ],
+      "gcode_sha256": "32e86db4875d113fcda17a93eb8a13b41a7ce7c1c97d31d3cae4d64f755a5234",
+      "project_sha256": "dd2869f7350a7ac57323e040f56a29c8e32e362441a4e71d9866219548c4c5a4"
+    },
+    "fittings": {
+      "layer_count": 25,
+      "stats": {
+        "filament used [mm]": "1911.18, 0.00, 0.00, 0.00, 0.00",
+        "filament used [cm3]": "4.60, 0.00, 0.00, 0.00, 0.00",
+        "filament used [g]": "5.84, 0.00, 0.00, 0.00, 0.00",
+        "total filament used [g]": "5.84",
+        "total filament used for wipe tower [g]": "0.00",
+        "estimated printing time (normal mode)": "42m 9s",
+        "estimated printing time (silent mode)": "42m 28s"
+      },
+      "warnings": [],
+      "extrusion_features": {
+        "Perimeter": 6311,
+        "External perimeter": 6369,
+        "Solid infill": 6914,
+        "Internal infill": 2034,
+        "Top solid infill": 140
+      },
+      "path_z_min_max_mm": [
+        0.25,
+        6.25
+      ],
+      "gcode_sha256": "79e6788599a50ff50fb54211206b14b7c456bbe95d5f5f1e99a1aa29b391f685",
+      "project_sha256": "8a8844e2b45265f937b1b19b96e0dc5e3ffcfcf331dd5f6bcb88d3d00971a0db"
+    }
+  },
+  "spiral": {
+    "turns": 110.98828402486403,
+    "continuous_extrusion_after_first_layer": true,
+    "monotonic_z": true,
+    "max_wall_speed_mm_s": 15.0,
+    "max_outer_radius_error_vs_cad_mm": 0.10126665075036456,
+    "cap_outer_groove_min_radial_clearance_from_paths_mm": 0.1488702799837185,
+    "cap_inner_groove_min_radial_clearance_from_paths_mm": 0.3439261457017224,
+    "mounting_ring_min_radial_clearance_from_paths_mm": 0.21892942136248905
+  },
+  "cap_roof": {
+    "bridge_infill_paths": 0,
+    "support_paths": 0,
+    "construction": "Tapered annular groove roof"
+  },
+  "passed": true
+}

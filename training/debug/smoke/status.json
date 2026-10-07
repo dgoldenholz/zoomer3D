@@ -1,0 +1,115 @@
+{
+  "status": "completed",
+  "algorithm": "PPO residual control",
+  "seed": 7,
+  "requested_steps": 4096,
+  "stages": [
+    "navigation",
+    "pickup",
+    "drawing",
+    "sequence"
+  ],
+  "stage": "sequence",
+  "trained_steps": 4096,
+  "elapsed_s": 151.8,
+  "evaluations": [
+    {
+      "stage": "navigation",
+      "trained_steps": 1024,
+      "success_rate": 1.0,
+      "episodes": [
+        {
+          "phase": "done",
+          "held": null,
+          "color": "black",
+          "stroke": 0,
+          "point": 0,
+          "visible": false,
+          "success": true,
+          "failure": null,
+          "time_s": 30.320000000014073,
+          "coverage": 0.0,
+          "tolerance_m": 0.03,
+          "mse_limit_m2": 0.0009,
+          "mse_m2": null,
+          "rmse_m": null,
+          "max_error_m": null
+        }
+      ]
+    },
+    {
+      "stage": "pickup",
+      "trained_steps": 2048,
+      "success_rate": 1.0,
+      "episodes": [
+        {
+          "phase": "done",
+          "held": "black",
+          "color": "black",
+          "stroke": 0,
+          "point": 0,
+          "visible": false,
+          "success": true,
+          "failure": null,
+          "time_s": 0.9400000000000007,
+          "coverage": 0.0,
+          "tolerance_m": 0.03,
+          "mse_limit_m2": 0.0009,
+          "mse_m2": null,
+          "rmse_m": null,
+          "max_error_m": null
+        }
+      ]
+    },
+    {
+      "stage": "drawing",
+      "trained_steps": 3072,
+      "success_rate": 1.0,
+      "episodes": [
+        {
+          "phase": "done",
+          "held": "black",
+          "color": "black",
+          "stroke": 0,
+          "point": 6,
+          "visible": true,
+          "success": true,
+          "failure": null,
+          "time_s": 1.1399999999999852,
+          "coverage": 0.25,
+          "tolerance_m": 0.03,
+          "mse_limit_m2": 0.0009,
+          "mse_m2": 8.87978220030148e-05,
+          "rmse_m": 0.009423259627274142,
+          "max_error_m": 0.015368795221100295
+        }
+      ]
+    },
+    {
+      "stage": "sequence",
+      "trained_steps": 4096,
+      "success_rate": 0.0,
+      "episodes": [
+        {
+          "phase": "draw",
+          "held": "black",
+          "color": "black",
+          "stroke": 0,
+          "point": 2,
+          "visible": true,
+          "success": false,
+          "failure": "phase_timeout_draw",
+          "time_s": 123.98000000022793,
+          "coverage": 0.08333333333333333,
+          "tolerance_m": 0.03,
+          "mse_limit_m2": 0.0009,
+          "mse_m2": 0.0002832175698245583,
+          "rmse_m": 0.016829069190675946,
+          "max_error_m": 0.016983613821484972
+        }
+      ]
+    }
+  ],
+  "policy_ready": false,
+  "needs_more_training": "sequence"
+}

@@ -1,0 +1,59 @@
+{
+  "status": "stopped",
+  "algorithm": "PPO residual control",
+  "seed": 7,
+  "requested_steps": 4096,
+  "stages": [
+    "navigation",
+    "pickup",
+    "drawing",
+    "sequence"
+  ],
+  "stage": "pickup",
+  "trained_steps": 1025,
+  "elapsed_s": 76.7,
+  "evaluations": [
+    {
+      "stage": "navigation",
+      "trained_steps": 1024,
+      "success_rate": 1.0,
+      "episodes": [
+        {
+          "phase": "done",
+          "held": null,
+          "color": "black",
+          "stroke": 0,
+          "point": 0,
+          "visible": false,
+          "success": true,
+          "failure": null,
+          "time_s": 34.080000000011275,
+          "coverage": 0.0,
+          "tolerance_m": 0.03,
+          "mse_limit_m2": 0.0009,
+          "mse_m2": null,
+          "rmse_m": null,
+          "max_error_m": null
+        },
+        {
+          "phase": "done",
+          "held": null,
+          "color": "black",
+          "stroke": 0,
+          "point": 0,
+          "visible": false,
+          "success": true,
+          "failure": null,
+          "time_s": 33.54000000001253,
+          "coverage": 0.0,
+          "tolerance_m": 0.03,
+          "mse_limit_m2": 0.0009,
+          "mse_m2": null,
+          "rmse_m": null,
+          "max_error_m": null
+        }
+      ]
+    }
+  ],
+  "policy_ready": false
+}

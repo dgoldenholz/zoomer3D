@@ -1,0 +1,40 @@
+[
+  {
+    "name": "01_XL_flat_wall_test_VASE",
+    "project": "print/flat_window_domes/01_XL_flat_wall_test_VASE.3mf",
+    "gcode": "/private/tmp/zoomer_01_XL_flat_wall_test_VASE.gcode",
+    "vase": true,
+    "parts": [
+      "01_flat_wall_test_VASE_SOLID"
+    ]
+  },
+  {
+    "name": "02_XL_faceted_shell_VASE",
+    "project": "print/flat_window_domes/02_XL_faceted_shell_VASE.3mf",
+    "gcode": "/private/tmp/zoomer_02_XL_faceted_shell_VASE.gcode",
+    "vase": true,
+    "parts": [
+      "02_faceted_shell_VASE_SOLID"
+    ]
+  },
+  {
+    "name": "03_XL_shared_cap_and_adapter_NORMAL",
+    "project": "print/flat_window_domes/03_XL_shared_cap_and_adapter_NORMAL.3mf",
+    "gcode": "/private/tmp/zoomer_03_XL_shared_cap_and_adapter_NORMAL.gcode",
+    "vase": false,
+    "parts": [
+      "03_shared_cap_NORMAL",
+      "04_shared_adapter_NORMAL"
+    ]
+  },
+  {
+    "name": "04_XL_sheet_hood_and_retainer_NORMAL",
+    "project": "print/flat_window_domes/04_XL_sheet_hood_and_retainer_NORMAL.3mf",
+    "gcode": "/private/tmp/zoomer_04_XL_sheet_hood_and_retainer_NORMAL.gcode",
+    "vase": false,
+    "parts": [
+      "05_sheet_window_hood_NORMAL",
+      "06_sheet_retainer_NORMAL"
+    ]
+  }
+]

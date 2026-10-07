@@ -1,0 +1,77 @@
+{
+  "status": "completed",
+  "algorithm": "PPO residual control",
+  "controller_version": 3,
+  "target": "/Users/dgoldenh/Documents/GitHub/zoomer3D/targets/3201207f878b4707ab8753bffb68dbac.json",
+  "seed": 7,
+  "requested_steps": 1024,
+  "warm_start_steps": 20302,
+  "stages": [
+    "drawing",
+    "sequence"
+  ],
+  "stage": "sequence",
+  "trained_steps": 1024,
+  "elapsed_s": 237.7,
+  "evaluations": [
+    {
+      "stage": "drawing",
+      "trained_steps": 512,
+      "success_rate": 1.0,
+      "episodes": [
+        {
+          "phase": "done",
+          "held": "black",
+          "color": "black",
+          "stroke": 0,
+          "point": 130,
+          "visible": true,
+          "success": true,
+          "failure": null,
+          "time_s": 2.8199999999998004,
+          "coverage": 1.0,
+          "tolerance_m": 0.03,
+          "tracking_tolerance_m": 0.00075,
+          "mse_limit_m2": 0.0009,
+          "mse_m2": 1.5421156490903953e-07,
+          "rmse_m": 0.0003926978035449645,
+          "max_error_m": 0.0005090723412821699,
+          "target_coverage_1mm": 1.0,
+          "ink_precision_1mm": 1.0,
+          "shape_rmse_m": 0.00023267867246057805,
+          "max_target_gap_m": 0.0004909498396025899
+        }
+      ]
+    },
+    {
+      "stage": "sequence",
+      "trained_steps": 1024,
+      "success_rate": 1.0,
+      "episodes": [
+        {
+          "phase": "done",
+          "held": null,
+          "color": "green",
+          "stroke": 18,
+          "point": 0,
+          "visible": false,
+          "success": true,
+          "failure": null,
+          "time_s": 814.7399999876459,
+          "coverage": 1.0,
+          "tolerance_m": 0.03,
+          "tracking_tolerance_m": 0.00075,
+          "mse_limit_m2": 0.0009,
+          "mse_m2": 1.3058193731848445e-07,
+          "rmse_m": 0.0003613612282999996,
+          "max_error_m": 0.0005885318692302379,
+          "target_coverage_1mm": 1.0,
+          "ink_precision_1mm": 1.0,
+          "shape_rmse_m": 0.0002479636657612128,
+          "max_target_gap_m": 0.0005482873498269576
+        }
+      ]
+    }
+  ],
+  "policy_ready": true
+}

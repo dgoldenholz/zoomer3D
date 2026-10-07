@@ -1,0 +1,71 @@
+{
+  "layer_height_mm": 0.25,
+  "nozzle_mm": 0.4,
+  "vase_extrusion_width_mm": 0.6,
+  "shell_print_height_mm": 27.5,
+  "shell_bottom_outer_diameter_mm": 58.98512330820523,
+  "shell_top_outer_diameter_mm": 34.40423104333085,
+  "nominal_horizontal_wall_mm": 0.6,
+  "minimum_wall_normal_thickness_mm": 0.46852128566581813,
+  "transition_height_above_old_dome_base_mm": 22.42212476153975,
+  "max_radial_step_per_layer_mm": 0.2,
+  "nominal_minimum_path_overlap_fraction": 0.6666666666666666,
+  "cap_bottom_above_eye_top_mm": 1.0499969482421818,
+  "cap_straight_groove_depth_mm": 1.0,
+  "cap_tapered_roof_height_mm": 0.75,
+  "cap_maximum_nominal_seating_drop_mm": 0.25,
+  "cap_min_eye_clearance_after_seating_mm": 0.7999969482421818,
+  "cap_groove_radial_width_mm": 1.1,
+  "cap_groove_clearance_each_side_mm": 0.25,
+  "ring_to_head_radial_clearance_mm": 0.3999999999999986,
+  "ring_to_shell_min_radial_clearance_mm": 0.2194796158519381,
+  "assembled_dome_height_mm": 33.5,
+  "original_dome_height_mm": 33.4,
+  "maximum_window_radial_change_from_original_mm": 1.4642545600910761,
+  "maximum_cap_radial_change_from_original_mm": 2.5785998278191133,
+  "parts": {
+    "01_viewing_shell_VASE_SOLID": {
+      "watertight": true,
+      "connected_components": 1,
+      "dimensions_mm": [
+        58.98512330651283,
+        58.98512330651283,
+        27.5
+      ],
+      "volume_mm3": 57055.40120740477,
+      "bed_contact_area_mm2": 2732.3181127727817
+    },
+    "02_crown_cap_NORMAL": {
+      "watertight": true,
+      "connected_components": 1,
+      "dimensions_mm": [
+        38.50423105061054,
+        38.50423105061054,
+        6.25
+      ],
+      "volume_mm3": 3863.5708391832727,
+      "bed_contact_area_mm2": 1041.9594589536473
+    },
+    "03_mounting_ring_NORMAL": {
+      "watertight": true,
+      "connected_components": 1,
+      "dimensions_mm": [
+        59.0,
+        59.0,
+        1.75
+      ],
+      "volume_mm3": 347.80096071237705,
+      "bed_contact_area_mm2": 288.4949027256661
+    }
+  },
+  "intersection_volume_mm3": {
+    "viewing_shell/existing_head": 0.0,
+    "crown_cap/existing_head": 0.0,
+    "mounting_ring/existing_head": 0.0017357160846312055,
+    "viewing_shell/crown_cap": 0.0,
+    "viewing_shell/mounting_ring": -5.828941929825193e-17,
+    "crown_cap/mounting_ring": 0.0
+  },
+  "physical_test": "Not performed. Transparency and fits require printing.",
+  "head_sha256": "0fbe37a81d93730ae701bf340463cc046d4857f14c4b5f130a302357ac1541bb"
+}

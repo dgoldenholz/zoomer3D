@@ -1,0 +1,78 @@
+{
+  "status": "completed",
+  "algorithm": "PPO residual control",
+  "controller_version": 3,
+  "target": "/Users/dgoldenh/Documents/GitHub/zoomer3D/targets/3201207f878b4707ab8753bffb68dbac.json",
+  "seed": 7,
+  "requested_steps": 2048,
+  "warm_start_steps": 16718,
+  "stages": [
+    "drawing",
+    "sequence"
+  ],
+  "stage": "sequence",
+  "trained_steps": 2048,
+  "elapsed_s": 214.8,
+  "evaluations": [
+    {
+      "stage": "drawing",
+      "trained_steps": 1024,
+      "success_rate": 1.0,
+      "episodes": [
+        {
+          "phase": "done",
+          "held": "black",
+          "color": "black",
+          "stroke": 0,
+          "point": 130,
+          "visible": true,
+          "success": true,
+          "failure": null,
+          "time_s": 2.8199999999998004,
+          "coverage": 1.0,
+          "tolerance_m": 0.03,
+          "tracking_tolerance_m": 0.00075,
+          "mse_limit_m2": 0.0009,
+          "mse_m2": 1.5269659554620032e-07,
+          "rmse_m": 0.0003907641175264181,
+          "max_error_m": 0.00048210486455632965,
+          "target_coverage_1mm": 1.0,
+          "ink_precision_1mm": 1.0,
+          "shape_rmse_m": 0.0002333944644039436,
+          "max_target_gap_m": 0.00043634772981589073
+        }
+      ]
+    },
+    {
+      "stage": "sequence",
+      "trained_steps": 2048,
+      "success_rate": 0.0,
+      "episodes": [
+        {
+          "phase": "draw",
+          "held": "black",
+          "color": "black",
+          "stroke": 3,
+          "point": 22,
+          "visible": true,
+          "success": false,
+          "failure": "phase_timeout_draw",
+          "time_s": 130.24000000025782,
+          "coverage": 0.1423859263331501,
+          "tolerance_m": 0.03,
+          "tracking_tolerance_m": 0.00075,
+          "mse_limit_m2": 0.0009,
+          "mse_m2": 1.4523676767202161e-07,
+          "rmse_m": 0.0003810994196689646,
+          "max_error_m": 0.0005389168338793953,
+          "target_coverage_1mm": 0.14293567894447498,
+          "ink_precision_1mm": 1.0,
+          "shape_rmse_m": null,
+          "max_target_gap_m": null
+        }
+      ]
+    }
+  ],
+  "policy_ready": false,
+  "needs_more_training": "sequence"
+}

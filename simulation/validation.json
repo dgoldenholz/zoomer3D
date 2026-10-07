@@ -1,0 +1,194 @@
+{
+  "mujoco_version": "3.14.0",
+  "scenes": {
+    "zoomer": {
+      "motors": 35,
+      "scalar_joints": 49,
+      "mass_kg": 0.7704000000000001,
+      "steps": 2000,
+      "finite": true,
+      "warnings": 0,
+      "base_z_m": 0.019083226112059787
+    },
+    "zoomer_fixed": {
+      "motors": 35,
+      "scalar_joints": 49,
+      "mass_kg": 0.7704000000000001,
+      "steps": 2000,
+      "finite": true,
+      "warnings": 0,
+      "base_z_m": 0.019091813
+    },
+    "whiteboard": {
+      "motors": 35,
+      "scalar_joints": 49,
+      "mass_kg": 0.7704000000000001,
+      "steps": 2000,
+      "finite": true,
+      "warnings": 0,
+      "base_z_m": 0.019091813
+    }
+  },
+  "motor_response": {
+    "right_drive": {
+      "target_rad": 0.12,
+      "actual_rad": 0.11652710249181418
+    },
+    "left_drive": {
+      "target_rad": 0.12,
+      "actual_rad": 0.11652710249181418
+    },
+    "waist_yaw": {
+      "target_rad": 0.12,
+      "actual_rad": 0.11999822791180162
+    },
+    "waist_pitch": {
+      "target_rad": 0.12,
+      "actual_rad": 0.11999868951669393
+    },
+    "head_yaw": {
+      "target_rad": 0.12,
+      "actual_rad": 0.11996712372524254
+    },
+    "right_shoulder_pitch": {
+      "target_rad": 0.12,
+      "actual_rad": 0.12000224893000676
+    },
+    "right_shoulder_roll": {
+      "target_rad": 0.12,
+      "actual_rad": 0.1199949665452189
+    },
+    "right_shoulder_yaw": {
+      "target_rad": 0.12,
+      "actual_rad": 0.11989152333161551
+    },
+    "right_elbow": {
+      "target_rad": -0.12,
+      "actual_rad": -0.1198671081534977
+    },
+    "right_forearm_roll": {
+      "target_rad": 0.12,
+      "actual_rad": 0.11926630130111687
+    },
+    "right_wrist_pitch": {
+      "target_rad": 0.12,
+      "actual_rad": 0.11876200041470211
+    },
+    "right_wrist_roll": {
+      "target_rad": 0.12,
+      "actual_rad": 0.1185795901455045
+    },
+    "right_finger_1_base": {
+      "target_rad": 0.12,
+      "actual_rad": 0.1166153303987053
+    },
+    "right_finger_1_tip": {
+      "target_rad": 0.12,
+      "actual_rad": 0.11664264415095338
+    },
+    "right_finger_2_base": {
+      "target_rad": 0.12,
+      "actual_rad": 0.11661533067545508
+    },
+    "right_finger_2_tip": {
+      "target_rad": 0.12,
+      "actual_rad": 0.11664264417640625
+    },
+    "right_finger_3_base": {
+      "target_rad": 0.12,
+      "actual_rad": 0.11661541003785715
+    },
+    "right_finger_3_tip": {
+      "target_rad": 0.12,
+      "actual_rad": 0.1166426615884413
+    },
+    "right_finger_4_base": {
+      "target_rad": 0.12,
+      "actual_rad": 0.1166154099239652
+    },
+    "right_finger_4_tip": {
+      "target_rad": 0.12,
+      "actual_rad": 0.11664266157614102
+    },
+    "left_shoulder_pitch": {
+      "target_rad": 0.12,
+      "actual_rad": 0.12000224893000674
+    },
+    "left_shoulder_roll": {
+      "target_rad": 0.12,
+      "actual_rad": 0.11999496654521889
+    },
+    "left_shoulder_yaw": {
+      "target_rad": 0.12,
+      "actual_rad": 0.11989152360262587
+    },
+    "left_elbow": {
+      "target_rad": -0.12,
+      "actual_rad": -0.1198671081534977
+    },
+    "left_forearm_roll": {
+      "target_rad": 0.12,
+      "actual_rad": 0.11926630131888134
+    },
+    "left_wrist_pitch": {
+      "target_rad": 0.12,
+      "actual_rad": 0.11876200041470211
+    },
+    "left_wrist_roll": {
+      "target_rad": 0.12,
+      "actual_rad": 0.11857959014550448
+    },
+    "left_finger_1_base": {
+      "target_rad": 0.12,
+      "actual_rad": 0.11661533067545511
+    },
+    "left_finger_1_tip": {
+      "target_rad": 0.12,
+      "actual_rad": 0.11664264417640625
+    },
+    "left_finger_2_base": {
+      "target_rad": 0.12,
+      "actual_rad": 0.1166153303987053
+    },
+    "left_finger_2_tip": {
+      "target_rad": 0.12,
+      "actual_rad": 0.11664264415095338
+    },
+    "left_finger_3_base": {
+      "target_rad": 0.12,
+      "actual_rad": 0.11661540992396519
+    },
+    "left_finger_3_tip": {
+      "target_rad": 0.12,
+      "actual_rad": 0.11664266157614102
+    },
+    "left_finger_4_base": {
+      "target_rad": 0.12,
+      "actual_rad": 0.11661541003785712
+    },
+    "left_finger_4_tip": {
+      "target_rad": 0.12,
+      "actual_rad": 0.11664266158844128
+    }
+  },
+  "urdf": {
+    "links": 50,
+    "joints": 49,
+    "motor_axes_and_limits_match": true,
+    "imported_by_mujoco": true
+  },
+  "tread_layout": {
+    "lower_wheels_per_side": 5,
+    "upper_rollers_per_side": 3,
+    "drive_motors": 2,
+    "passive_wheel_joints": 14
+  },
+  "tool_path": {
+    "duration_s": 8.000000000001005,
+    "samples": 800,
+    "rms_error_mm": 0.3661235942362748,
+    "max_error_mm": 0.37179063613901864,
+    "initial_ik_error_mm": 0.0002469715213942815,
+    "finite": true
+  }
+}

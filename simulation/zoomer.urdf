@@ -1,0 +1,2165 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="zoomer_xi30">
+  <link name="base">
+    <inertial>
+      <origin xyz="0 0 0.025058005" />
+      <mass value="0.36" />
+      <inertia ixx="0.0001512" iyy="0.0001512" izz="0.0001512" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/base__blue.obj" />
+      </geometry>
+      <material name="blue">
+        <color rgba="0.035 0.13 0.55 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/base__red.obj" />
+      </geometry>
+      <material name="red">
+        <color rgba="0.62 0.024 0.043 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/base__ivory.obj" />
+      </geometry>
+      <material name="ivory">
+        <color rgba="0.79 0.84 0.85 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/base__metal.obj" />
+      </geometry>
+      <material name="metal">
+        <color rgba="0.3 0.39 0.46 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/base__cyan.obj" />
+      </geometry>
+      <material name="cyan">
+        <color rgba="0.015 0.65 0.92 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/base__dark.obj" />
+      </geometry>
+      <material name="dark">
+        <color rgba="0.018 0.027 0.042 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/base__green.obj" />
+      </geometry>
+      <material name="green">
+        <color rgba="0.12 0.48 0.075 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/base__rubber.obj" />
+      </geometry>
+      <material name="rubber">
+        <color rgba="0.012 0.016 0.022 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.0035797149" rpy="0 0 0" />
+      <geometry>
+        <box size="0.047709924 0.051309248 0.017898575" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 0 0.046536294" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.0057251908396946565" length="0.05369572422936692" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="right_drive">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.006" />
+      <inertia ixx="9.72e-08" iyy="9.72e-08" izz="9.72e-08" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_drive__rubber.obj" />
+      </geometry>
+      <material name="rubber">
+        <color rgba="0.012 0.016 0.022 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_drive__blue.obj" />
+      </geometry>
+      <material name="blue">
+        <color rgba="0.035 0.13 0.55 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_drive__dark.obj" />
+      </geometry>
+      <material name="dark">
+        <color rgba="0.018 0.027 0.042 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 1.5707963 0" />
+      <geometry>
+        <cylinder radius="0.008877693072588663" length="0.008969465648854962" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_drive" type="continuous">
+    <parent link="base" />
+    <child link="right_drive" />
+    <origin xyz="-0.026908397 -0.025710798 -0.011228373" />
+    <axis xyz="1 0 0" />
+    <limit effort="0.063" velocity="4" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="right_idler_1">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.006" />
+      <inertia ixx="9.72e-08" iyy="9.72e-08" izz="9.72e-08" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_idler_1__rubber.obj" />
+      </geometry>
+      <material name="rubber">
+        <color rgba="0.012 0.016 0.022 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_idler_1__blue.obj" />
+      </geometry>
+      <material name="blue">
+        <color rgba="0.035 0.13 0.55 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_idler_1__dark.obj" />
+      </geometry>
+      <material name="dark">
+        <color rgba="0.018 0.027 0.042 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 1.5707963 0" />
+      <geometry>
+        <cylinder radius="0.008486310904872391" length="0.008969465648854962" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_idler_1" type="continuous">
+    <parent link="base" />
+    <child link="right_idler_1" />
+    <origin xyz="-0.026908397 -0.010537212 -0.011619755" />
+    <axis xyz="1 0 0" />
+    <limit effort="0.0" velocity="4" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="right_idler_2">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.006" />
+      <inertia ixx="9.72e-08" iyy="9.72e-08" izz="9.72e-08" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_idler_2__rubber.obj" />
+      </geometry>
+      <material name="rubber">
+        <color rgba="0.012 0.016 0.022 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_idler_2__blue.obj" />
+      </geometry>
+      <material name="blue">
+        <color rgba="0.035 0.13 0.55 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_idler_2__dark.obj" />
+      </geometry>
+      <material name="dark">
+        <color rgba="0.018 0.027 0.042 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 1.5707963 0" />
+      <geometry>
+        <cylinder radius="0.009464766324163076" length="0.008969465648854962" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_idler_2" type="continuous">
+    <parent link="base" />
+    <child link="right_idler_2" />
+    <origin xyz="-0.026908397 0.0021074424 -0.010641299" />
+    <axis xyz="1 0 0" />
+    <limit effort="0.0" velocity="4" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="right_idler_3">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.006" />
+      <inertia ixx="9.72e-08" iyy="9.72e-08" izz="9.72e-08" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_idler_3__rubber.obj" />
+      </geometry>
+      <material name="rubber">
+        <color rgba="0.012 0.016 0.022 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_idler_3__blue.obj" />
+      </geometry>
+      <material name="blue">
+        <color rgba="0.035 0.13 0.55 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_idler_3__dark.obj" />
+      </geometry>
+      <material name="dark">
+        <color rgba="0.018 0.027 0.042 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 1.5707963 0" />
+      <geometry>
+        <cylinder radius="0.009464766324163076" length="0.008969465648854962" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_idler_3" type="continuous">
+    <parent link="base" />
+    <child link="right_idler_3" />
+    <origin xyz="-0.026908397 0.014330609 -0.010641299" />
+    <axis xyz="1 0 0" />
+    <limit effort="0.0" velocity="4" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="right_idler_4">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.006" />
+      <inertia ixx="9.72e-08" iyy="9.72e-08" izz="9.72e-08" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_idler_4__rubber.obj" />
+      </geometry>
+      <material name="rubber">
+        <color rgba="0.012 0.016 0.022 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_idler_4__blue.obj" />
+      </geometry>
+      <material name="blue">
+        <color rgba="0.035 0.13 0.55 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_idler_4__dark.obj" />
+      </geometry>
+      <material name="dark">
+        <color rgba="0.018 0.027 0.042 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 1.5707963 0" />
+      <geometry>
+        <cylinder radius="0.0064339410009943655" length="0.008969465648854962" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_idler_4" type="continuous">
+    <parent link="base" />
+    <child link="right_idler_4" />
+    <origin xyz="-0.026908397 0.026764519 -0.0088800795" />
+    <axis xyz="1 0 0" />
+    <limit effort="0.0" velocity="4" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="right_return_1">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.003" />
+      <inertia ixx="3.4560000000000006e-08" iyy="3.4560000000000006e-08" izz="3.4560000000000006e-08" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_return_1__rubber.obj" />
+      </geometry>
+      <material name="rubber">
+        <color rgba="0.012 0.016 0.022 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_return_1__blue.obj" />
+      </geometry>
+      <material name="blue">
+        <color rgba="0.035 0.13 0.55 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_return_1__dark.obj" />
+      </geometry>
+      <material name="dark">
+        <color rgba="0.018 0.027 0.042 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 1.5707963 0" />
+      <geometry>
+        <cylinder radius="0.006012452512684531" length="0.008969465648854962" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_return_1" type="continuous">
+    <parent link="base" />
+    <child link="right_return_1" />
+    <origin xyz="-0.026908397 -0.018334749 -7.3980776e-05" />
+    <axis xyz="1 0 0" />
+    <limit effort="0.0" velocity="4" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="right_return_2">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.003" />
+      <inertia ixx="3.4560000000000006e-08" iyy="3.4560000000000006e-08" izz="3.4560000000000006e-08" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_return_2__rubber.obj" />
+      </geometry>
+      <material name="rubber">
+        <color rgba="0.012 0.016 0.022 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_return_2__blue.obj" />
+      </geometry>
+      <material name="blue">
+        <color rgba="0.035 0.13 0.55 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_return_2__dark.obj" />
+      </geometry>
+      <material name="dark">
+        <color rgba="0.018 0.027 0.042 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 1.5707963 0" />
+      <geometry>
+        <cylinder radius="0.0058017082685296135" length="0.008969465648854962" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_return_2" type="continuous">
+    <parent link="base" />
+    <child link="right_return_2" />
+    <origin xyz="-0.026908397 -0.0061115831 -0.00026967186" />
+    <axis xyz="1 0 0" />
+    <limit effort="0.0" velocity="4" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="right_return_3">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.003" />
+      <inertia ixx="3.4560000000000006e-08" iyy="3.4560000000000006e-08" izz="3.4560000000000006e-08" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_return_3__rubber.obj" />
+      </geometry>
+      <material name="rubber">
+        <color rgba="0.012 0.016 0.022 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_return_3__blue.obj" />
+      </geometry>
+      <material name="blue">
+        <color rgba="0.035 0.13 0.55 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_return_3__dark.obj" />
+      </geometry>
+      <material name="dark">
+        <color rgba="0.018 0.027 0.042 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 1.5707963 0" />
+      <geometry>
+        <cylinder radius="0.005590964024374696" length="0.008969465648854962" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_return_3" type="continuous">
+    <parent link="base" />
+    <child link="right_return_3" />
+    <origin xyz="-0.026908397 0.0065330716 0.00012171031" />
+    <axis xyz="1 0 0" />
+    <limit effort="0.0" velocity="4" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="left_drive">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.006" />
+      <inertia ixx="9.72e-08" iyy="9.72e-08" izz="9.72e-08" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_drive__rubber.obj" />
+      </geometry>
+      <material name="rubber">
+        <color rgba="0.012 0.016 0.022 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_drive__blue.obj" />
+      </geometry>
+      <material name="blue">
+        <color rgba="0.035 0.13 0.55 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_drive__dark.obj" />
+      </geometry>
+      <material name="dark">
+        <color rgba="0.018 0.027 0.042 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 1.5707963 0" />
+      <geometry>
+        <cylinder radius="0.008877693072588663" length="0.008969465648854962" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_drive" type="continuous">
+    <parent link="base" />
+    <child link="left_drive" />
+    <origin xyz="0.026908397 -0.025710798 -0.011228373" />
+    <axis xyz="1 0 0" />
+    <limit effort="0.063" velocity="4" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="left_idler_1">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.006" />
+      <inertia ixx="9.72e-08" iyy="9.72e-08" izz="9.72e-08" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_idler_1__rubber.obj" />
+      </geometry>
+      <material name="rubber">
+        <color rgba="0.012 0.016 0.022 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_idler_1__blue.obj" />
+      </geometry>
+      <material name="blue">
+        <color rgba="0.035 0.13 0.55 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_idler_1__dark.obj" />
+      </geometry>
+      <material name="dark">
+        <color rgba="0.018 0.027 0.042 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 1.5707963 0" />
+      <geometry>
+        <cylinder radius="0.008486310904872391" length="0.008969465648854962" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_idler_1" type="continuous">
+    <parent link="base" />
+    <child link="left_idler_1" />
+    <origin xyz="0.026908397 -0.010537212 -0.011619755" />
+    <axis xyz="1 0 0" />
+    <limit effort="0.0" velocity="4" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="left_idler_2">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.006" />
+      <inertia ixx="9.72e-08" iyy="9.72e-08" izz="9.72e-08" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_idler_2__rubber.obj" />
+      </geometry>
+      <material name="rubber">
+        <color rgba="0.012 0.016 0.022 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_idler_2__blue.obj" />
+      </geometry>
+      <material name="blue">
+        <color rgba="0.035 0.13 0.55 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_idler_2__dark.obj" />
+      </geometry>
+      <material name="dark">
+        <color rgba="0.018 0.027 0.042 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 1.5707963 0" />
+      <geometry>
+        <cylinder radius="0.009464766324163076" length="0.008969465648854962" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_idler_2" type="continuous">
+    <parent link="base" />
+    <child link="left_idler_2" />
+    <origin xyz="0.026908397 0.0021074424 -0.010641299" />
+    <axis xyz="1 0 0" />
+    <limit effort="0.0" velocity="4" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="left_idler_3">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.006" />
+      <inertia ixx="9.72e-08" iyy="9.72e-08" izz="9.72e-08" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_idler_3__rubber.obj" />
+      </geometry>
+      <material name="rubber">
+        <color rgba="0.012 0.016 0.022 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_idler_3__blue.obj" />
+      </geometry>
+      <material name="blue">
+        <color rgba="0.035 0.13 0.55 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_idler_3__dark.obj" />
+      </geometry>
+      <material name="dark">
+        <color rgba="0.018 0.027 0.042 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 1.5707963 0" />
+      <geometry>
+        <cylinder radius="0.009464766324163076" length="0.008969465648854962" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_idler_3" type="continuous">
+    <parent link="base" />
+    <child link="left_idler_3" />
+    <origin xyz="0.026908397 0.014330609 -0.010641299" />
+    <axis xyz="1 0 0" />
+    <limit effort="0.0" velocity="4" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="left_idler_4">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.006" />
+      <inertia ixx="9.72e-08" iyy="9.72e-08" izz="9.72e-08" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_idler_4__rubber.obj" />
+      </geometry>
+      <material name="rubber">
+        <color rgba="0.012 0.016 0.022 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_idler_4__blue.obj" />
+      </geometry>
+      <material name="blue">
+        <color rgba="0.035 0.13 0.55 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_idler_4__dark.obj" />
+      </geometry>
+      <material name="dark">
+        <color rgba="0.018 0.027 0.042 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 1.5707963 0" />
+      <geometry>
+        <cylinder radius="0.0064339410009943655" length="0.008969465648854962" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_idler_4" type="continuous">
+    <parent link="base" />
+    <child link="left_idler_4" />
+    <origin xyz="0.026908397 0.026764519 -0.0088800795" />
+    <axis xyz="1 0 0" />
+    <limit effort="0.0" velocity="4" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="left_return_1">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.003" />
+      <inertia ixx="3.4560000000000006e-08" iyy="3.4560000000000006e-08" izz="3.4560000000000006e-08" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_return_1__rubber.obj" />
+      </geometry>
+      <material name="rubber">
+        <color rgba="0.012 0.016 0.022 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_return_1__blue.obj" />
+      </geometry>
+      <material name="blue">
+        <color rgba="0.035 0.13 0.55 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_return_1__dark.obj" />
+      </geometry>
+      <material name="dark">
+        <color rgba="0.018 0.027 0.042 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 1.5707963 0" />
+      <geometry>
+        <cylinder radius="0.006012452512684531" length="0.008969465648854962" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_return_1" type="continuous">
+    <parent link="base" />
+    <child link="left_return_1" />
+    <origin xyz="0.026908397 -0.018334749 -7.3980776e-05" />
+    <axis xyz="1 0 0" />
+    <limit effort="0.0" velocity="4" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="left_return_2">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.003" />
+      <inertia ixx="3.4560000000000006e-08" iyy="3.4560000000000006e-08" izz="3.4560000000000006e-08" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_return_2__rubber.obj" />
+      </geometry>
+      <material name="rubber">
+        <color rgba="0.012 0.016 0.022 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_return_2__blue.obj" />
+      </geometry>
+      <material name="blue">
+        <color rgba="0.035 0.13 0.55 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_return_2__dark.obj" />
+      </geometry>
+      <material name="dark">
+        <color rgba="0.018 0.027 0.042 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 1.5707963 0" />
+      <geometry>
+        <cylinder radius="0.0058017082685296135" length="0.008969465648854962" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_return_2" type="continuous">
+    <parent link="base" />
+    <child link="left_return_2" />
+    <origin xyz="0.026908397 -0.0061115831 -0.00026967186" />
+    <axis xyz="1 0 0" />
+    <limit effort="0.0" velocity="4" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="left_return_3">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.003" />
+      <inertia ixx="3.4560000000000006e-08" iyy="3.4560000000000006e-08" izz="3.4560000000000006e-08" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_return_3__rubber.obj" />
+      </geometry>
+      <material name="rubber">
+        <color rgba="0.012 0.016 0.022 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_return_3__blue.obj" />
+      </geometry>
+      <material name="blue">
+        <color rgba="0.035 0.13 0.55 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_return_3__dark.obj" />
+      </geometry>
+      <material name="dark">
+        <color rgba="0.018 0.027 0.042 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 1.5707963 0" />
+      <geometry>
+        <cylinder radius="0.005590964024374696" length="0.008969465648854962" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_return_3" type="continuous">
+    <parent link="base" />
+    <child link="left_return_3" />
+    <origin xyz="0.026908397 0.0065330716 0.00012171031" />
+    <axis xyz="1 0 0" />
+    <limit effort="0.0" velocity="4" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="waist_yaw">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.0225" />
+      <inertia ixx="5.4e-06" iyy="5.4e-06" izz="5.4e-06" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/waist_yaw__dark.obj" />
+      </geometry>
+      <material name="dark">
+        <color rgba="0.018 0.027 0.042 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/waist_yaw__red.obj" />
+      </geometry>
+      <material name="red">
+        <color rgba="0.62 0.024 0.043 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="waist_yaw" type="continuous">
+    <parent link="base" />
+    <child link="waist_yaw" />
+    <origin xyz="0 0 0.075174014" />
+    <axis xyz="0 0 1" />
+    <limit effort="0.23399999999999999" velocity="4" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="waist_pitch">
+    <inertial>
+      <origin xyz="0 0 0.027444481" />
+      <mass value="0.135" />
+      <inertia ixx="7.56e-05" iyy="7.56e-05" izz="7.56e-05" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/waist_pitch__metal.obj" />
+      </geometry>
+      <material name="metal">
+        <color rgba="0.3 0.39 0.46 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/waist_pitch__ivory.obj" />
+      </geometry>
+      <material name="ivory">
+        <color rgba="0.79 0.84 0.85 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/waist_pitch__red.obj" />
+      </geometry>
+      <material name="red">
+        <color rgba="0.62 0.024 0.043 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/waist_pitch__dark.obj" />
+      </geometry>
+      <material name="dark">
+        <color rgba="0.018 0.027 0.042 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/waist_pitch__cyan.obj" />
+      </geometry>
+      <material name="cyan">
+        <color rgba="0.015 0.65 0.92 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/waist_pitch__green.obj" />
+      </geometry>
+      <material name="green">
+        <color rgba="0.12 0.48 0.075 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/waist_pitch__blue.obj" />
+      </geometry>
+      <material name="blue">
+        <color rgba="0.035 0.13 0.55 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/waist_pitch__purple.obj" />
+      </geometry>
+      <material name="purple">
+        <color rgba="0.18 0.065 0.34 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.027444481" rpy="0 0 0" />
+      <geometry>
+        <box size="0.062022901 0.032814054 0.035797149" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="waist_pitch" type="revolute">
+    <parent link="waist_yaw" />
+    <child link="waist_pitch" />
+    <origin xyz="0 0 0.0053695724" />
+    <axis xyz="1 0 0" />
+    <limit effort="0.288" velocity="4" lower="-0.4363323129985824" upper="0.4363323129985824" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="head_yaw">
+    <inertial>
+      <origin xyz="0 0 0.012886974" />
+      <mass value="0.0195" />
+      <inertia ixx="5.4e-06" iyy="5.4e-06" izz="5.4e-06" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/head_yaw__dark.obj" />
+      </geometry>
+      <material name="dark">
+        <color rgba="0.018 0.027 0.042 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/head_yaw__metal.obj" />
+      </geometry>
+      <material name="metal">
+        <color rgba="0.3 0.39 0.46 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/head_yaw__glass.obj" />
+      </geometry>
+      <material name="glass">
+        <color rgba="0.55 0.86 0.96 0.16" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/head_yaw__purple.obj" />
+      </geometry>
+      <material name="purple">
+        <color rgba="0.18 0.065 0.34 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/head_yaw__green.obj" />
+      </geometry>
+      <material name="green">
+        <color rgba="0.12 0.48 0.075 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/head_yaw__blue.obj" />
+      </geometry>
+      <material name="blue">
+        <color rgba="0.035 0.13 0.55 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/head_yaw__ivory.obj" />
+      </geometry>
+      <material name="ivory">
+        <color rgba="0.79 0.84 0.85 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/head_yaw__red.obj" />
+      </geometry>
+      <material name="red">
+        <color rgba="0.62 0.024 0.043 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/head_yaw__cyan.obj" />
+      </geometry>
+      <material name="cyan">
+        <color rgba="0.015 0.65 0.92 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/head_yaw__white.obj" />
+      </geometry>
+      <material name="white">
+        <color rgba="0.95 0.97 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.012886974" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.01431297709923664" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="head_yaw" type="continuous">
+    <parent link="waist_pitch" />
+    <child link="head_yaw" />
+    <origin xyz="0 0 0.04796818" />
+    <axis xyz="0 0 1" />
+    <limit effort="0.0144" velocity="4" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="right_shoulder_pitch">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.0045" />
+      <inertia ixx="4.32e-07" iyy="4.32e-07" izz="4.32e-07" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_shoulder_pitch__dark.obj" />
+      </geometry>
+      <material name="dark">
+        <color rgba="0.018 0.027 0.042 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_shoulder_pitch__metal.obj" />
+      </geometry>
+      <material name="metal">
+        <color rgba="0.3 0.39 0.46 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="right_shoulder_pitch" type="revolute">
+    <parent link="waist_pitch" />
+    <child link="right_shoulder_pitch" />
+    <origin xyz="-0.042366412 0 0.036274445" />
+    <axis xyz="1 0 0" />
+    <limit effort="0.11699999999999999" velocity="4" lower="-2.8797932657906435" upper="1.0471975511965976" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="right_shoulder_roll">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.00375" />
+      <inertia ixx="4.32e-07" iyy="4.32e-07" izz="4.32e-07" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_shoulder_roll__metal.obj" />
+      </geometry>
+      <material name="metal">
+        <color rgba="0.3 0.39 0.46 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="right_shoulder_roll" type="revolute">
+    <parent link="right_shoulder_pitch" />
+    <child link="right_shoulder_roll" />
+    <origin xyz="0 0 0" />
+    <axis xyz="0 1 0" />
+    <limit effort="0.11699999999999999" velocity="4" lower="-1.6580627893946132" upper="1.6580627893946132" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="right_shoulder_yaw">
+    <inertial>
+      <origin xyz="0 0 -0.013006298" />
+      <mass value="0.027" />
+      <inertia ixx="3.024e-06" iyy="3.024e-06" izz="3.024e-06" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_shoulder_yaw__red.obj" />
+      </geometry>
+      <material name="red">
+        <color rgba="0.62 0.024 0.043 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_shoulder_yaw__ivory.obj" />
+      </geometry>
+      <material name="ivory">
+        <color rgba="0.79 0.84 0.85 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_shoulder_yaw__green.obj" />
+      </geometry>
+      <material name="green">
+        <color rgba="0.12 0.48 0.075 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.013006298" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.004961832061068702" length="0.017898574743122307" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_shoulder_yaw" type="revolute">
+    <parent link="right_shoulder_roll" />
+    <child link="right_shoulder_yaw" />
+    <origin xyz="0 0 0" />
+    <axis xyz="0 0 1" />
+    <limit effort="0.0576" velocity="4" lower="-1.9198621771937625" upper="1.9198621771937625" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="right_elbow">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.018" />
+      <inertia ixx="1.9439999999999995e-06" iyy="1.9439999999999995e-06" izz="1.9439999999999995e-06" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_elbow__green.obj" />
+      </geometry>
+      <material name="green">
+        <color rgba="0.12 0.48 0.075 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_elbow__metal.obj" />
+      </geometry>
+      <material name="metal">
+        <color rgba="0.3 0.39 0.46 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="right_elbow" type="revolute">
+    <parent link="right_shoulder_yaw" />
+    <child link="right_elbow" />
+    <origin xyz="0 0 -0.029830958" />
+    <axis xyz="1 0 0" />
+    <limit effort="0.081" velocity="4" lower="-2.530727415391778" upper="0.0" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="right_forearm_roll">
+    <inertial>
+      <origin xyz="0 0 -0.01026185" />
+      <mass value="0.012" />
+      <inertia ixx="1.512e-06" iyy="1.512e-06" izz="1.512e-06" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_forearm_roll__ivory.obj" />
+      </geometry>
+      <material name="ivory">
+        <color rgba="0.79 0.84 0.85 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_forearm_roll__purple.obj" />
+      </geometry>
+      <material name="purple">
+        <color rgba="0.18 0.065 0.34 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_forearm_roll__metal.obj" />
+      </geometry>
+      <material name="metal">
+        <color rgba="0.3 0.39 0.46 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.01026185" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.004484732824427481" length="0.016705336426914155" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_forearm_roll" type="revolute">
+    <parent link="right_elbow" />
+    <child link="right_forearm_roll" />
+    <origin xyz="0 0 -0.0031024196" />
+    <axis xyz="0 0 1" />
+    <limit effort="0.0252" velocity="4" lower="-3.141592653589793" upper="3.141592653589793" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="right_wrist_pitch">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.003" />
+      <inertia ixx="2.16e-07" iyy="2.16e-07" izz="2.16e-07" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_wrist_pitch__metal.obj" />
+      </geometry>
+      <material name="metal">
+        <color rgba="0.3 0.39 0.46 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="right_wrist_pitch" type="revolute">
+    <parent link="right_forearm_roll" />
+    <child link="right_wrist_pitch" />
+    <origin xyz="0 0 -0.0230295" />
+    <axis xyz="1 0 0" />
+    <limit effort="0.0162" velocity="4" lower="-1.2217304763960306" upper="1.2217304763960306" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="right_wrist_roll">
+    <inertial>
+      <origin xyz="0 0 -0.0041763341" />
+      <mass value="0.0052499999999999995" />
+      <inertia ixx="2.16e-07" iyy="2.16e-07" izz="2.16e-07" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_wrist_roll__dark.obj" />
+      </geometry>
+      <material name="dark">
+        <color rgba="0.018 0.027 0.042 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_wrist_roll__ivory.obj" />
+      </geometry>
+      <material name="ivory">
+        <color rgba="0.79 0.84 0.85 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_wrist_roll__purple.obj" />
+      </geometry>
+      <material name="purple">
+        <color rgba="0.18 0.065 0.34 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.0041763341" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.004484732824427481" length="0.005966191581040769" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_wrist_roll" type="revolute">
+    <parent link="right_wrist_pitch" />
+    <child link="right_wrist_roll" />
+    <origin xyz="0 0 -0.0015512098" />
+    <axis xyz="0 1 0" />
+    <limit effort="0.0126" velocity="4" lower="-0.6981317007977318" upper="0.6981317007977318" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="right_finger_1_base">
+    <inertial>
+      <origin xyz="0.00091087228 0.0011390583 -0.0029830958" />
+      <mass value="0.0006749999999999999" />
+      <inertia ixx="6.479999999999999e-09" iyy="6.479999999999999e-09" izz="6.479999999999999e-09" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_finger_1_base__metal.obj" />
+      </geometry>
+      <material name="metal">
+        <color rgba="0.3 0.39 0.46 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_finger_1_base__ivory.obj" />
+      </geometry>
+      <material name="ivory">
+        <color rgba="0.79 0.84 0.85 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00091087228 0.0011390583 -0.0029830958" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.0009541984732824428" length="0.005250248591315876" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_finger_1_base" type="revolute">
+    <parent link="right_wrist_roll" />
+    <child link="right_finger_1_base" />
+    <origin xyz="0.0027663529 0.0034593623 -0.0068014584" />
+    <axis xyz="-0.70710678 0.70710678 0" />
+    <limit effort="0.0036" velocity="4" lower="-0.4363323129985824" upper="0.9599310885968813" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="right_finger_1_tip">
+    <inertial>
+      <origin xyz="-0.0029012969 -0.0036281117 -0.0064434869" />
+      <mass value="0.000375" />
+      <inertia ixx="4.320000000000001e-09" iyy="4.320000000000001e-09" izz="4.320000000000001e-09" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_finger_1_tip__purple.obj" />
+      </geometry>
+      <material name="purple">
+        <color rgba="0.18 0.065 0.34 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_finger_1_tip__metal.obj" />
+      </geometry>
+      <material name="metal">
+        <color rgba="0.3 0.39 0.46 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_finger_1_tip__rubber.obj" />
+      </geometry>
+      <material name="rubber">
+        <color rgba="0.012 0.016 0.022 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0029012969 -0.0036281117 -0.0064434869" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.0012404580152671756" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_finger_1_tip" type="revolute">
+    <parent link="right_finger_1_base" />
+    <child link="right_finger_1_tip" />
+    <origin xyz="0.0018217446 0.0022781166 -0.0059661916" />
+    <axis xyz="-0.70710678 0.70710678 0" />
+    <limit effort="0.0018" velocity="4" lower="-0.17453292519943295" upper="1.2217304763960306" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="right_finger_2_base">
+    <inertial>
+      <origin xyz="-0.00091087228 0.0011390583 -0.0029830958" />
+      <mass value="0.0006749999999999999" />
+      <inertia ixx="6.479999999999999e-09" iyy="6.479999999999999e-09" izz="6.479999999999999e-09" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_finger_2_base__metal.obj" />
+      </geometry>
+      <material name="metal">
+        <color rgba="0.3 0.39 0.46 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_finger_2_base__ivory.obj" />
+      </geometry>
+      <material name="ivory">
+        <color rgba="0.79 0.84 0.85 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00091087228 0.0011390583 -0.0029830958" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.0009541984732824428" length="0.005250248591315876" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_finger_2_base" type="revolute">
+    <parent link="right_wrist_roll" />
+    <child link="right_finger_2_base" />
+    <origin xyz="-0.0027663529 0.0034593623 -0.0068014584" />
+    <axis xyz="-0.70710678 -0.70710678 0" />
+    <limit effort="0.0036" velocity="4" lower="-0.4363323129985824" upper="0.9599310885968813" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="right_finger_2_tip">
+    <inertial>
+      <origin xyz="0.0029012969 -0.0036281117 -0.0064434869" />
+      <mass value="0.000375" />
+      <inertia ixx="4.320000000000001e-09" iyy="4.320000000000001e-09" izz="4.320000000000001e-09" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_finger_2_tip__purple.obj" />
+      </geometry>
+      <material name="purple">
+        <color rgba="0.18 0.065 0.34 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_finger_2_tip__metal.obj" />
+      </geometry>
+      <material name="metal">
+        <color rgba="0.3 0.39 0.46 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_finger_2_tip__rubber.obj" />
+      </geometry>
+      <material name="rubber">
+        <color rgba="0.012 0.016 0.022 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0029012969 -0.0036281117 -0.0064434869" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.0012404580152671756" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_finger_2_tip" type="revolute">
+    <parent link="right_finger_2_base" />
+    <child link="right_finger_2_tip" />
+    <origin xyz="-0.0018217446 0.0022781166 -0.0059661916" />
+    <axis xyz="-0.70710678 -0.70710678 0" />
+    <limit effort="0.0018" velocity="4" lower="-0.17453292519943295" upper="1.2217304763960306" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="right_finger_3_base">
+    <inertial>
+      <origin xyz="-0.00091087228 -0.0011390583 -0.0029830958" />
+      <mass value="0.0006749999999999999" />
+      <inertia ixx="6.479999999999999e-09" iyy="6.479999999999999e-09" izz="6.479999999999999e-09" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_finger_3_base__metal.obj" />
+      </geometry>
+      <material name="metal">
+        <color rgba="0.3 0.39 0.46 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_finger_3_base__ivory.obj" />
+      </geometry>
+      <material name="ivory">
+        <color rgba="0.79 0.84 0.85 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00091087228 -0.0011390583 -0.0029830958" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.0009541984732824428" length="0.005250248591315876" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_finger_3_base" type="revolute">
+    <parent link="right_wrist_roll" />
+    <child link="right_finger_3_base" />
+    <origin xyz="-0.0027663529 -0.0034593623 -0.0068014584" />
+    <axis xyz="0.70710678 -0.70710678 0" />
+    <limit effort="0.0036" velocity="4" lower="-0.4363323129985824" upper="0.9599310885968813" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="right_finger_3_tip">
+    <inertial>
+      <origin xyz="0.0029012969 0.0036281117 -0.0064434869" />
+      <mass value="0.000375" />
+      <inertia ixx="4.320000000000001e-09" iyy="4.320000000000001e-09" izz="4.320000000000001e-09" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_finger_3_tip__purple.obj" />
+      </geometry>
+      <material name="purple">
+        <color rgba="0.18 0.065 0.34 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_finger_3_tip__metal.obj" />
+      </geometry>
+      <material name="metal">
+        <color rgba="0.3 0.39 0.46 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_finger_3_tip__rubber.obj" />
+      </geometry>
+      <material name="rubber">
+        <color rgba="0.012 0.016 0.022 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0029012969 0.0036281117 -0.0064434869" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.0012404580152671756" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_finger_3_tip" type="revolute">
+    <parent link="right_finger_3_base" />
+    <child link="right_finger_3_tip" />
+    <origin xyz="-0.0018217446 -0.0022781166 -0.0059661916" />
+    <axis xyz="0.70710678 -0.70710678 0" />
+    <limit effort="0.0018" velocity="4" lower="-0.17453292519943295" upper="1.2217304763960306" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="right_finger_4_base">
+    <inertial>
+      <origin xyz="0.00091087228 -0.0011390583 -0.0029830958" />
+      <mass value="0.0006749999999999999" />
+      <inertia ixx="6.479999999999999e-09" iyy="6.479999999999999e-09" izz="6.479999999999999e-09" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_finger_4_base__metal.obj" />
+      </geometry>
+      <material name="metal">
+        <color rgba="0.3 0.39 0.46 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_finger_4_base__ivory.obj" />
+      </geometry>
+      <material name="ivory">
+        <color rgba="0.79 0.84 0.85 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00091087228 -0.0011390583 -0.0029830958" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.0009541984732824428" length="0.005250248591315876" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_finger_4_base" type="revolute">
+    <parent link="right_wrist_roll" />
+    <child link="right_finger_4_base" />
+    <origin xyz="0.0027663529 -0.0034593623 -0.0068014584" />
+    <axis xyz="0.70710678 0.70710678 0" />
+    <limit effort="0.0036" velocity="4" lower="-0.4363323129985824" upper="0.9599310885968813" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="right_finger_4_tip">
+    <inertial>
+      <origin xyz="-0.0029012969 0.0036281117 -0.0064434869" />
+      <mass value="0.000375" />
+      <inertia ixx="4.320000000000001e-09" iyy="4.320000000000001e-09" izz="4.320000000000001e-09" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_finger_4_tip__purple.obj" />
+      </geometry>
+      <material name="purple">
+        <color rgba="0.18 0.065 0.34 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_finger_4_tip__metal.obj" />
+      </geometry>
+      <material name="metal">
+        <color rgba="0.3 0.39 0.46 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/right_finger_4_tip__rubber.obj" />
+      </geometry>
+      <material name="rubber">
+        <color rgba="0.012 0.016 0.022 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0029012969 0.0036281117 -0.0064434869" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.0012404580152671756" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_finger_4_tip" type="revolute">
+    <parent link="right_finger_4_base" />
+    <child link="right_finger_4_tip" />
+    <origin xyz="0.0018217446 -0.0022781166 -0.0059661916" />
+    <axis xyz="0.70710678 0.70710678 0" />
+    <limit effort="0.0018" velocity="4" lower="-0.17453292519943295" upper="1.2217304763960306" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="left_shoulder_pitch">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.0045" />
+      <inertia ixx="4.32e-07" iyy="4.32e-07" izz="4.32e-07" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_shoulder_pitch__dark.obj" />
+      </geometry>
+      <material name="dark">
+        <color rgba="0.018 0.027 0.042 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_shoulder_pitch__metal.obj" />
+      </geometry>
+      <material name="metal">
+        <color rgba="0.3 0.39 0.46 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="left_shoulder_pitch" type="revolute">
+    <parent link="waist_pitch" />
+    <child link="left_shoulder_pitch" />
+    <origin xyz="0.042366412 0 0.036274445" />
+    <axis xyz="1 0 0" />
+    <limit effort="0.11699999999999999" velocity="4" lower="-2.8797932657906435" upper="1.0471975511965976" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="left_shoulder_roll">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.00375" />
+      <inertia ixx="4.32e-07" iyy="4.32e-07" izz="4.32e-07" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_shoulder_roll__metal.obj" />
+      </geometry>
+      <material name="metal">
+        <color rgba="0.3 0.39 0.46 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="left_shoulder_roll" type="revolute">
+    <parent link="left_shoulder_pitch" />
+    <child link="left_shoulder_roll" />
+    <origin xyz="0 0 0" />
+    <axis xyz="0 1 0" />
+    <limit effort="0.11699999999999999" velocity="4" lower="-1.6580627893946132" upper="1.6580627893946132" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="left_shoulder_yaw">
+    <inertial>
+      <origin xyz="0 0 -0.013006298" />
+      <mass value="0.027" />
+      <inertia ixx="3.024e-06" iyy="3.024e-06" izz="3.024e-06" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_shoulder_yaw__red.obj" />
+      </geometry>
+      <material name="red">
+        <color rgba="0.62 0.024 0.043 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_shoulder_yaw__ivory.obj" />
+      </geometry>
+      <material name="ivory">
+        <color rgba="0.79 0.84 0.85 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_shoulder_yaw__green.obj" />
+      </geometry>
+      <material name="green">
+        <color rgba="0.12 0.48 0.075 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.013006298" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.004961832061068702" length="0.017898574743122307" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_shoulder_yaw" type="revolute">
+    <parent link="left_shoulder_roll" />
+    <child link="left_shoulder_yaw" />
+    <origin xyz="0 0 0" />
+    <axis xyz="0 0 1" />
+    <limit effort="0.0576" velocity="4" lower="-1.9198621771937625" upper="1.9198621771937625" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="left_elbow">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.018" />
+      <inertia ixx="1.9439999999999995e-06" iyy="1.9439999999999995e-06" izz="1.9439999999999995e-06" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_elbow__green.obj" />
+      </geometry>
+      <material name="green">
+        <color rgba="0.12 0.48 0.075 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_elbow__metal.obj" />
+      </geometry>
+      <material name="metal">
+        <color rgba="0.3 0.39 0.46 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="left_elbow" type="revolute">
+    <parent link="left_shoulder_yaw" />
+    <child link="left_elbow" />
+    <origin xyz="0 0 -0.029830958" />
+    <axis xyz="1 0 0" />
+    <limit effort="0.081" velocity="4" lower="-2.530727415391778" upper="0.0" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="left_forearm_roll">
+    <inertial>
+      <origin xyz="0 0 -0.01026185" />
+      <mass value="0.012" />
+      <inertia ixx="1.512e-06" iyy="1.512e-06" izz="1.512e-06" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_forearm_roll__ivory.obj" />
+      </geometry>
+      <material name="ivory">
+        <color rgba="0.79 0.84 0.85 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_forearm_roll__purple.obj" />
+      </geometry>
+      <material name="purple">
+        <color rgba="0.18 0.065 0.34 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_forearm_roll__metal.obj" />
+      </geometry>
+      <material name="metal">
+        <color rgba="0.3 0.39 0.46 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.01026185" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.004484732824427481" length="0.016705336426914155" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_forearm_roll" type="revolute">
+    <parent link="left_elbow" />
+    <child link="left_forearm_roll" />
+    <origin xyz="0 0 -0.0031024196" />
+    <axis xyz="0 0 1" />
+    <limit effort="0.0252" velocity="4" lower="-3.141592653589793" upper="3.141592653589793" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="left_wrist_pitch">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.003" />
+      <inertia ixx="2.16e-07" iyy="2.16e-07" izz="2.16e-07" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_wrist_pitch__metal.obj" />
+      </geometry>
+      <material name="metal">
+        <color rgba="0.3 0.39 0.46 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="left_wrist_pitch" type="revolute">
+    <parent link="left_forearm_roll" />
+    <child link="left_wrist_pitch" />
+    <origin xyz="0 0 -0.0230295" />
+    <axis xyz="1 0 0" />
+    <limit effort="0.0162" velocity="4" lower="-1.2217304763960306" upper="1.2217304763960306" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="left_wrist_roll">
+    <inertial>
+      <origin xyz="0 0 -0.0041763341" />
+      <mass value="0.0052499999999999995" />
+      <inertia ixx="2.16e-07" iyy="2.16e-07" izz="2.16e-07" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_wrist_roll__dark.obj" />
+      </geometry>
+      <material name="dark">
+        <color rgba="0.018 0.027 0.042 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_wrist_roll__ivory.obj" />
+      </geometry>
+      <material name="ivory">
+        <color rgba="0.79 0.84 0.85 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_wrist_roll__purple.obj" />
+      </geometry>
+      <material name="purple">
+        <color rgba="0.18 0.065 0.34 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.0041763341" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.004484732824427481" length="0.005966191581040769" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_wrist_roll" type="revolute">
+    <parent link="left_wrist_pitch" />
+    <child link="left_wrist_roll" />
+    <origin xyz="0 0 -0.0015512098" />
+    <axis xyz="0 1 0" />
+    <limit effort="0.0126" velocity="4" lower="-0.6981317007977318" upper="0.6981317007977318" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="left_finger_1_base">
+    <inertial>
+      <origin xyz="0.00091087228 0.0011390583 -0.0029830958" />
+      <mass value="0.0006749999999999999" />
+      <inertia ixx="6.479999999999999e-09" iyy="6.479999999999999e-09" izz="6.479999999999999e-09" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_finger_1_base__metal.obj" />
+      </geometry>
+      <material name="metal">
+        <color rgba="0.3 0.39 0.46 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_finger_1_base__ivory.obj" />
+      </geometry>
+      <material name="ivory">
+        <color rgba="0.79 0.84 0.85 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00091087228 0.0011390583 -0.0029830958" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.0009541984732824428" length="0.005250248591315876" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_finger_1_base" type="revolute">
+    <parent link="left_wrist_roll" />
+    <child link="left_finger_1_base" />
+    <origin xyz="0.0027663529 0.0034593623 -0.0068014584" />
+    <axis xyz="-0.70710678 0.70710678 0" />
+    <limit effort="0.0036" velocity="4" lower="-0.4363323129985824" upper="0.9599310885968813" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="left_finger_1_tip">
+    <inertial>
+      <origin xyz="-0.0029012969 -0.0036281117 -0.0064434869" />
+      <mass value="0.000375" />
+      <inertia ixx="4.320000000000001e-09" iyy="4.320000000000001e-09" izz="4.320000000000001e-09" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_finger_1_tip__purple.obj" />
+      </geometry>
+      <material name="purple">
+        <color rgba="0.18 0.065 0.34 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_finger_1_tip__metal.obj" />
+      </geometry>
+      <material name="metal">
+        <color rgba="0.3 0.39 0.46 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_finger_1_tip__rubber.obj" />
+      </geometry>
+      <material name="rubber">
+        <color rgba="0.012 0.016 0.022 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0029012969 -0.0036281117 -0.0064434869" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.0012404580152671756" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_finger_1_tip" type="revolute">
+    <parent link="left_finger_1_base" />
+    <child link="left_finger_1_tip" />
+    <origin xyz="0.0018217446 0.0022781166 -0.0059661916" />
+    <axis xyz="-0.70710678 0.70710678 0" />
+    <limit effort="0.0018" velocity="4" lower="-0.17453292519943295" upper="1.2217304763960306" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="left_finger_2_base">
+    <inertial>
+      <origin xyz="-0.00091087228 0.0011390583 -0.0029830958" />
+      <mass value="0.0006749999999999999" />
+      <inertia ixx="6.479999999999999e-09" iyy="6.479999999999999e-09" izz="6.479999999999999e-09" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_finger_2_base__metal.obj" />
+      </geometry>
+      <material name="metal">
+        <color rgba="0.3 0.39 0.46 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_finger_2_base__ivory.obj" />
+      </geometry>
+      <material name="ivory">
+        <color rgba="0.79 0.84 0.85 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00091087228 0.0011390583 -0.0029830958" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.0009541984732824428" length="0.005250248591315876" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_finger_2_base" type="revolute">
+    <parent link="left_wrist_roll" />
+    <child link="left_finger_2_base" />
+    <origin xyz="-0.0027663529 0.0034593623 -0.0068014584" />
+    <axis xyz="-0.70710678 -0.70710678 0" />
+    <limit effort="0.0036" velocity="4" lower="-0.4363323129985824" upper="0.9599310885968813" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="left_finger_2_tip">
+    <inertial>
+      <origin xyz="0.0029012969 -0.0036281117 -0.0064434869" />
+      <mass value="0.000375" />
+      <inertia ixx="4.320000000000001e-09" iyy="4.320000000000001e-09" izz="4.320000000000001e-09" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_finger_2_tip__purple.obj" />
+      </geometry>
+      <material name="purple">
+        <color rgba="0.18 0.065 0.34 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_finger_2_tip__metal.obj" />
+      </geometry>
+      <material name="metal">
+        <color rgba="0.3 0.39 0.46 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_finger_2_tip__rubber.obj" />
+      </geometry>
+      <material name="rubber">
+        <color rgba="0.012 0.016 0.022 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0029012969 -0.0036281117 -0.0064434869" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.0012404580152671756" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_finger_2_tip" type="revolute">
+    <parent link="left_finger_2_base" />
+    <child link="left_finger_2_tip" />
+    <origin xyz="-0.0018217446 0.0022781166 -0.0059661916" />
+    <axis xyz="-0.70710678 -0.70710678 0" />
+    <limit effort="0.0018" velocity="4" lower="-0.17453292519943295" upper="1.2217304763960306" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="left_finger_3_base">
+    <inertial>
+      <origin xyz="-0.00091087228 -0.0011390583 -0.0029830958" />
+      <mass value="0.0006749999999999999" />
+      <inertia ixx="6.479999999999999e-09" iyy="6.479999999999999e-09" izz="6.479999999999999e-09" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_finger_3_base__metal.obj" />
+      </geometry>
+      <material name="metal">
+        <color rgba="0.3 0.39 0.46 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_finger_3_base__ivory.obj" />
+      </geometry>
+      <material name="ivory">
+        <color rgba="0.79 0.84 0.85 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00091087228 -0.0011390583 -0.0029830958" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.0009541984732824428" length="0.005250248591315876" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_finger_3_base" type="revolute">
+    <parent link="left_wrist_roll" />
+    <child link="left_finger_3_base" />
+    <origin xyz="-0.0027663529 -0.0034593623 -0.0068014584" />
+    <axis xyz="0.70710678 -0.70710678 0" />
+    <limit effort="0.0036" velocity="4" lower="-0.4363323129985824" upper="0.9599310885968813" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="left_finger_3_tip">
+    <inertial>
+      <origin xyz="0.0029012969 0.0036281117 -0.0064434869" />
+      <mass value="0.000375" />
+      <inertia ixx="4.320000000000001e-09" iyy="4.320000000000001e-09" izz="4.320000000000001e-09" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_finger_3_tip__purple.obj" />
+      </geometry>
+      <material name="purple">
+        <color rgba="0.18 0.065 0.34 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_finger_3_tip__metal.obj" />
+      </geometry>
+      <material name="metal">
+        <color rgba="0.3 0.39 0.46 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_finger_3_tip__rubber.obj" />
+      </geometry>
+      <material name="rubber">
+        <color rgba="0.012 0.016 0.022 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0029012969 0.0036281117 -0.0064434869" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.0012404580152671756" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_finger_3_tip" type="revolute">
+    <parent link="left_finger_3_base" />
+    <child link="left_finger_3_tip" />
+    <origin xyz="-0.0018217446 -0.0022781166 -0.0059661916" />
+    <axis xyz="0.70710678 -0.70710678 0" />
+    <limit effort="0.0018" velocity="4" lower="-0.17453292519943295" upper="1.2217304763960306" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="left_finger_4_base">
+    <inertial>
+      <origin xyz="0.00091087228 -0.0011390583 -0.0029830958" />
+      <mass value="0.0006749999999999999" />
+      <inertia ixx="6.479999999999999e-09" iyy="6.479999999999999e-09" izz="6.479999999999999e-09" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_finger_4_base__metal.obj" />
+      </geometry>
+      <material name="metal">
+        <color rgba="0.3 0.39 0.46 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_finger_4_base__ivory.obj" />
+      </geometry>
+      <material name="ivory">
+        <color rgba="0.79 0.84 0.85 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00091087228 -0.0011390583 -0.0029830958" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.0009541984732824428" length="0.005250248591315876" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_finger_4_base" type="revolute">
+    <parent link="left_wrist_roll" />
+    <child link="left_finger_4_base" />
+    <origin xyz="0.0027663529 -0.0034593623 -0.0068014584" />
+    <axis xyz="0.70710678 0.70710678 0" />
+    <limit effort="0.0036" velocity="4" lower="-0.4363323129985824" upper="0.9599310885968813" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+  <link name="left_finger_4_tip">
+    <inertial>
+      <origin xyz="-0.0029012969 0.0036281117 -0.0064434869" />
+      <mass value="0.000375" />
+      <inertia ixx="4.320000000000001e-09" iyy="4.320000000000001e-09" izz="4.320000000000001e-09" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_finger_4_tip__purple.obj" />
+      </geometry>
+      <material name="purple">
+        <color rgba="0.18 0.065 0.34 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_finger_4_tip__metal.obj" />
+      </geometry>
+      <material name="metal">
+        <color rgba="0.3 0.39 0.46 1" />
+      </material>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/left_finger_4_tip__rubber.obj" />
+      </geometry>
+      <material name="rubber">
+        <color rgba="0.012 0.016 0.022 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0029012969 0.0036281117 -0.0064434869" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.0012404580152671756" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_finger_4_tip" type="revolute">
+    <parent link="left_finger_4_base" />
+    <child link="left_finger_4_tip" />
+    <origin xyz="0.0018217446 -0.0022781166 -0.0059661916" />
+    <axis xyz="0.70710678 0.70710678 0" />
+    <limit effort="0.0018" velocity="4" lower="-0.17453292519943295" upper="1.2217304763960306" />
+    <dynamics damping=".002" friction="0" />
+  </joint>
+</robot>

@@ -1,0 +1,183 @@
+{
+  "status": "completed",
+  "algorithm": "PPO residual control",
+  "seed": 7,
+  "requested_steps": 100000,
+  "stages": [
+    "navigation",
+    "pickup",
+    "drawing",
+    "sequence"
+  ],
+  "stage": "sequence",
+  "trained_steps": 100096,
+  "elapsed_s": 495.4,
+  "evaluations": [
+    {
+      "stage": "navigation",
+      "trained_steps": 25088,
+      "success_rate": 1.0,
+      "episodes": [
+        {
+          "phase": "done",
+          "held": null,
+          "color": "black",
+          "stroke": 0,
+          "point": 0,
+          "visible": false,
+          "success": true,
+          "failure": null,
+          "time_s": 34.46000000001039,
+          "coverage": 0.0,
+          "tolerance_m": 0.03,
+          "mse_limit_m2": 0.0009,
+          "mse_m2": null,
+          "rmse_m": null,
+          "max_error_m": null
+        },
+        {
+          "phase": "done",
+          "held": null,
+          "color": "black",
+          "stroke": 0,
+          "point": 0,
+          "visible": false,
+          "success": true,
+          "failure": null,
+          "time_s": 32.42000000001514,
+          "coverage": 0.0,
+          "tolerance_m": 0.03,
+          "mse_limit_m2": 0.0009,
+          "mse_m2": null,
+          "rmse_m": null,
+          "max_error_m": null
+        }
+      ]
+    },
+    {
+      "stage": "pickup",
+      "trained_steps": 50176,
+      "success_rate": 1.0,
+      "episodes": [
+        {
+          "phase": "done",
+          "held": "black",
+          "color": "black",
+          "stroke": 0,
+          "point": 0,
+          "visible": false,
+          "success": true,
+          "failure": null,
+          "time_s": 0.9000000000000007,
+          "coverage": 0.0,
+          "tolerance_m": 0.03,
+          "mse_limit_m2": 0.0009,
+          "mse_m2": null,
+          "rmse_m": null,
+          "max_error_m": null
+        },
+        {
+          "phase": "done",
+          "held": "black",
+          "color": "black",
+          "stroke": 0,
+          "point": 0,
+          "visible": false,
+          "success": true,
+          "failure": null,
+          "time_s": 0.9000000000000007,
+          "coverage": 0.0,
+          "tolerance_m": 0.03,
+          "mse_limit_m2": 0.0009,
+          "mse_m2": null,
+          "rmse_m": null,
+          "max_error_m": null
+        }
+      ]
+    },
+    {
+      "stage": "drawing",
+      "trained_steps": 75264,
+      "success_rate": 1.0,
+      "episodes": [
+        {
+          "phase": "done",
+          "held": "black",
+          "color": "black",
+          "stroke": 0,
+          "point": 78,
+          "visible": true,
+          "success": true,
+          "failure": null,
+          "time_s": 1.759999999999917,
+          "coverage": 0.04890282131661442,
+          "tolerance_m": 0.03,
+          "mse_limit_m2": 0.0009,
+          "mse_m2": 0.0002900800207010054,
+          "rmse_m": 0.01703173569255363,
+          "max_error_m": 0.025216235598766325
+        },
+        {
+          "phase": "done",
+          "held": "black",
+          "color": "black",
+          "stroke": 0,
+          "point": 78,
+          "visible": true,
+          "success": true,
+          "failure": null,
+          "time_s": 1.859999999999906,
+          "coverage": 0.04890282131661442,
+          "tolerance_m": 0.03,
+          "mse_limit_m2": 0.0009,
+          "mse_m2": 0.0002857866028810656,
+          "rmse_m": 0.01690522412986783,
+          "max_error_m": 0.025216280432432518
+        }
+      ]
+    },
+    {
+      "stage": "sequence",
+      "trained_steps": 100096,
+      "success_rate": 0.0,
+      "episodes": [
+        {
+          "phase": "reach_pick",
+          "held": null,
+          "color": "red",
+          "stroke": 9,
+          "point": 0,
+          "visible": true,
+          "success": false,
+          "failure": "phase_timeout_reach_pick",
+          "time_s": 274.44000000042223,
+          "coverage": 0.18557993730407524,
+          "tolerance_m": 0.03,
+          "mse_limit_m2": 0.0009,
+          "mse_m2": 0.00015175125024234726,
+          "rmse_m": 0.012318735740421874,
+          "max_error_m": 0.022540334092450657
+        },
+        {
+          "phase": "reach_pick",
+          "held": null,
+          "color": "red",
+          "stroke": 9,
+          "point": 0,
+          "visible": true,
+          "success": false,
+          "failure": "phase_timeout_reach_pick",
+          "time_s": 283.3800000002108,
+          "coverage": 0.18557993730407524,
+          "tolerance_m": 0.03,
+          "mse_limit_m2": 0.0009,
+          "mse_m2": 0.00015305842265332648,
+          "rmse_m": 0.012371678247243842,
+          "max_error_m": 0.022533491447328784
+        }
+      ]
+    }
+  ],
+  "policy_ready": false,
+  "needs_more_training": "sequence"
+}

@@ -1,0 +1,173 @@
+{
+  "layer_mm": 0.25,
+  "nozzle_mm": 0.4,
+  "vase_width_mm": 0.6,
+  "parts": {
+    "01_flat_wall_test_VASE_SOLID": {
+      "dimensions_mm": [
+        50.0,
+        32.0,
+        20.0
+      ],
+      "volume_mm3": 31982.652572186915,
+      "watertight": true,
+      "connected_components": 1,
+      "bed_contact_area_mm2": 1599.1326286093458
+    },
+    "02_faceted_shell_VASE_SOLID": {
+      "dimensions_mm": [
+        55.0,
+        42.0,
+        26.0
+      ],
+      "volume_mm3": 39823.22931262076,
+      "watertight": true,
+      "connected_components": 1,
+      "bed_contact_area_mm2": 2144.785286412475
+    },
+    "03_shared_cap_NORMAL": {
+      "dimensions_mm": [
+        40.57692308,
+        31.57692308,
+        6.25
+      ],
+      "volume_mm3": 4488.131704219023,
+      "watertight": true,
+      "connected_components": 1,
+      "bed_contact_area_mm2": 1052.9170683063924
+    },
+    "04_shared_adapter_NORMAL": {
+      "dimensions_mm": [
+        60.0,
+        60.0,
+        2.25
+      ],
+      "volume_mm3": 2052.4825953599516,
+      "watertight": true,
+      "connected_components": 1,
+      "bed_contact_area_mm2": 1972.8073106623815
+    },
+    "05_sheet_window_hood_NORMAL": {
+      "dimensions_mm": [
+        55.0,
+        42.0,
+        26.0
+      ],
+      "volume_mm3": 3399.103181450691,
+      "watertight": true,
+      "connected_components": 1,
+      "bed_contact_area_mm2": 179.75364263607216
+    },
+    "06_sheet_retainer_NORMAL": {
+      "dimensions_mm": [
+        39.70000000298023,
+        25.51167293637991,
+        1.0
+      ],
+      "volume_mm3": 134.8515540919378,
+      "watertight": true,
+      "connected_components": 1,
+      "bed_contact_area_mm2": 134.8515540919378
+    }
+  },
+  "intersection_volumes_mm3": {
+    "faceted_shell": 0.0,
+    "shared_cap": 0.0,
+    "shared_adapter": 0.001736881513627172,
+    "sheet_hood": 0.0,
+    "clear_sheet_NOT_FOR_PRINTING": 0.0,
+    "sheet_retainer": 0.0,
+    "faceted_shell/shared_adapter": -1.556046957951196e-15,
+    "faceted_shell/shared_cap": 0.0,
+    "shared_adapter/shared_cap": 0.0,
+    "sheet_hood/clear_sheet_NOT_FOR_PRINTING": 0.0,
+    "sheet_hood/sheet_retainer": 0.0,
+    "sheet_hood/shared_adapter": -6.192962809237201e-16,
+    "sheet_hood/shared_cap": 0.0,
+    "clear_sheet_NOT_FOR_PRINTING/sheet_retainer": 0.0,
+    "clear_sheet_NOT_FOR_PRINTING/shared_adapter": 0.0,
+    "clear_sheet_NOT_FOR_PRINTING/shared_cap": 0.0,
+    "sheet_retainer/shared_adapter": 0.0,
+    "sheet_retainer/shared_cap": 0.0
+  },
+  "front_panel_base_width_mm": 40,
+  "front_panel_top_width_mm": 27.2,
+  "front_panel_tilt_deg": 14.491619410149571,
+  "faceted_shell_print_height_mm": 26.0,
+  "overall_cover_height_mm": 33.5,
+  "adapter_bore_diameter_mm": 55.8,
+  "adapter_lip_vertical_clearance_mm": 0.3,
+  "cap_eye_vertical_clearance_mm": 1.05,
+  "minimum_cap_material_outside_groove_mm": 0.6055483189081335,
+  "max_face_inward_step_per_layer_mm": 0.0846153846153846,
+  "sheet_thickness_mm": 0.5,
+  "sheet_rebate_depth_mm": 0.6,
+  "sheet_edge_clearance_mm": 0.2,
+  "sheet_outline_x_v_mm": [
+    [
+      12.600000001490116,
+      26.85439256578684
+    ],
+    [
+      -12.600000001490116,
+      26.85439256578684
+    ],
+    [
+      -18.940419428050518,
+      0.25
+    ],
+    [
+      18.940419428050518,
+      0.25
+    ]
+  ],
+  "sheet_dimensions_mm": [
+    37.88083886119068,
+    25.200000000000003,
+    26.604392564345964
+  ],
+  "face_visibility_checks": [
+    {
+      "feature": "left eye outer top",
+      "plane_offset_mm": -0.5,
+      "visible": true
+    },
+    {
+      "feature": "left eye outer top",
+      "plane_offset_mm": 1.1,
+      "visible": true
+    },
+    {
+      "feature": "right eye outer top",
+      "plane_offset_mm": -0.5,
+      "visible": true
+    },
+    {
+      "feature": "right eye outer top",
+      "plane_offset_mm": 1.1,
+      "visible": true
+    },
+    {
+      "feature": "mouth lower left",
+      "plane_offset_mm": -0.5,
+      "visible": true
+    },
+    {
+      "feature": "mouth lower left",
+      "plane_offset_mm": 1.1,
+      "visible": true
+    },
+    {
+      "feature": "mouth lower right",
+      "plane_offset_mm": -0.5,
+      "visible": true
+    },
+    {
+      "feature": "mouth lower right",
+      "plane_offset_mm": 1.1,
+      "visible": true
+    }
+  ],
+  "physical_test": "Not performed. The previous curved vase dome improved clarity but distorted the image, per user feedback.",
+  "head_sha256": "0fbe37a81d93730ae701bf340463cc046d4857f14c4b5f130a302357ac1541bb"
+}

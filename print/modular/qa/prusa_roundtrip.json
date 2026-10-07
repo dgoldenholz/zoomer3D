@@ -1,0 +1,46 @@
+{
+  "XL_dome_PETG.3mf": {
+    "objects": 1,
+    "volumes": 1,
+    "repairs": {
+      "edges_fixed": 0,
+      "degenerate_facets": 0,
+      "facets_removed": 0,
+      "facets_reversed": 0,
+      "backwards_edges": 0
+    }
+  },
+  "XL_main_single_material.3mf": {
+    "objects": 11,
+    "volumes": 11,
+    "repairs": {
+      "edges_fixed": 0,
+      "degenerate_facets": 0,
+      "facets_removed": 0,
+      "facets_reversed": 0,
+      "backwards_edges": 0
+    }
+  },
+  "XL_main_five_color.3mf": {
+    "objects": 11,
+    "volumes": 33,
+    "repairs": {
+      "edges_fixed": 0,
+      "degenerate_facets": 0,
+      "facets_removed": 0,
+      "facets_reversed": 0,
+      "backwards_edges": 0
+    }
+  },
+  "XL_fit_coupons.3mf": {
+    "objects": 5,
+    "volumes": 5,
+    "repairs": {
+      "edges_fixed": 0,
+      "degenerate_facets": 0,
+      "facets_removed": 0,
+      "facets_reversed": 0,
+      "backwards_edges": 0
+    }
+  }
+}

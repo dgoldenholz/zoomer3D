@@ -1,0 +1,675 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="zoomer_fixed">
+  <compiler angle="radian" meshdir="meshes" autolimits="true" balanceinertia="true" />
+  <option timestep=".001" integrator="implicitfast" cone="elliptic" iterations="80" />
+  <default>
+    <joint damping=".002" armature=".000001" />
+    <geom solref=".008 1" solimp=".95 .99 .001" friction="1 .005 .0001" />
+  </default>
+  <asset>
+    <material name="ivory" rgba="0.79 0.84 0.85 1" specular=".4" shininess=".4" />
+    <material name="red" rgba="0.62 0.024 0.043 1" specular=".4" shininess=".4" />
+    <material name="blue" rgba="0.035 0.13 0.55 1" specular=".4" shininess=".4" />
+    <material name="purple" rgba="0.18 0.065 0.34 1" specular=".4" shininess=".4" />
+    <material name="green" rgba="0.12 0.48 0.075 1" specular=".4" shininess=".4" />
+    <material name="dark" rgba="0.018 0.027 0.042 1" specular=".4" shininess=".4" />
+    <material name="rubber" rgba="0.012 0.016 0.022 1" specular=".4" shininess=".4" />
+    <material name="metal" rgba="0.3 0.39 0.46 1" specular=".4" shininess=".4" />
+    <material name="glass" rgba="0.55 0.86 0.96 0.16" specular=".4" shininess=".4" />
+    <material name="cyan" rgba="0.015 0.65 0.92 1" specular=".4" shininess=".4" />
+    <material name="white" rgba="0.95 0.97 1 1" specular=".4" shininess=".4" />
+    <material name="amber" rgba="1 0.35 0.018 1" specular=".4" shininess=".4" />
+    <mesh name="m0" file="base__blue.obj" />
+    <mesh name="m1" file="base__red.obj" />
+    <mesh name="m2" file="base__ivory.obj" />
+    <mesh name="m3" file="base__metal.obj" />
+    <mesh name="m4" file="base__cyan.obj" />
+    <mesh name="m5" file="base__dark.obj" />
+    <mesh name="m6" file="base__green.obj" />
+    <mesh name="m7" file="base__rubber.obj" />
+    <mesh name="m8" file="right_drive__rubber.obj" />
+    <mesh name="m9" file="right_drive__blue.obj" />
+    <mesh name="m10" file="right_drive__dark.obj" />
+    <mesh name="m11" file="right_idler_1__rubber.obj" />
+    <mesh name="m12" file="right_idler_1__blue.obj" />
+    <mesh name="m13" file="right_idler_1__dark.obj" />
+    <mesh name="m14" file="right_idler_2__rubber.obj" />
+    <mesh name="m15" file="right_idler_2__blue.obj" />
+    <mesh name="m16" file="right_idler_2__dark.obj" />
+    <mesh name="m17" file="right_idler_3__rubber.obj" />
+    <mesh name="m18" file="right_idler_3__blue.obj" />
+    <mesh name="m19" file="right_idler_3__dark.obj" />
+    <mesh name="m20" file="right_idler_4__rubber.obj" />
+    <mesh name="m21" file="right_idler_4__blue.obj" />
+    <mesh name="m22" file="right_idler_4__dark.obj" />
+    <mesh name="m23" file="right_return_1__rubber.obj" />
+    <mesh name="m24" file="right_return_1__blue.obj" />
+    <mesh name="m25" file="right_return_1__dark.obj" />
+    <mesh name="m26" file="right_return_2__rubber.obj" />
+    <mesh name="m27" file="right_return_2__blue.obj" />
+    <mesh name="m28" file="right_return_2__dark.obj" />
+    <mesh name="m29" file="right_return_3__rubber.obj" />
+    <mesh name="m30" file="right_return_3__blue.obj" />
+    <mesh name="m31" file="right_return_3__dark.obj" />
+    <mesh name="m32" file="left_drive__rubber.obj" />
+    <mesh name="m33" file="left_drive__blue.obj" />
+    <mesh name="m34" file="left_drive__dark.obj" />
+    <mesh name="m35" file="left_idler_1__rubber.obj" />
+    <mesh name="m36" file="left_idler_1__blue.obj" />
+    <mesh name="m37" file="left_idler_1__dark.obj" />
+    <mesh name="m38" file="left_idler_2__rubber.obj" />
+    <mesh name="m39" file="left_idler_2__blue.obj" />
+    <mesh name="m40" file="left_idler_2__dark.obj" />
+    <mesh name="m41" file="left_idler_3__rubber.obj" />
+    <mesh name="m42" file="left_idler_3__blue.obj" />
+    <mesh name="m43" file="left_idler_3__dark.obj" />
+    <mesh name="m44" file="left_idler_4__rubber.obj" />
+    <mesh name="m45" file="left_idler_4__blue.obj" />
+    <mesh name="m46" file="left_idler_4__dark.obj" />
+    <mesh name="m47" file="left_return_1__rubber.obj" />
+    <mesh name="m48" file="left_return_1__blue.obj" />
+    <mesh name="m49" file="left_return_1__dark.obj" />
+    <mesh name="m50" file="left_return_2__rubber.obj" />
+    <mesh name="m51" file="left_return_2__blue.obj" />
+    <mesh name="m52" file="left_return_2__dark.obj" />
+    <mesh name="m53" file="left_return_3__rubber.obj" />
+    <mesh name="m54" file="left_return_3__blue.obj" />
+    <mesh name="m55" file="left_return_3__dark.obj" />
+    <mesh name="m56" file="waist_yaw__dark.obj" />
+    <mesh name="m57" file="waist_yaw__red.obj" />
+    <mesh name="m58" file="waist_pitch__metal.obj" />
+    <mesh name="m59" file="waist_pitch__ivory.obj" />
+    <mesh name="m60" file="waist_pitch__red.obj" />
+    <mesh name="m61" file="waist_pitch__dark.obj" />
+    <mesh name="m62" file="waist_pitch__cyan.obj" />
+    <mesh name="m63" file="waist_pitch__green.obj" />
+    <mesh name="m64" file="waist_pitch__blue.obj" />
+    <mesh name="m65" file="waist_pitch__purple.obj" />
+    <mesh name="m66" file="head_yaw__dark.obj" />
+    <mesh name="m67" file="head_yaw__metal.obj" />
+    <mesh name="m68" file="head_yaw__glass.obj" />
+    <mesh name="m69" file="head_yaw__purple.obj" />
+    <mesh name="m70" file="head_yaw__green.obj" />
+    <mesh name="m71" file="head_yaw__blue.obj" />
+    <mesh name="m72" file="head_yaw__ivory.obj" />
+    <mesh name="m73" file="head_yaw__red.obj" />
+    <mesh name="m74" file="head_yaw__cyan.obj" />
+    <mesh name="m75" file="head_yaw__white.obj" />
+    <mesh name="m76" file="right_shoulder_pitch__dark.obj" />
+    <mesh name="m77" file="right_shoulder_pitch__metal.obj" />
+    <mesh name="m78" file="right_shoulder_roll__metal.obj" />
+    <mesh name="m79" file="right_shoulder_yaw__red.obj" />
+    <mesh name="m80" file="right_shoulder_yaw__ivory.obj" />
+    <mesh name="m81" file="right_shoulder_yaw__green.obj" />
+    <mesh name="m82" file="right_elbow__green.obj" />
+    <mesh name="m83" file="right_elbow__metal.obj" />
+    <mesh name="m84" file="right_forearm_roll__ivory.obj" />
+    <mesh name="m85" file="right_forearm_roll__purple.obj" />
+    <mesh name="m86" file="right_forearm_roll__metal.obj" />
+    <mesh name="m87" file="right_wrist_pitch__metal.obj" />
+    <mesh name="m88" file="right_wrist_roll__dark.obj" />
+    <mesh name="m89" file="right_wrist_roll__ivory.obj" />
+    <mesh name="m90" file="right_wrist_roll__purple.obj" />
+    <mesh name="m91" file="right_finger_1_base__metal.obj" />
+    <mesh name="m92" file="right_finger_1_base__ivory.obj" />
+    <mesh name="m93" file="right_finger_1_tip__purple.obj" />
+    <mesh name="m94" file="right_finger_1_tip__metal.obj" />
+    <mesh name="m95" file="right_finger_1_tip__rubber.obj" />
+    <mesh name="m96" file="right_finger_2_base__metal.obj" />
+    <mesh name="m97" file="right_finger_2_base__ivory.obj" />
+    <mesh name="m98" file="right_finger_2_tip__purple.obj" />
+    <mesh name="m99" file="right_finger_2_tip__metal.obj" />
+    <mesh name="m100" file="right_finger_2_tip__rubber.obj" />
+    <mesh name="m101" file="right_finger_3_base__metal.obj" />
+    <mesh name="m102" file="right_finger_3_base__ivory.obj" />
+    <mesh name="m103" file="right_finger_3_tip__purple.obj" />
+    <mesh name="m104" file="right_finger_3_tip__metal.obj" />
+    <mesh name="m105" file="right_finger_3_tip__rubber.obj" />
+    <mesh name="m106" file="right_finger_4_base__metal.obj" />
+    <mesh name="m107" file="right_finger_4_base__ivory.obj" />
+    <mesh name="m108" file="right_finger_4_tip__purple.obj" />
+    <mesh name="m109" file="right_finger_4_tip__metal.obj" />
+    <mesh name="m110" file="right_finger_4_tip__rubber.obj" />
+    <mesh name="m111" file="left_shoulder_pitch__dark.obj" />
+    <mesh name="m112" file="left_shoulder_pitch__metal.obj" />
+    <mesh name="m113" file="left_shoulder_roll__metal.obj" />
+    <mesh name="m114" file="left_shoulder_yaw__red.obj" />
+    <mesh name="m115" file="left_shoulder_yaw__ivory.obj" />
+    <mesh name="m116" file="left_shoulder_yaw__green.obj" />
+    <mesh name="m117" file="left_elbow__green.obj" />
+    <mesh name="m118" file="left_elbow__metal.obj" />
+    <mesh name="m119" file="left_forearm_roll__ivory.obj" />
+    <mesh name="m120" file="left_forearm_roll__purple.obj" />
+    <mesh name="m121" file="left_forearm_roll__metal.obj" />
+    <mesh name="m122" file="left_wrist_pitch__metal.obj" />
+    <mesh name="m123" file="left_wrist_roll__dark.obj" />
+    <mesh name="m124" file="left_wrist_roll__ivory.obj" />
+    <mesh name="m125" file="left_wrist_roll__purple.obj" />
+    <mesh name="m126" file="left_finger_1_base__metal.obj" />
+    <mesh name="m127" file="left_finger_1_base__ivory.obj" />
+    <mesh name="m128" file="left_finger_1_tip__purple.obj" />
+    <mesh name="m129" file="left_finger_1_tip__metal.obj" />
+    <mesh name="m130" file="left_finger_1_tip__rubber.obj" />
+    <mesh name="m131" file="left_finger_2_base__metal.obj" />
+    <mesh name="m132" file="left_finger_2_base__ivory.obj" />
+    <mesh name="m133" file="left_finger_2_tip__purple.obj" />
+    <mesh name="m134" file="left_finger_2_tip__metal.obj" />
+    <mesh name="m135" file="left_finger_2_tip__rubber.obj" />
+    <mesh name="m136" file="left_finger_3_base__metal.obj" />
+    <mesh name="m137" file="left_finger_3_base__ivory.obj" />
+    <mesh name="m138" file="left_finger_3_tip__purple.obj" />
+    <mesh name="m139" file="left_finger_3_tip__metal.obj" />
+    <mesh name="m140" file="left_finger_3_tip__rubber.obj" />
+    <mesh name="m141" file="left_finger_4_base__metal.obj" />
+    <mesh name="m142" file="left_finger_4_base__ivory.obj" />
+    <mesh name="m143" file="left_finger_4_tip__purple.obj" />
+    <mesh name="m144" file="left_finger_4_tip__metal.obj" />
+    <mesh name="m145" file="left_finger_4_tip__rubber.obj" />
+  </asset>
+  <worldbody>
+    <light pos="0 -.5 1" dir="0 .4 -1" diffuse=".9 .9 .9" />
+    <geom name="floor" type="plane" pos="0 0 -0.0030142526" size="1 1 .01" rgba=".12 .16 .21 1" contype="1" conaffinity="3" />
+    <camera name="overview" pos=".32 -.50 .28" xyaxes="1 .5 0 -.17 .34 .94" />
+    <camera name="front" pos="0 -.5 .12" xyaxes="1 0 0 0 0 1" />
+    <body name="base" pos="0 0 0.019091813">
+      <inertial pos="0 0 0.025058005" mass="0.36" diaginertia="0.0001512 0.0001512 0.0001512" />
+      <geom name="v0" type="mesh" mesh="m0" material="blue" contype="0" conaffinity="0" group="2" density="0" />
+      <geom name="v1" type="mesh" mesh="m1" material="red" contype="0" conaffinity="0" group="2" density="0" />
+      <geom name="v2" type="mesh" mesh="m2" material="ivory" contype="0" conaffinity="0" group="2" density="0" />
+      <geom name="v3" type="mesh" mesh="m3" material="metal" contype="0" conaffinity="0" group="2" density="0" />
+      <geom name="v4" type="mesh" mesh="m4" material="cyan" contype="0" conaffinity="0" group="2" density="0" />
+      <geom name="v5" type="mesh" mesh="m5" material="dark" contype="0" conaffinity="0" group="2" density="0" />
+      <geom name="v6" type="mesh" mesh="m6" material="green" contype="0" conaffinity="0" group="2" density="0" />
+      <geom name="v7" type="mesh" mesh="m7" material="rubber" contype="0" conaffinity="0" group="2" density="0" />
+      <geom name="base_collision_0" type="box" pos="0 0 0.0035797149" size="0.023854962 0.025654624 0.0089492874" quat="1 0 0 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+      <geom name="base_collision_1" type="cylinder" pos="0 0 0.046536294" size="0.0057251908 0.026847862" quat="1 0 0 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+      <body name="right_drive" pos="-0.026908397 -0.025710798 -0.011228373">
+        <inertial pos="0 0 0" mass="0.006" diaginertia="9.72e-08 9.72e-08 9.72e-08" />
+        <joint name="right_drive" axis="1 0 0" type="hinge" limited="false" />
+        <geom name="v8" type="mesh" mesh="m8" material="rubber" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="v9" type="mesh" mesh="m9" material="blue" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="v10" type="mesh" mesh="m10" material="dark" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="right_drive_collision_0" type="cylinder" pos="0 0 0" size="0.0088776931 0.0044847328" quat="0.70710678 0 0.70710678 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+      </body>
+      <body name="right_idler_1" pos="-0.026908397 -0.010537212 -0.011619755">
+        <inertial pos="0 0 0" mass="0.006" diaginertia="9.72e-08 9.72e-08 9.72e-08" />
+        <joint name="right_idler_1" axis="1 0 0" type="hinge" limited="false" />
+        <geom name="v11" type="mesh" mesh="m11" material="rubber" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="v12" type="mesh" mesh="m12" material="blue" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="v13" type="mesh" mesh="m13" material="dark" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="right_idler_1_collision_0" type="cylinder" pos="0 0 0" size="0.0084863109 0.0044847328" quat="0.70710678 0 0.70710678 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+      </body>
+      <body name="right_idler_2" pos="-0.026908397 0.0021074424 -0.010641299">
+        <inertial pos="0 0 0" mass="0.006" diaginertia="9.72e-08 9.72e-08 9.72e-08" />
+        <joint name="right_idler_2" axis="1 0 0" type="hinge" limited="false" />
+        <geom name="v14" type="mesh" mesh="m14" material="rubber" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="v15" type="mesh" mesh="m15" material="blue" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="v16" type="mesh" mesh="m16" material="dark" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="right_idler_2_collision_0" type="cylinder" pos="0 0 0" size="0.0094647663 0.0044847328" quat="0.70710678 0 0.70710678 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+      </body>
+      <body name="right_idler_3" pos="-0.026908397 0.014330609 -0.010641299">
+        <inertial pos="0 0 0" mass="0.006" diaginertia="9.72e-08 9.72e-08 9.72e-08" />
+        <joint name="right_idler_3" axis="1 0 0" type="hinge" limited="false" />
+        <geom name="v17" type="mesh" mesh="m17" material="rubber" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="v18" type="mesh" mesh="m18" material="blue" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="v19" type="mesh" mesh="m19" material="dark" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="right_idler_3_collision_0" type="cylinder" pos="0 0 0" size="0.0094647663 0.0044847328" quat="0.70710678 0 0.70710678 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+      </body>
+      <body name="right_idler_4" pos="-0.026908397 0.026764519 -0.0088800795">
+        <inertial pos="0 0 0" mass="0.006" diaginertia="9.72e-08 9.72e-08 9.72e-08" />
+        <joint name="right_idler_4" axis="1 0 0" type="hinge" limited="false" />
+        <geom name="v20" type="mesh" mesh="m20" material="rubber" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="v21" type="mesh" mesh="m21" material="blue" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="v22" type="mesh" mesh="m22" material="dark" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="right_idler_4_collision_0" type="cylinder" pos="0 0 0" size="0.006433941 0.0044847328" quat="0.70710678 0 0.70710678 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+      </body>
+      <body name="right_return_1" pos="-0.026908397 -0.018334749 -7.3980776e-05">
+        <inertial pos="0 0 0" mass="0.003" diaginertia="3.456e-08 3.456e-08 3.456e-08" />
+        <joint name="right_return_1" axis="1 0 0" type="hinge" limited="false" />
+        <geom name="v23" type="mesh" mesh="m23" material="rubber" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="v24" type="mesh" mesh="m24" material="blue" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="v25" type="mesh" mesh="m25" material="dark" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="right_return_1_collision_0" type="cylinder" pos="0 0 0" size="0.0060124525 0.0044847328" quat="0.70710678 0 0.70710678 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+      </body>
+      <body name="right_return_2" pos="-0.026908397 -0.0061115831 -0.00026967186">
+        <inertial pos="0 0 0" mass="0.003" diaginertia="3.456e-08 3.456e-08 3.456e-08" />
+        <joint name="right_return_2" axis="1 0 0" type="hinge" limited="false" />
+        <geom name="v26" type="mesh" mesh="m26" material="rubber" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="v27" type="mesh" mesh="m27" material="blue" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="v28" type="mesh" mesh="m28" material="dark" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="right_return_2_collision_0" type="cylinder" pos="0 0 0" size="0.0058017083 0.0044847328" quat="0.70710678 0 0.70710678 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+      </body>
+      <body name="right_return_3" pos="-0.026908397 0.0065330716 0.00012171031">
+        <inertial pos="0 0 0" mass="0.003" diaginertia="3.456e-08 3.456e-08 3.456e-08" />
+        <joint name="right_return_3" axis="1 0 0" type="hinge" limited="false" />
+        <geom name="v29" type="mesh" mesh="m29" material="rubber" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="v30" type="mesh" mesh="m30" material="blue" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="v31" type="mesh" mesh="m31" material="dark" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="right_return_3_collision_0" type="cylinder" pos="0 0 0" size="0.005590964 0.0044847328" quat="0.70710678 0 0.70710678 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+      </body>
+      <body name="left_drive" pos="0.026908397 -0.025710798 -0.011228373">
+        <inertial pos="0 0 0" mass="0.006" diaginertia="9.72e-08 9.72e-08 9.72e-08" />
+        <joint name="left_drive" axis="1 0 0" type="hinge" limited="false" />
+        <geom name="v32" type="mesh" mesh="m32" material="rubber" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="v33" type="mesh" mesh="m33" material="blue" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="v34" type="mesh" mesh="m34" material="dark" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="left_drive_collision_0" type="cylinder" pos="0 0 0" size="0.0088776931 0.0044847328" quat="0.70710678 0 0.70710678 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+      </body>
+      <body name="left_idler_1" pos="0.026908397 -0.010537212 -0.011619755">
+        <inertial pos="0 0 0" mass="0.006" diaginertia="9.72e-08 9.72e-08 9.72e-08" />
+        <joint name="left_idler_1" axis="1 0 0" type="hinge" limited="false" />
+        <geom name="v35" type="mesh" mesh="m35" material="rubber" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="v36" type="mesh" mesh="m36" material="blue" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="v37" type="mesh" mesh="m37" material="dark" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="left_idler_1_collision_0" type="cylinder" pos="0 0 0" size="0.0084863109 0.0044847328" quat="0.70710678 0 0.70710678 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+      </body>
+      <body name="left_idler_2" pos="0.026908397 0.0021074424 -0.010641299">
+        <inertial pos="0 0 0" mass="0.006" diaginertia="9.72e-08 9.72e-08 9.72e-08" />
+        <joint name="left_idler_2" axis="1 0 0" type="hinge" limited="false" />
+        <geom name="v38" type="mesh" mesh="m38" material="rubber" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="v39" type="mesh" mesh="m39" material="blue" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="v40" type="mesh" mesh="m40" material="dark" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="left_idler_2_collision_0" type="cylinder" pos="0 0 0" size="0.0094647663 0.0044847328" quat="0.70710678 0 0.70710678 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+      </body>
+      <body name="left_idler_3" pos="0.026908397 0.014330609 -0.010641299">
+        <inertial pos="0 0 0" mass="0.006" diaginertia="9.72e-08 9.72e-08 9.72e-08" />
+        <joint name="left_idler_3" axis="1 0 0" type="hinge" limited="false" />
+        <geom name="v41" type="mesh" mesh="m41" material="rubber" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="v42" type="mesh" mesh="m42" material="blue" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="v43" type="mesh" mesh="m43" material="dark" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="left_idler_3_collision_0" type="cylinder" pos="0 0 0" size="0.0094647663 0.0044847328" quat="0.70710678 0 0.70710678 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+      </body>
+      <body name="left_idler_4" pos="0.026908397 0.026764519 -0.0088800795">
+        <inertial pos="0 0 0" mass="0.006" diaginertia="9.72e-08 9.72e-08 9.72e-08" />
+        <joint name="left_idler_4" axis="1 0 0" type="hinge" limited="false" />
+        <geom name="v44" type="mesh" mesh="m44" material="rubber" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="v45" type="mesh" mesh="m45" material="blue" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="v46" type="mesh" mesh="m46" material="dark" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="left_idler_4_collision_0" type="cylinder" pos="0 0 0" size="0.006433941 0.0044847328" quat="0.70710678 0 0.70710678 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+      </body>
+      <body name="left_return_1" pos="0.026908397 -0.018334749 -7.3980776e-05">
+        <inertial pos="0 0 0" mass="0.003" diaginertia="3.456e-08 3.456e-08 3.456e-08" />
+        <joint name="left_return_1" axis="1 0 0" type="hinge" limited="false" />
+        <geom name="v47" type="mesh" mesh="m47" material="rubber" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="v48" type="mesh" mesh="m48" material="blue" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="v49" type="mesh" mesh="m49" material="dark" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="left_return_1_collision_0" type="cylinder" pos="0 0 0" size="0.0060124525 0.0044847328" quat="0.70710678 0 0.70710678 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+      </body>
+      <body name="left_return_2" pos="0.026908397 -0.0061115831 -0.00026967186">
+        <inertial pos="0 0 0" mass="0.003" diaginertia="3.456e-08 3.456e-08 3.456e-08" />
+        <joint name="left_return_2" axis="1 0 0" type="hinge" limited="false" />
+        <geom name="v50" type="mesh" mesh="m50" material="rubber" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="v51" type="mesh" mesh="m51" material="blue" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="v52" type="mesh" mesh="m52" material="dark" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="left_return_2_collision_0" type="cylinder" pos="0 0 0" size="0.0058017083 0.0044847328" quat="0.70710678 0 0.70710678 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+      </body>
+      <body name="left_return_3" pos="0.026908397 0.0065330716 0.00012171031">
+        <inertial pos="0 0 0" mass="0.003" diaginertia="3.456e-08 3.456e-08 3.456e-08" />
+        <joint name="left_return_3" axis="1 0 0" type="hinge" limited="false" />
+        <geom name="v53" type="mesh" mesh="m53" material="rubber" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="v54" type="mesh" mesh="m54" material="blue" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="v55" type="mesh" mesh="m55" material="dark" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="left_return_3_collision_0" type="cylinder" pos="0 0 0" size="0.005590964 0.0044847328" quat="0.70710678 0 0.70710678 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+      </body>
+      <body name="waist_yaw" pos="0 0 0.075174014">
+        <inertial pos="0 0 0" mass="0.0225" diaginertia="5.4e-06 5.4e-06 5.4e-06" />
+        <joint name="waist_yaw" axis="0 0 1" type="hinge" limited="false" />
+        <geom name="v56" type="mesh" mesh="m56" material="dark" contype="0" conaffinity="0" group="2" density="0" />
+        <geom name="v57" type="mesh" mesh="m57" material="red" contype="0" conaffinity="0" group="2" density="0" />
+        <body name="waist_pitch" pos="0 0 0.0053695724">
+          <inertial pos="0 0 0.027444481" mass="0.135" diaginertia="7.56e-05 7.56e-05 7.56e-05" />
+          <joint name="waist_pitch" axis="1 0 0" type="hinge" range="-0.43633231 0.43633231" />
+          <geom name="v58" type="mesh" mesh="m58" material="metal" contype="0" conaffinity="0" group="2" density="0" />
+          <geom name="v59" type="mesh" mesh="m59" material="ivory" contype="0" conaffinity="0" group="2" density="0" />
+          <geom name="v60" type="mesh" mesh="m60" material="red" contype="0" conaffinity="0" group="2" density="0" />
+          <geom name="v61" type="mesh" mesh="m61" material="dark" contype="0" conaffinity="0" group="2" density="0" />
+          <geom name="v62" type="mesh" mesh="m62" material="cyan" contype="0" conaffinity="0" group="2" density="0" />
+          <geom name="v63" type="mesh" mesh="m63" material="green" contype="0" conaffinity="0" group="2" density="0" />
+          <geom name="v64" type="mesh" mesh="m64" material="blue" contype="0" conaffinity="0" group="2" density="0" />
+          <geom name="v65" type="mesh" mesh="m65" material="purple" contype="0" conaffinity="0" group="2" density="0" />
+          <geom name="waist_pitch_collision_0" type="box" pos="0 0 0.027444481" size="0.03101145 0.016407027 0.017898575" quat="1 0 0 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+          <body name="head_yaw" pos="0 0 0.04796818">
+            <inertial pos="0 0 0.012886974" mass="0.0195" diaginertia="5.4e-06 5.4e-06 5.4e-06" />
+            <joint name="head_yaw" axis="0 0 1" type="hinge" limited="false" />
+            <geom name="v66" type="mesh" mesh="m66" material="dark" contype="0" conaffinity="0" group="2" density="0" />
+            <geom name="v67" type="mesh" mesh="m67" material="metal" contype="0" conaffinity="0" group="2" density="0" />
+            <geom name="v68" type="mesh" mesh="m68" material="glass" contype="0" conaffinity="0" group="2" density="0" />
+            <geom name="v69" type="mesh" mesh="m69" material="purple" contype="0" conaffinity="0" group="2" density="0" />
+            <geom name="v70" type="mesh" mesh="m70" material="green" contype="0" conaffinity="0" group="2" density="0" />
+            <geom name="v71" type="mesh" mesh="m71" material="blue" contype="0" conaffinity="0" group="2" density="0" />
+            <geom name="v72" type="mesh" mesh="m72" material="ivory" contype="0" conaffinity="0" group="2" density="0" />
+            <geom name="v73" type="mesh" mesh="m73" material="red" contype="0" conaffinity="0" group="2" density="0" />
+            <geom name="v74" type="mesh" mesh="m74" material="cyan" contype="0" conaffinity="0" group="2" density="0" />
+            <geom name="v75" type="mesh" mesh="m75" material="white" contype="0" conaffinity="0" group="2" density="0" />
+            <geom name="head_yaw_collision_0" type="sphere" pos="0 0 0.012886974" size="0.014312977" quat="1 0 0 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+          </body>
+          <body name="right_shoulder_pitch" pos="-0.042366412 0 0.036274445">
+            <inertial pos="0 0 0" mass="0.0045" diaginertia="4.32e-07 4.32e-07 4.32e-07" />
+            <joint name="right_shoulder_pitch" axis="1 0 0" type="hinge" range="-2.8797933 1.0471976" />
+            <geom name="v76" type="mesh" mesh="m76" material="dark" contype="0" conaffinity="0" group="2" density="0" />
+            <geom name="v77" type="mesh" mesh="m77" material="metal" contype="0" conaffinity="0" group="2" density="0" />
+            <body name="right_shoulder_roll" pos="0 0 0">
+              <inertial pos="0 0 0" mass="0.00375" diaginertia="4.32e-07 4.32e-07 4.32e-07" />
+              <joint name="right_shoulder_roll" axis="0 1 0" type="hinge" range="-1.6580628 1.6580628" />
+              <geom name="v78" type="mesh" mesh="m78" material="metal" contype="0" conaffinity="0" group="2" density="0" />
+              <body name="right_shoulder_yaw" pos="0 0 0">
+                <inertial pos="0 0 -0.013006298" mass="0.027" diaginertia="3.024e-06 3.024e-06 3.024e-06" />
+                <joint name="right_shoulder_yaw" axis="0 0 1" type="hinge" range="-1.9198622 1.9198622" />
+                <geom name="v79" type="mesh" mesh="m79" material="red" contype="0" conaffinity="0" group="2" density="0" />
+                <geom name="v80" type="mesh" mesh="m80" material="ivory" contype="0" conaffinity="0" group="2" density="0" />
+                <geom name="v81" type="mesh" mesh="m81" material="green" contype="0" conaffinity="0" group="2" density="0" />
+                <geom name="right_shoulder_yaw_collision_0" type="capsule" pos="0 0 -0.013006298" size="0.0049618321 0.0089492874" quat="1 0 0 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+                <body name="right_elbow" pos="0 0 -0.029830958">
+                  <inertial pos="0 0 0" mass="0.018" diaginertia="1.944e-06 1.944e-06 1.944e-06" />
+                  <joint name="right_elbow" axis="1 0 0" type="hinge" range="-2.5307274 0" />
+                  <geom name="v82" type="mesh" mesh="m82" material="green" contype="0" conaffinity="0" group="2" density="0" />
+                  <geom name="v83" type="mesh" mesh="m83" material="metal" contype="0" conaffinity="0" group="2" density="0" />
+                  <body name="right_forearm_roll" pos="0 0 -0.0031024196">
+                    <inertial pos="0 0 -0.01026185" mass="0.012" diaginertia="1.512e-06 1.512e-06 1.512e-06" />
+                    <joint name="right_forearm_roll" axis="0 0 1" type="hinge" range="-3.1415927 3.1415927" />
+                    <geom name="v84" type="mesh" mesh="m84" material="ivory" contype="0" conaffinity="0" group="2" density="0" />
+                    <geom name="v85" type="mesh" mesh="m85" material="purple" contype="0" conaffinity="0" group="2" density="0" />
+                    <geom name="v86" type="mesh" mesh="m86" material="metal" contype="0" conaffinity="0" group="2" density="0" />
+                    <geom name="right_forearm_roll_collision_0" type="capsule" pos="0 0 -0.01026185" size="0.0044847328 0.0083526682" quat="1 0 0 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+                    <body name="right_wrist_pitch" pos="0 0 -0.0230295">
+                      <inertial pos="0 0 0" mass="0.003" diaginertia="2.16e-07 2.16e-07 2.16e-07" />
+                      <joint name="right_wrist_pitch" axis="1 0 0" type="hinge" range="-1.2217305 1.2217305" />
+                      <geom name="v87" type="mesh" mesh="m87" material="metal" contype="0" conaffinity="0" group="2" density="0" />
+                      <body name="right_wrist_roll" pos="0 0 -0.0015512098">
+                        <inertial pos="0 0 -0.0041763341" mass="0.0052499999999999995" diaginertia="2.16e-07 2.16e-07 2.16e-07" />
+                        <joint name="right_wrist_roll" axis="0 1 0" type="hinge" range="-0.6981317 0.6981317" />
+                        <geom name="v88" type="mesh" mesh="m88" material="dark" contype="0" conaffinity="0" group="2" density="0" />
+                        <geom name="v89" type="mesh" mesh="m89" material="ivory" contype="0" conaffinity="0" group="2" density="0" />
+                        <geom name="v90" type="mesh" mesh="m90" material="purple" contype="0" conaffinity="0" group="2" density="0" />
+                        <geom name="right_wrist_roll_collision_0" type="cylinder" pos="0 0 -0.0041763341" size="0.0044847328 0.0029830958" quat="1 0 0 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+                        <site name="right_tool" pos="0 0 -0.022910176" size=".001" rgba="1 .2 .1 1" group="4" />
+                        <body name="right_finger_1_base" pos="0.0027663529 0.0034593623 -0.0068014584">
+                          <inertial pos="0.00091087228 0.0011390583 -0.0029830958" mass="0.0006749999999999999" diaginertia="6.48e-09 6.48e-09 6.48e-09" />
+                          <joint name="right_finger_1_base" axis="-0.70710678 0.70710678 0" type="hinge" range="-0.43633231 0.95993109" />
+                          <geom name="v91" type="mesh" mesh="m91" material="metal" contype="0" conaffinity="0" group="2" density="0" />
+                          <geom name="v92" type="mesh" mesh="m92" material="ivory" contype="0" conaffinity="0" group="2" density="0" />
+                          <geom name="right_finger_1_base_collision_0" type="capsule" pos="0.00091087228 0.0011390583 -0.0029830958" size="0.00095419847 0.0026251243" quat="1 0 0 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+                          <body name="right_finger_1_tip" pos="0.0018217446 0.0022781166 -0.0059661916">
+                            <inertial pos="-0.0029012969 -0.0036281117 -0.0064434869" mass="0.000375" diaginertia="4.32e-09 4.32e-09 4.32e-09" />
+                            <joint name="right_finger_1_tip" axis="-0.70710678 0.70710678 0" type="hinge" range="-0.17453293 1.2217305" />
+                            <geom name="v93" type="mesh" mesh="m93" material="purple" contype="0" conaffinity="0" group="2" density="0" />
+                            <geom name="v94" type="mesh" mesh="m94" material="metal" contype="0" conaffinity="0" group="2" density="0" />
+                            <geom name="v95" type="mesh" mesh="m95" material="rubber" contype="0" conaffinity="0" group="2" density="0" />
+                            <geom name="right_finger_1_tip_collision_0" type="sphere" pos="-0.0029012969 -0.0036281117 -0.0064434869" size="0.001240458" quat="1 0 0 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+                          </body>
+                        </body>
+                        <body name="right_finger_2_base" pos="-0.0027663529 0.0034593623 -0.0068014584">
+                          <inertial pos="-0.00091087228 0.0011390583 -0.0029830958" mass="0.0006749999999999999" diaginertia="6.48e-09 6.48e-09 6.48e-09" />
+                          <joint name="right_finger_2_base" axis="-0.70710678 -0.70710678 0" type="hinge" range="-0.43633231 0.95993109" />
+                          <geom name="v96" type="mesh" mesh="m96" material="metal" contype="0" conaffinity="0" group="2" density="0" />
+                          <geom name="v97" type="mesh" mesh="m97" material="ivory" contype="0" conaffinity="0" group="2" density="0" />
+                          <geom name="right_finger_2_base_collision_0" type="capsule" pos="-0.00091087228 0.0011390583 -0.0029830958" size="0.00095419847 0.0026251243" quat="1 0 0 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+                          <body name="right_finger_2_tip" pos="-0.0018217446 0.0022781166 -0.0059661916">
+                            <inertial pos="0.0029012969 -0.0036281117 -0.0064434869" mass="0.000375" diaginertia="4.32e-09 4.32e-09 4.32e-09" />
+                            <joint name="right_finger_2_tip" axis="-0.70710678 -0.70710678 0" type="hinge" range="-0.17453293 1.2217305" />
+                            <geom name="v98" type="mesh" mesh="m98" material="purple" contype="0" conaffinity="0" group="2" density="0" />
+                            <geom name="v99" type="mesh" mesh="m99" material="metal" contype="0" conaffinity="0" group="2" density="0" />
+                            <geom name="v100" type="mesh" mesh="m100" material="rubber" contype="0" conaffinity="0" group="2" density="0" />
+                            <geom name="right_finger_2_tip_collision_0" type="sphere" pos="0.0029012969 -0.0036281117 -0.0064434869" size="0.001240458" quat="1 0 0 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+                          </body>
+                        </body>
+                        <body name="right_finger_3_base" pos="-0.0027663529 -0.0034593623 -0.0068014584">
+                          <inertial pos="-0.00091087228 -0.0011390583 -0.0029830958" mass="0.0006749999999999999" diaginertia="6.48e-09 6.48e-09 6.48e-09" />
+                          <joint name="right_finger_3_base" axis="0.70710678 -0.70710678 0" type="hinge" range="-0.43633231 0.95993109" />
+                          <geom name="v101" type="mesh" mesh="m101" material="metal" contype="0" conaffinity="0" group="2" density="0" />
+                          <geom name="v102" type="mesh" mesh="m102" material="ivory" contype="0" conaffinity="0" group="2" density="0" />
+                          <geom name="right_finger_3_base_collision_0" type="capsule" pos="-0.00091087228 -0.0011390583 -0.0029830958" size="0.00095419847 0.0026251243" quat="1 0 0 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+                          <body name="right_finger_3_tip" pos="-0.0018217446 -0.0022781166 -0.0059661916">
+                            <inertial pos="0.0029012969 0.0036281117 -0.0064434869" mass="0.000375" diaginertia="4.32e-09 4.32e-09 4.32e-09" />
+                            <joint name="right_finger_3_tip" axis="0.70710678 -0.70710678 0" type="hinge" range="-0.17453293 1.2217305" />
+                            <geom name="v103" type="mesh" mesh="m103" material="purple" contype="0" conaffinity="0" group="2" density="0" />
+                            <geom name="v104" type="mesh" mesh="m104" material="metal" contype="0" conaffinity="0" group="2" density="0" />
+                            <geom name="v105" type="mesh" mesh="m105" material="rubber" contype="0" conaffinity="0" group="2" density="0" />
+                            <geom name="right_finger_3_tip_collision_0" type="sphere" pos="0.0029012969 0.0036281117 -0.0064434869" size="0.001240458" quat="1 0 0 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+                          </body>
+                        </body>
+                        <body name="right_finger_4_base" pos="0.0027663529 -0.0034593623 -0.0068014584">
+                          <inertial pos="0.00091087228 -0.0011390583 -0.0029830958" mass="0.0006749999999999999" diaginertia="6.48e-09 6.48e-09 6.48e-09" />
+                          <joint name="right_finger_4_base" axis="0.70710678 0.70710678 0" type="hinge" range="-0.43633231 0.95993109" />
+                          <geom name="v106" type="mesh" mesh="m106" material="metal" contype="0" conaffinity="0" group="2" density="0" />
+                          <geom name="v107" type="mesh" mesh="m107" material="ivory" contype="0" conaffinity="0" group="2" density="0" />
+                          <geom name="right_finger_4_base_collision_0" type="capsule" pos="0.00091087228 -0.0011390583 -0.0029830958" size="0.00095419847 0.0026251243" quat="1 0 0 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+                          <body name="right_finger_4_tip" pos="0.0018217446 -0.0022781166 -0.0059661916">
+                            <inertial pos="-0.0029012969 0.0036281117 -0.0064434869" mass="0.000375" diaginertia="4.32e-09 4.32e-09 4.32e-09" />
+                            <joint name="right_finger_4_tip" axis="0.70710678 0.70710678 0" type="hinge" range="-0.17453293 1.2217305" />
+                            <geom name="v108" type="mesh" mesh="m108" material="purple" contype="0" conaffinity="0" group="2" density="0" />
+                            <geom name="v109" type="mesh" mesh="m109" material="metal" contype="0" conaffinity="0" group="2" density="0" />
+                            <geom name="v110" type="mesh" mesh="m110" material="rubber" contype="0" conaffinity="0" group="2" density="0" />
+                            <geom name="right_finger_4_tip_collision_0" type="sphere" pos="-0.0029012969 0.0036281117 -0.0064434869" size="0.001240458" quat="1 0 0 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+                          </body>
+                        </body>
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+          <body name="left_shoulder_pitch" pos="0.042366412 0 0.036274445">
+            <inertial pos="0 0 0" mass="0.0045" diaginertia="4.32e-07 4.32e-07 4.32e-07" />
+            <joint name="left_shoulder_pitch" axis="1 0 0" type="hinge" range="-2.8797933 1.0471976" />
+            <geom name="v111" type="mesh" mesh="m111" material="dark" contype="0" conaffinity="0" group="2" density="0" />
+            <geom name="v112" type="mesh" mesh="m112" material="metal" contype="0" conaffinity="0" group="2" density="0" />
+            <body name="left_shoulder_roll" pos="0 0 0">
+              <inertial pos="0 0 0" mass="0.00375" diaginertia="4.32e-07 4.32e-07 4.32e-07" />
+              <joint name="left_shoulder_roll" axis="0 1 0" type="hinge" range="-1.6580628 1.6580628" />
+              <geom name="v113" type="mesh" mesh="m113" material="metal" contype="0" conaffinity="0" group="2" density="0" />
+              <body name="left_shoulder_yaw" pos="0 0 0">
+                <inertial pos="0 0 -0.013006298" mass="0.027" diaginertia="3.024e-06 3.024e-06 3.024e-06" />
+                <joint name="left_shoulder_yaw" axis="0 0 1" type="hinge" range="-1.9198622 1.9198622" />
+                <geom name="v114" type="mesh" mesh="m114" material="red" contype="0" conaffinity="0" group="2" density="0" />
+                <geom name="v115" type="mesh" mesh="m115" material="ivory" contype="0" conaffinity="0" group="2" density="0" />
+                <geom name="v116" type="mesh" mesh="m116" material="green" contype="0" conaffinity="0" group="2" density="0" />
+                <geom name="left_shoulder_yaw_collision_0" type="capsule" pos="0 0 -0.013006298" size="0.0049618321 0.0089492874" quat="1 0 0 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+                <body name="left_elbow" pos="0 0 -0.029830958">
+                  <inertial pos="0 0 0" mass="0.018" diaginertia="1.944e-06 1.944e-06 1.944e-06" />
+                  <joint name="left_elbow" axis="1 0 0" type="hinge" range="-2.5307274 0" />
+                  <geom name="v117" type="mesh" mesh="m117" material="green" contype="0" conaffinity="0" group="2" density="0" />
+                  <geom name="v118" type="mesh" mesh="m118" material="metal" contype="0" conaffinity="0" group="2" density="0" />
+                  <body name="left_forearm_roll" pos="0 0 -0.0031024196">
+                    <inertial pos="0 0 -0.01026185" mass="0.012" diaginertia="1.512e-06 1.512e-06 1.512e-06" />
+                    <joint name="left_forearm_roll" axis="0 0 1" type="hinge" range="-3.1415927 3.1415927" />
+                    <geom name="v119" type="mesh" mesh="m119" material="ivory" contype="0" conaffinity="0" group="2" density="0" />
+                    <geom name="v120" type="mesh" mesh="m120" material="purple" contype="0" conaffinity="0" group="2" density="0" />
+                    <geom name="v121" type="mesh" mesh="m121" material="metal" contype="0" conaffinity="0" group="2" density="0" />
+                    <geom name="left_forearm_roll_collision_0" type="capsule" pos="0 0 -0.01026185" size="0.0044847328 0.0083526682" quat="1 0 0 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+                    <body name="left_wrist_pitch" pos="0 0 -0.0230295">
+                      <inertial pos="0 0 0" mass="0.003" diaginertia="2.16e-07 2.16e-07 2.16e-07" />
+                      <joint name="left_wrist_pitch" axis="1 0 0" type="hinge" range="-1.2217305 1.2217305" />
+                      <geom name="v122" type="mesh" mesh="m122" material="metal" contype="0" conaffinity="0" group="2" density="0" />
+                      <body name="left_wrist_roll" pos="0 0 -0.0015512098">
+                        <inertial pos="0 0 -0.0041763341" mass="0.0052499999999999995" diaginertia="2.16e-07 2.16e-07 2.16e-07" />
+                        <joint name="left_wrist_roll" axis="0 1 0" type="hinge" range="-0.6981317 0.6981317" />
+                        <geom name="v123" type="mesh" mesh="m123" material="dark" contype="0" conaffinity="0" group="2" density="0" />
+                        <geom name="v124" type="mesh" mesh="m124" material="ivory" contype="0" conaffinity="0" group="2" density="0" />
+                        <geom name="v125" type="mesh" mesh="m125" material="purple" contype="0" conaffinity="0" group="2" density="0" />
+                        <geom name="left_wrist_roll_collision_0" type="cylinder" pos="0 0 -0.0041763341" size="0.0044847328 0.0029830958" quat="1 0 0 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+                        <site name="left_tool" pos="0 0 -0.022910176" size=".001" rgba="1 .2 .1 1" group="4" />
+                        <body name="left_finger_1_base" pos="0.0027663529 0.0034593623 -0.0068014584">
+                          <inertial pos="0.00091087228 0.0011390583 -0.0029830958" mass="0.0006749999999999999" diaginertia="6.48e-09 6.48e-09 6.48e-09" />
+                          <joint name="left_finger_1_base" axis="-0.70710678 0.70710678 0" type="hinge" range="-0.43633231 0.95993109" />
+                          <geom name="v126" type="mesh" mesh="m126" material="metal" contype="0" conaffinity="0" group="2" density="0" />
+                          <geom name="v127" type="mesh" mesh="m127" material="ivory" contype="0" conaffinity="0" group="2" density="0" />
+                          <geom name="left_finger_1_base_collision_0" type="capsule" pos="0.00091087228 0.0011390583 -0.0029830958" size="0.00095419847 0.0026251243" quat="1 0 0 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+                          <body name="left_finger_1_tip" pos="0.0018217446 0.0022781166 -0.0059661916">
+                            <inertial pos="-0.0029012969 -0.0036281117 -0.0064434869" mass="0.000375" diaginertia="4.32e-09 4.32e-09 4.32e-09" />
+                            <joint name="left_finger_1_tip" axis="-0.70710678 0.70710678 0" type="hinge" range="-0.17453293 1.2217305" />
+                            <geom name="v128" type="mesh" mesh="m128" material="purple" contype="0" conaffinity="0" group="2" density="0" />
+                            <geom name="v129" type="mesh" mesh="m129" material="metal" contype="0" conaffinity="0" group="2" density="0" />
+                            <geom name="v130" type="mesh" mesh="m130" material="rubber" contype="0" conaffinity="0" group="2" density="0" />
+                            <geom name="left_finger_1_tip_collision_0" type="sphere" pos="-0.0029012969 -0.0036281117 -0.0064434869" size="0.001240458" quat="1 0 0 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+                          </body>
+                        </body>
+                        <body name="left_finger_2_base" pos="-0.0027663529 0.0034593623 -0.0068014584">
+                          <inertial pos="-0.00091087228 0.0011390583 -0.0029830958" mass="0.0006749999999999999" diaginertia="6.48e-09 6.48e-09 6.48e-09" />
+                          <joint name="left_finger_2_base" axis="-0.70710678 -0.70710678 0" type="hinge" range="-0.43633231 0.95993109" />
+                          <geom name="v131" type="mesh" mesh="m131" material="metal" contype="0" conaffinity="0" group="2" density="0" />
+                          <geom name="v132" type="mesh" mesh="m132" material="ivory" contype="0" conaffinity="0" group="2" density="0" />
+                          <geom name="left_finger_2_base_collision_0" type="capsule" pos="-0.00091087228 0.0011390583 -0.0029830958" size="0.00095419847 0.0026251243" quat="1 0 0 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+                          <body name="left_finger_2_tip" pos="-0.0018217446 0.0022781166 -0.0059661916">
+                            <inertial pos="0.0029012969 -0.0036281117 -0.0064434869" mass="0.000375" diaginertia="4.32e-09 4.32e-09 4.32e-09" />
+                            <joint name="left_finger_2_tip" axis="-0.70710678 -0.70710678 0" type="hinge" range="-0.17453293 1.2217305" />
+                            <geom name="v133" type="mesh" mesh="m133" material="purple" contype="0" conaffinity="0" group="2" density="0" />
+                            <geom name="v134" type="mesh" mesh="m134" material="metal" contype="0" conaffinity="0" group="2" density="0" />
+                            <geom name="v135" type="mesh" mesh="m135" material="rubber" contype="0" conaffinity="0" group="2" density="0" />
+                            <geom name="left_finger_2_tip_collision_0" type="sphere" pos="0.0029012969 -0.0036281117 -0.0064434869" size="0.001240458" quat="1 0 0 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+                          </body>
+                        </body>
+                        <body name="left_finger_3_base" pos="-0.0027663529 -0.0034593623 -0.0068014584">
+                          <inertial pos="-0.00091087228 -0.0011390583 -0.0029830958" mass="0.0006749999999999999" diaginertia="6.48e-09 6.48e-09 6.48e-09" />
+                          <joint name="left_finger_3_base" axis="0.70710678 -0.70710678 0" type="hinge" range="-0.43633231 0.95993109" />
+                          <geom name="v136" type="mesh" mesh="m136" material="metal" contype="0" conaffinity="0" group="2" density="0" />
+                          <geom name="v137" type="mesh" mesh="m137" material="ivory" contype="0" conaffinity="0" group="2" density="0" />
+                          <geom name="left_finger_3_base_collision_0" type="capsule" pos="-0.00091087228 -0.0011390583 -0.0029830958" size="0.00095419847 0.0026251243" quat="1 0 0 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+                          <body name="left_finger_3_tip" pos="-0.0018217446 -0.0022781166 -0.0059661916">
+                            <inertial pos="0.0029012969 0.0036281117 -0.0064434869" mass="0.000375" diaginertia="4.32e-09 4.32e-09 4.32e-09" />
+                            <joint name="left_finger_3_tip" axis="0.70710678 -0.70710678 0" type="hinge" range="-0.17453293 1.2217305" />
+                            <geom name="v138" type="mesh" mesh="m138" material="purple" contype="0" conaffinity="0" group="2" density="0" />
+                            <geom name="v139" type="mesh" mesh="m139" material="metal" contype="0" conaffinity="0" group="2" density="0" />
+                            <geom name="v140" type="mesh" mesh="m140" material="rubber" contype="0" conaffinity="0" group="2" density="0" />
+                            <geom name="left_finger_3_tip_collision_0" type="sphere" pos="0.0029012969 0.0036281117 -0.0064434869" size="0.001240458" quat="1 0 0 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+                          </body>
+                        </body>
+                        <body name="left_finger_4_base" pos="0.0027663529 -0.0034593623 -0.0068014584">
+                          <inertial pos="0.00091087228 -0.0011390583 -0.0029830958" mass="0.0006749999999999999" diaginertia="6.48e-09 6.48e-09 6.48e-09" />
+                          <joint name="left_finger_4_base" axis="0.70710678 0.70710678 0" type="hinge" range="-0.43633231 0.95993109" />
+                          <geom name="v141" type="mesh" mesh="m141" material="metal" contype="0" conaffinity="0" group="2" density="0" />
+                          <geom name="v142" type="mesh" mesh="m142" material="ivory" contype="0" conaffinity="0" group="2" density="0" />
+                          <geom name="left_finger_4_base_collision_0" type="capsule" pos="0.00091087228 -0.0011390583 -0.0029830958" size="0.00095419847 0.0026251243" quat="1 0 0 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+                          <body name="left_finger_4_tip" pos="0.0018217446 -0.0022781166 -0.0059661916">
+                            <inertial pos="-0.0029012969 0.0036281117 -0.0064434869" mass="0.000375" diaginertia="4.32e-09 4.32e-09 4.32e-09" />
+                            <joint name="left_finger_4_tip" axis="0.70710678 0.70710678 0" type="hinge" range="-0.17453293 1.2217305" />
+                            <geom name="v143" type="mesh" mesh="m143" material="purple" contype="0" conaffinity="0" group="2" density="0" />
+                            <geom name="v144" type="mesh" mesh="m144" material="metal" contype="0" conaffinity="0" group="2" density="0" />
+                            <geom name="v145" type="mesh" mesh="m145" material="rubber" contype="0" conaffinity="0" group="2" density="0" />
+                            <geom name="left_finger_4_tip_collision_0" type="sphere" pos="-0.0029012969 0.0036281117 -0.0064434869" size="0.001240458" quat="1 0 0 0" contype="2" conaffinity="1" group="3" rgba=".9 .3 .1 .3" density="0" />
+                          </body>
+                        </body>
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <actuator>
+    <motor name="right_drive" joint="right_drive" gear="0.063" ctrlrange="-1 1" />
+    <motor name="left_drive" joint="left_drive" gear="0.063" ctrlrange="-1 1" />
+    <motor name="waist_yaw" joint="waist_yaw" gear="0.23399999999999999" ctrlrange="-1 1" />
+    <motor name="waist_pitch" joint="waist_pitch" gear="0.288" ctrlrange="-1 1" />
+    <motor name="head_yaw" joint="head_yaw" gear="0.0144" ctrlrange="-1 1" />
+    <motor name="right_shoulder_pitch" joint="right_shoulder_pitch" gear="0.11699999999999999" ctrlrange="-1 1" />
+    <motor name="right_shoulder_roll" joint="right_shoulder_roll" gear="0.11699999999999999" ctrlrange="-1 1" />
+    <motor name="right_shoulder_yaw" joint="right_shoulder_yaw" gear="0.0576" ctrlrange="-1 1" />
+    <motor name="right_elbow" joint="right_elbow" gear="0.081" ctrlrange="-1 1" />
+    <motor name="right_forearm_roll" joint="right_forearm_roll" gear="0.0252" ctrlrange="-1 1" />
+    <motor name="right_wrist_pitch" joint="right_wrist_pitch" gear="0.0162" ctrlrange="-1 1" />
+    <motor name="right_wrist_roll" joint="right_wrist_roll" gear="0.0126" ctrlrange="-1 1" />
+    <motor name="right_finger_1_base" joint="right_finger_1_base" gear="0.0036" ctrlrange="-1 1" />
+    <motor name="right_finger_1_tip" joint="right_finger_1_tip" gear="0.0018" ctrlrange="-1 1" />
+    <motor name="right_finger_2_base" joint="right_finger_2_base" gear="0.0036" ctrlrange="-1 1" />
+    <motor name="right_finger_2_tip" joint="right_finger_2_tip" gear="0.0018" ctrlrange="-1 1" />
+    <motor name="right_finger_3_base" joint="right_finger_3_base" gear="0.0036" ctrlrange="-1 1" />
+    <motor name="right_finger_3_tip" joint="right_finger_3_tip" gear="0.0018" ctrlrange="-1 1" />
+    <motor name="right_finger_4_base" joint="right_finger_4_base" gear="0.0036" ctrlrange="-1 1" />
+    <motor name="right_finger_4_tip" joint="right_finger_4_tip" gear="0.0018" ctrlrange="-1 1" />
+    <motor name="left_shoulder_pitch" joint="left_shoulder_pitch" gear="0.11699999999999999" ctrlrange="-1 1" />
+    <motor name="left_shoulder_roll" joint="left_shoulder_roll" gear="0.11699999999999999" ctrlrange="-1 1" />
+    <motor name="left_shoulder_yaw" joint="left_shoulder_yaw" gear="0.0576" ctrlrange="-1 1" />
+    <motor name="left_elbow" joint="left_elbow" gear="0.081" ctrlrange="-1 1" />
+    <motor name="left_forearm_roll" joint="left_forearm_roll" gear="0.0252" ctrlrange="-1 1" />
+    <motor name="left_wrist_pitch" joint="left_wrist_pitch" gear="0.0162" ctrlrange="-1 1" />
+    <motor name="left_wrist_roll" joint="left_wrist_roll" gear="0.0126" ctrlrange="-1 1" />
+    <motor name="left_finger_1_base" joint="left_finger_1_base" gear="0.0036" ctrlrange="-1 1" />
+    <motor name="left_finger_1_tip" joint="left_finger_1_tip" gear="0.0018" ctrlrange="-1 1" />
+    <motor name="left_finger_2_base" joint="left_finger_2_base" gear="0.0036" ctrlrange="-1 1" />
+    <motor name="left_finger_2_tip" joint="left_finger_2_tip" gear="0.0018" ctrlrange="-1 1" />
+    <motor name="left_finger_3_base" joint="left_finger_3_base" gear="0.0036" ctrlrange="-1 1" />
+    <motor name="left_finger_3_tip" joint="left_finger_3_tip" gear="0.0018" ctrlrange="-1 1" />
+    <motor name="left_finger_4_base" joint="left_finger_4_base" gear="0.0036" ctrlrange="-1 1" />
+    <motor name="left_finger_4_tip" joint="left_finger_4_tip" gear="0.0018" ctrlrange="-1 1" />
+  </actuator>
+  <sensor>
+    <jointpos name="right_drive_position" joint="right_drive" />
+    <jointvel name="right_drive_velocity" joint="right_drive" />
+    <jointpos name="left_drive_position" joint="left_drive" />
+    <jointvel name="left_drive_velocity" joint="left_drive" />
+    <jointpos name="waist_yaw_position" joint="waist_yaw" />
+    <jointvel name="waist_yaw_velocity" joint="waist_yaw" />
+    <jointpos name="waist_pitch_position" joint="waist_pitch" />
+    <jointvel name="waist_pitch_velocity" joint="waist_pitch" />
+    <jointpos name="head_yaw_position" joint="head_yaw" />
+    <jointvel name="head_yaw_velocity" joint="head_yaw" />
+    <jointpos name="right_shoulder_pitch_position" joint="right_shoulder_pitch" />
+    <jointvel name="right_shoulder_pitch_velocity" joint="right_shoulder_pitch" />
+    <jointpos name="right_shoulder_roll_position" joint="right_shoulder_roll" />
+    <jointvel name="right_shoulder_roll_velocity" joint="right_shoulder_roll" />
+    <jointpos name="right_shoulder_yaw_position" joint="right_shoulder_yaw" />
+    <jointvel name="right_shoulder_yaw_velocity" joint="right_shoulder_yaw" />
+    <jointpos name="right_elbow_position" joint="right_elbow" />
+    <jointvel name="right_elbow_velocity" joint="right_elbow" />
+    <jointpos name="right_forearm_roll_position" joint="right_forearm_roll" />
+    <jointvel name="right_forearm_roll_velocity" joint="right_forearm_roll" />
+    <jointpos name="right_wrist_pitch_position" joint="right_wrist_pitch" />
+    <jointvel name="right_wrist_pitch_velocity" joint="right_wrist_pitch" />
+    <jointpos name="right_wrist_roll_position" joint="right_wrist_roll" />
+    <jointvel name="right_wrist_roll_velocity" joint="right_wrist_roll" />
+    <jointpos name="right_finger_1_base_position" joint="right_finger_1_base" />
+    <jointvel name="right_finger_1_base_velocity" joint="right_finger_1_base" />
+    <jointpos name="right_finger_1_tip_position" joint="right_finger_1_tip" />
+    <jointvel name="right_finger_1_tip_velocity" joint="right_finger_1_tip" />
+    <jointpos name="right_finger_2_base_position" joint="right_finger_2_base" />
+    <jointvel name="right_finger_2_base_velocity" joint="right_finger_2_base" />
+    <jointpos name="right_finger_2_tip_position" joint="right_finger_2_tip" />
+    <jointvel name="right_finger_2_tip_velocity" joint="right_finger_2_tip" />
+    <jointpos name="right_finger_3_base_position" joint="right_finger_3_base" />
+    <jointvel name="right_finger_3_base_velocity" joint="right_finger_3_base" />
+    <jointpos name="right_finger_3_tip_position" joint="right_finger_3_tip" />
+    <jointvel name="right_finger_3_tip_velocity" joint="right_finger_3_tip" />
+    <jointpos name="right_finger_4_base_position" joint="right_finger_4_base" />
+    <jointvel name="right_finger_4_base_velocity" joint="right_finger_4_base" />
+    <jointpos name="right_finger_4_tip_position" joint="right_finger_4_tip" />
+    <jointvel name="right_finger_4_tip_velocity" joint="right_finger_4_tip" />
+    <jointpos name="left_shoulder_pitch_position" joint="left_shoulder_pitch" />
+    <jointvel name="left_shoulder_pitch_velocity" joint="left_shoulder_pitch" />
+    <jointpos name="left_shoulder_roll_position" joint="left_shoulder_roll" />
+    <jointvel name="left_shoulder_roll_velocity" joint="left_shoulder_roll" />
+    <jointpos name="left_shoulder_yaw_position" joint="left_shoulder_yaw" />
+    <jointvel name="left_shoulder_yaw_velocity" joint="left_shoulder_yaw" />
+    <jointpos name="left_elbow_position" joint="left_elbow" />
+    <jointvel name="left_elbow_velocity" joint="left_elbow" />
+    <jointpos name="left_forearm_roll_position" joint="left_forearm_roll" />
+    <jointvel name="left_forearm_roll_velocity" joint="left_forearm_roll" />
+    <jointpos name="left_wrist_pitch_position" joint="left_wrist_pitch" />
+    <jointvel name="left_wrist_pitch_velocity" joint="left_wrist_pitch" />
+    <jointpos name="left_wrist_roll_position" joint="left_wrist_roll" />
+    <jointvel name="left_wrist_roll_velocity" joint="left_wrist_roll" />
+    <jointpos name="left_finger_1_base_position" joint="left_finger_1_base" />
+    <jointvel name="left_finger_1_base_velocity" joint="left_finger_1_base" />
+    <jointpos name="left_finger_1_tip_position" joint="left_finger_1_tip" />
+    <jointvel name="left_finger_1_tip_velocity" joint="left_finger_1_tip" />
+    <jointpos name="left_finger_2_base_position" joint="left_finger_2_base" />
+    <jointvel name="left_finger_2_base_velocity" joint="left_finger_2_base" />
+    <jointpos name="left_finger_2_tip_position" joint="left_finger_2_tip" />
+    <jointvel name="left_finger_2_tip_velocity" joint="left_finger_2_tip" />
+    <jointpos name="left_finger_3_base_position" joint="left_finger_3_base" />
+    <jointvel name="left_finger_3_base_velocity" joint="left_finger_3_base" />
+    <jointpos name="left_finger_3_tip_position" joint="left_finger_3_tip" />
+    <jointvel name="left_finger_3_tip_velocity" joint="left_finger_3_tip" />
+    <jointpos name="left_finger_4_base_position" joint="left_finger_4_base" />
+    <jointvel name="left_finger_4_base_velocity" joint="left_finger_4_base" />
+    <jointpos name="left_finger_4_tip_position" joint="left_finger_4_tip" />
+    <jointvel name="left_finger_4_tip_velocity" joint="left_finger_4_tip" />
+    <framepos name="left_tool_position" objtype="site" objname="left_tool" />
+    <framepos name="right_tool_position" objtype="site" objname="right_tool" />
+  </sensor>
+</mujoco>

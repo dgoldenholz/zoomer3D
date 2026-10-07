@@ -1,0 +1,28 @@
+{
+  "method": "Manual image landmarks, normalized to 180 mm from crown y=91 to tread bottom y=1628. Approximate; the drawing is not orthographic.",
+  "source_image_pixels": [
+    1627,
+    1829
+  ],
+  "landmarks_pixels": {
+    "crown_y": 91,
+    "tread_bottom_y": 1628,
+    "shoulder_left_x": 90,
+    "shoulder_right_x": 1288,
+    "torso_top_y": 385,
+    "torso_lower_wing_y": 1075,
+    "central_underside_y": 865,
+    "base_deck_y": 1270,
+    "dome_left_x": 408,
+    "dome_right_x": 910
+  },
+  "nominal_model_mm": {
+    "height": 180,
+    "overall_width": 140.6,
+    "torso_height": 80,
+    "torso_width": 84,
+    "dome_width": 59,
+    "exposed_waist_height": 48
+  },
+  "interpretation": "The broad silhouette, chest cutout, gauge arrangement and hand height are close. Symmetry, inferred depth, fixed pincer shape, blue-for-purple palette and the stepped base are deliberate manufacturing simplifications."
+}

@@ -1,0 +1,3288 @@
+{
+  "result": {
+    "phase": "done",
+    "held": "green",
+    "color": "green",
+    "stroke": 17,
+    "point": 215,
+    "visible": true,
+    "success": true,
+    "failure": null,
+    "time_s": 115.96000000018964,
+    "coverage": 1.0,
+    "tolerance_m": 0.03,
+    "tracking_tolerance_m": 0.00075,
+    "mse_limit_m2": 0.0009,
+    "mse_m2": 1.3447506100920744e-06,
+    "rmse_m": 0.0011596338258657664,
+    "max_error_m": 0.007062183754925123,
+    "target_coverage_1mm": 1.0,
+    "ink_precision_1mm": 0.9690265486725663,
+    "shape_rmse_m": 0.00022845390772782952,
+    "max_target_gap_m": 0.0003372896165644594
+  },
+  "ink": [
+    {
+      "time_s": 0.24000000000000019,
+      "color": "green",
+      "stroke": 17,
+      "point": 0,
+      "phase": "draw",
+      "position": [
+        0.0008520573042282113,
+        -0.43502992453438466,
+        0.11453150090123669
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 0.2600000000000002,
+      "color": "green",
+      "stroke": 17,
+      "point": 1,
+      "phase": "draw",
+      "position": [
+        0.0012206708759867956,
+        -0.4353196379560081,
+        0.11453713126397655
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 0.2800000000000002,
+      "color": "green",
+      "stroke": 17,
+      "point": 2,
+      "phase": "draw",
+      "position": [
+        0.0021879918697762096,
+        -0.43527638114337225,
+        0.11452502782298724
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 0.3000000000000002,
+      "color": "green",
+      "stroke": 17,
+      "point": 3,
+      "phase": "draw",
+      "position": [
+        0.002930393014801604,
+        -0.4351823155094062,
+        0.11453697609276327
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 0.32000000000000023,
+      "color": "green",
+      "stroke": 17,
+      "point": 4,
+      "phase": "draw",
+      "position": [
+        0.0033437829631483827,
+        -0.43514042162435235,
+        0.11454896458206358
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 0.34000000000000025,
+      "color": "green",
+      "stroke": 17,
+      "point": 5,
+      "phase": "draw",
+      "position": [
+        0.0038331549467020415,
+        -0.43510541760561583,
+        0.11453081396148941
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 0.36000000000000026,
+      "color": "green",
+      "stroke": 17,
+      "point": 6,
+      "phase": "draw",
+      "position": [
+        0.004517624535606963,
+        -0.4350605580258863,
+        0.11451377786196754
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 0.3800000000000003,
+      "color": "green",
+      "stroke": 17,
+      "point": 7,
+      "phase": "draw",
+      "position": [
+        0.005186984647115868,
+        -0.43503745831407437,
+        0.11452459465739516
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 0.4000000000000003,
+      "color": "green",
+      "stroke": 17,
+      "point": 8,
+      "phase": "draw",
+      "position": [
+        0.005747821088783108,
+        -0.43504380596060577,
+        0.11453690691102425
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 0.4200000000000003,
+      "color": "green",
+      "stroke": 17,
+      "point": 9,
+      "phase": "draw",
+      "position": [
+        0.006304734362788926,
+        -0.4350538607638663,
+        0.11452966578316906
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 0.44000000000000034,
+      "color": "green",
+      "stroke": 17,
+      "point": 10,
+      "phase": "draw",
+      "position": [
+        0.006921482407118524,
+        -0.4350537105499246,
+        0.11451869240767532
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 0.46000000000000035,
+      "color": "green",
+      "stroke": 17,
+      "point": 11,
+      "phase": "draw",
+      "position": [
+        0.0075479973510375895,
+        -0.4350519128536755,
+        0.11452083456519653
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 0.48000000000000037,
+      "color": "green",
+      "stroke": 17,
+      "point": 12,
+      "phase": "draw",
+      "position": [
+        0.008142977836147938,
+        -0.4350552387674488,
+        0.11452709328714149
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 0.5000000000000003,
+      "color": "green",
+      "stroke": 17,
+      "point": 13,
+      "phase": "draw",
+      "position": [
+        0.008728830999321894,
+        -0.4350591233136677,
+        0.11452547930383389
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 0.5200000000000004,
+      "color": "green",
+      "stroke": 17,
+      "point": 14,
+      "phase": "draw",
+      "position": [
+        0.00933066922457935,
+        -0.4350593742128903,
+        0.11451995227994602
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 0.5400000000000004,
+      "color": "green",
+      "stroke": 17,
+      "point": 15,
+      "phase": "draw",
+      "position": [
+        0.009939292955673975,
+        -0.43505830090402137,
+        0.11451870803804183
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 0.5600000000000004,
+      "color": "green",
+      "stroke": 17,
+      "point": 16,
+      "phase": "draw",
+      "position": [
+        0.010539973166188111,
+        -0.4350587739986325,
+        0.11452041156364651
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 0.5800000000000004,
+      "color": "green",
+      "stroke": 17,
+      "point": 17,
+      "phase": "draw",
+      "position": [
+        0.011135902928209016,
+        -0.4350601142103046,
+        0.11451990303512136
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 0.6000000000000004,
+      "color": "green",
+      "stroke": 17,
+      "point": 18,
+      "phase": "draw",
+      "position": [
+        0.011735439008111947,
+        -0.43506076416603007,
+        0.11451725040790552
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 0.6200000000000004,
+      "color": "green",
+      "stroke": 17,
+      "point": 19,
+      "phase": "draw",
+      "position": [
+        0.012337876129001234,
+        -0.43506089733875525,
+        0.11451556149526791
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 0.6400000000000005,
+      "color": "green",
+      "stroke": 17,
+      "point": 20,
+      "phase": "draw",
+      "position": [
+        0.012938605909763796,
+        -0.4350613439106945,
+        0.11451525690591231
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 0.6600000000000005,
+      "color": "green",
+      "stroke": 17,
+      "point": 21,
+      "phase": "draw",
+      "position": [
+        0.013537427672018838,
+        -0.4350620587799514,
+        0.11451457675666242
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 0.6800000000000005,
+      "color": "green",
+      "stroke": 17,
+      "point": 22,
+      "phase": "draw",
+      "position": [
+        0.014136762814063487,
+        -0.4350625553298304,
+        0.11451302069919049
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 0.7000000000000005,
+      "color": "green",
+      "stroke": 17,
+      "point": 23,
+      "phase": "draw",
+      "position": [
+        0.014737011217336074,
+        -0.4350627796894387,
+        0.11451153571092401
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 0.7200000000000005,
+      "color": "green",
+      "stroke": 17,
+      "point": 24,
+      "phase": "draw",
+      "position": [
+        0.015336937435556041,
+        -0.435062981044848,
+        0.11451055356502479
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 0.7400000000000005,
+      "color": "green",
+      "stroke": 17,
+      "point": 25,
+      "phase": "draw",
+      "position": [
+        0.015936173878155553,
+        -0.43506322530253455,
+        0.11450960319714007
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 0.7600000000000006,
+      "color": "green",
+      "stroke": 17,
+      "point": 26,
+      "phase": "draw",
+      "position": [
+        0.016535324789065345,
+        -0.4350633995132918,
+        0.11450837104668984
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 0.7800000000000006,
+      "color": "green",
+      "stroke": 17,
+      "point": 27,
+      "phase": "draw",
+      "position": [
+        0.017134658340353368,
+        -0.43506346807424384,
+        0.11450707866934866
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 0.8000000000000006,
+      "color": "green",
+      "stroke": 17,
+      "point": 28,
+      "phase": "draw",
+      "position": [
+        0.017733895716896157,
+        -0.4350635003851383,
+        0.11450593681406132
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 0.8200000000000006,
+      "color": "green",
+      "stroke": 17,
+      "point": 29,
+      "phase": "draw",
+      "position": [
+        0.018332857733386557,
+        -0.4350635401765431,
+        0.11450485580336014
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 0.8400000000000006,
+      "color": "green",
+      "stroke": 17,
+      "point": 30,
+      "phase": "draw",
+      "position": [
+        0.0189316610174066,
+        -0.43506357519313865,
+        0.11450370255400438
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 0.8600000000000007,
+      "color": "green",
+      "stroke": 17,
+      "point": 31,
+      "phase": "draw",
+      "position": [
+        0.019530430431345606,
+        -0.43506359052180693,
+        0.11450251941324052
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 0.8800000000000007,
+      "color": "green",
+      "stroke": 17,
+      "point": 32,
+      "phase": "draw",
+      "position": [
+        0.020126488222623855,
+        -0.4350640993223825,
+        0.1144691891636705
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 0.9000000000000007,
+      "color": "green",
+      "stroke": 17,
+      "point": 33,
+      "phase": "draw",
+      "position": [
+        0.02071661186400548,
+        -0.43506501605830616,
+        0.11440280992795943
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 0.9200000000000007,
+      "color": "green",
+      "stroke": 17,
+      "point": 34,
+      "phase": "draw",
+      "position": [
+        0.02130501878126657,
+        -0.4350655777667638,
+        0.11434715192511385
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 0.9400000000000007,
+      "color": "green",
+      "stroke": 17,
+      "point": 35,
+      "phase": "draw",
+      "position": [
+        0.021897781016635493,
+        -0.43506524109415007,
+        0.11430934998108025
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 0.9600000000000007,
+      "color": "green",
+      "stroke": 17,
+      "point": 36,
+      "phase": "draw",
+      "position": [
+        0.022493369349655196,
+        -0.4350646420211389,
+        0.11426993992404948
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 0.9800000000000008,
+      "color": "green",
+      "stroke": 17,
+      "point": 37,
+      "phase": "draw",
+      "position": [
+        0.023086544573455423,
+        -0.43506468704182966,
+        0.11422206821166167
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 1.0000000000000007,
+      "color": "green",
+      "stroke": 17,
+      "point": 38,
+      "phase": "draw",
+      "position": [
+        0.023676957719287496,
+        -0.43506525902111454,
+        0.11417351881773197
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 1.0199999999999985,
+      "color": "green",
+      "stroke": 17,
+      "point": 39,
+      "phase": "draw",
+      "position": [
+        0.02426815115370018,
+        -0.4350656829475678,
+        0.11412876811218652
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 1.0399999999999963,
+      "color": "green",
+      "stroke": 17,
+      "point": 40,
+      "phase": "draw",
+      "position": [
+        0.024861166411706218,
+        -0.43506584152252276,
+        0.11408504931311605
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 1.059999999999994,
+      "color": "green",
+      "stroke": 17,
+      "point": 41,
+      "phase": "draw",
+      "position": [
+        0.02545394565778815,
+        -0.4350661394334123,
+        0.11403983347542873
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 1.0799999999999919,
+      "color": "green",
+      "stroke": 17,
+      "point": 42,
+      "phase": "draw",
+      "position": [
+        0.026045378897894437,
+        -0.43506672905420346,
+        0.11399390129269613
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 1.0999999999999897,
+      "color": "green",
+      "stroke": 17,
+      "point": 43,
+      "phase": "draw",
+      "position": [
+        0.0266365026555905,
+        -0.4350673819661171,
+        0.11394849443440941
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 1.1199999999999875,
+      "color": "green",
+      "stroke": 17,
+      "point": 44,
+      "phase": "draw",
+      "position": [
+        0.027228218413854144,
+        -0.43506795138637055,
+        0.11390349293398398
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 1.1399999999999852,
+      "color": "green",
+      "stroke": 17,
+      "point": 45,
+      "phase": "draw",
+      "position": [
+        0.027820103106534964,
+        -0.4350685483849949,
+        0.11385835084406971
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 1.159999999999983,
+      "color": "green",
+      "stroke": 17,
+      "point": 46,
+      "phase": "draw",
+      "position": [
+        0.028457637114682223,
+        -0.4350422554605857,
+        0.11381047717192429
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 30.880000000014757,
+      "color": "green",
+      "stroke": 17,
+      "point": 46,
+      "phase": "draw",
+      "position": [
+        0.028094547352503087,
+        -0.435181584362436,
+        0.11382050822322301
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 30.90000000001478,
+      "color": "green",
+      "stroke": 17,
+      "point": 47,
+      "phase": "draw",
+      "position": [
+        0.028463490397571744,
+        -0.4353953313007409,
+        0.11379606100070147
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 30.920000000014806,
+      "color": "green",
+      "stroke": 17,
+      "point": 48,
+      "phase": "draw",
+      "position": [
+        0.029387018580379298,
+        -0.43531386814487394,
+        0.11372336643434053
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 30.94000000001483,
+      "color": "green",
+      "stroke": 17,
+      "point": 49,
+      "phase": "draw",
+      "position": [
+        0.030110716006884565,
+        -0.4352029689904405,
+        0.11367646023794638
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 30.960000000014855,
+      "color": "green",
+      "stroke": 17,
+      "point": 50,
+      "phase": "draw",
+      "position": [
+        0.030534065652236732,
+        -0.43515205751213615,
+        0.11364864357516304
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 30.98000000001488,
+      "color": "green",
+      "stroke": 17,
+      "point": 51,
+      "phase": "draw",
+      "position": [
+        0.031033150738449346,
+        -0.4351145544499859,
+        0.11360096358437673
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.000000000014904,
+      "color": "green",
+      "stroke": 17,
+      "point": 52,
+      "phase": "draw",
+      "position": [
+        0.03170846359641905,
+        -0.43507254205312695,
+        0.1135418842680217
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.020000000014928,
+      "color": "green",
+      "stroke": 17,
+      "point": 53,
+      "phase": "draw",
+      "position": [
+        0.032360421910286014,
+        -0.43505243293279233,
+        0.11349710003318195
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.040000000014953,
+      "color": "green",
+      "stroke": 17,
+      "point": 54,
+      "phase": "draw",
+      "position": [
+        0.03291334504044456,
+        -0.4350581522282921,
+        0.11346005802292695
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.060000000014977,
+      "color": "green",
+      "stroke": 17,
+      "point": 55,
+      "phase": "draw",
+      "position": [
+        0.03347111334316184,
+        -0.4350653894129024,
+        0.11341442589201034
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.080000000015,
+      "color": "green",
+      "stroke": 17,
+      "point": 56,
+      "phase": "draw",
+      "position": [
+        0.03408520685768445,
+        -0.43506326993784006,
+        0.11336365770223943
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.100000000015026,
+      "color": "green",
+      "stroke": 17,
+      "point": 57,
+      "phase": "draw",
+      "position": [
+        0.03470236655600035,
+        -0.43506072595854334,
+        0.11331837051243779
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.12000000001505,
+      "color": "green",
+      "stroke": 17,
+      "point": 58,
+      "phase": "draw",
+      "position": [
+        0.035288664803828675,
+        -0.4350630648336376,
+        0.11327666155736216
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.140000000015075,
+      "color": "green",
+      "stroke": 17,
+      "point": 59,
+      "phase": "draw",
+      "position": [
+        0.03587039594149446,
+        -0.4350653175794428,
+        0.11323175615272943
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.1600000000151,
+      "color": "green",
+      "stroke": 17,
+      "point": 60,
+      "phase": "draw",
+      "position": [
+        0.036466580499440474,
+        -0.435064424412711,
+        0.11317666733807803
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.180000000015124,
+      "color": "green",
+      "stroke": 17,
+      "point": 61,
+      "phase": "draw",
+      "position": [
+        0.037064613373334505,
+        -0.43506308756670126,
+        0.11311557069025577
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.200000000015148,
+      "color": "green",
+      "stroke": 17,
+      "point": 62,
+      "phase": "draw",
+      "position": [
+        0.037654512545098606,
+        -0.43506328855445664,
+        0.11305887648349858
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.220000000015173,
+      "color": "green",
+      "stroke": 17,
+      "point": 63,
+      "phase": "draw",
+      "position": [
+        0.038242617470664,
+        -0.4350638256215792,
+        0.11300550717076255
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.240000000015197,
+      "color": "green",
+      "stroke": 17,
+      "point": 64,
+      "phase": "draw",
+      "position": [
+        0.03883508420942605,
+        -0.4350636090199272,
+        0.11295047234324868
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.26000000001522,
+      "color": "green",
+      "stroke": 17,
+      "point": 65,
+      "phase": "draw",
+      "position": [
+        0.039428813791541756,
+        -0.4350632706527471,
+        0.1128937677612896
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.280000000015246,
+      "color": "green",
+      "stroke": 17,
+      "point": 66,
+      "phase": "draw",
+      "position": [
+        0.040020011903408224,
+        -0.43506347839479337,
+        0.11283770347664812
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.30000000001527,
+      "color": "green",
+      "stroke": 17,
+      "point": 67,
+      "phase": "draw",
+      "position": [
+        0.04061008098472754,
+        -0.43506390119889254,
+        0.11278245509929367
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.320000000015295,
+      "color": "green",
+      "stroke": 17,
+      "point": 68,
+      "phase": "draw",
+      "position": [
+        0.04120129948396574,
+        -0.4350640970427085,
+        0.11272697921571631
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.34000000001532,
+      "color": "green",
+      "stroke": 17,
+      "point": 69,
+      "phase": "draw",
+      "position": [
+        0.041793085809765734,
+        -0.43506418377218387,
+        0.1126711287595112
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.360000000015344,
+      "color": "green",
+      "stroke": 17,
+      "point": 70,
+      "phase": "draw",
+      "position": [
+        0.04238409933892119,
+        -0.4350644028643831,
+        0.1126153642258099
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.380000000015368,
+      "color": "green",
+      "stroke": 17,
+      "point": 71,
+      "phase": "draw",
+      "position": [
+        0.04297453612198144,
+        -0.43506468964116096,
+        0.11255977934899791
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.400000000015392,
+      "color": "green",
+      "stroke": 17,
+      "point": 72,
+      "phase": "draw",
+      "position": [
+        0.04356517517939778,
+        -0.4350649092649105,
+        0.11250415653003501
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.420000000015417,
+      "color": "green",
+      "stroke": 17,
+      "point": 73,
+      "phase": "draw",
+      "position": [
+        0.04415598995901531,
+        -0.4350650796401276,
+        0.11244846224967582
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.44000000001544,
+      "color": "green",
+      "stroke": 17,
+      "point": 74,
+      "phase": "draw",
+      "position": [
+        0.044746546630647976,
+        -0.4350652816402866,
+        0.11239279930621031
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.460000000015466,
+      "color": "green",
+      "stroke": 17,
+      "point": 75,
+      "phase": "draw",
+      "position": [
+        0.04533680795608597,
+        -0.4350655171713129,
+        0.11233718126950859
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.48000000001549,
+      "color": "green",
+      "stroke": 17,
+      "point": 76,
+      "phase": "draw",
+      "position": [
+        0.04592703236075669,
+        -0.4350657389598181,
+        0.11228155996916742
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.500000000015515,
+      "color": "green",
+      "stroke": 17,
+      "point": 77,
+      "phase": "draw",
+      "position": [
+        0.046517260020199805,
+        -0.4350659468431202,
+        0.11222593278466053
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.52000000001554,
+      "color": "green",
+      "stroke": 17,
+      "point": 78,
+      "phase": "draw",
+      "position": [
+        0.04710735011616474,
+        -0.4350661688998147,
+        0.11217032477610785
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.540000000015564,
+      "color": "green",
+      "stroke": 17,
+      "point": 79,
+      "phase": "draw",
+      "position": [
+        0.04769727143914004,
+        -0.4350664099688474,
+        0.11211473821432347
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.560000000015588,
+      "color": "green",
+      "stroke": 17,
+      "point": 80,
+      "phase": "draw",
+      "position": [
+        0.04828710245698358,
+        -0.435066656525598,
+        0.11205915713402056
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.580000000015612,
+      "color": "green",
+      "stroke": 17,
+      "point": 81,
+      "phase": "draw",
+      "position": [
+        0.048876872179934076,
+        -0.43506690660861186,
+        0.1120035855993419
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.600000000015637,
+      "color": "green",
+      "stroke": 17,
+      "point": 82,
+      "phase": "draw",
+      "position": [
+        0.049435866895545036,
+        -0.4350715142176745,
+        0.11193368025955444
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.62000000001566,
+      "color": "green",
+      "stroke": 17,
+      "point": 83,
+      "phase": "draw",
+      "position": [
+        0.049967987380347384,
+        -0.4350781196908425,
+        0.11184712188795341
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.640000000015686,
+      "color": "green",
+      "stroke": 17,
+      "point": 84,
+      "phase": "draw",
+      "position": [
+        0.05051320277014208,
+        -0.43508016974973357,
+        0.11176336704159628
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.66000000001571,
+      "color": "green",
+      "stroke": 17,
+      "point": 85,
+      "phase": "draw",
+      "position": [
+        0.05107561149498176,
+        -0.4350784839113364,
+        0.11168843632936845
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.680000000015735,
+      "color": "green",
+      "stroke": 17,
+      "point": 86,
+      "phase": "draw",
+      "position": [
+        0.051633616464984614,
+        -0.43507764966165396,
+        0.11161466676215903
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.70000000001576,
+      "color": "green",
+      "stroke": 17,
+      "point": 87,
+      "phase": "draw",
+      "position": [
+        0.0521813577320239,
+        -0.4350785986962726,
+        0.11153705309397749
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.720000000015784,
+      "color": "green",
+      "stroke": 17,
+      "point": 88,
+      "phase": "draw",
+      "position": [
+        0.05272977157575406,
+        -0.4350792974465398,
+        0.11145780121077462
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.740000000015808,
+      "color": "green",
+      "stroke": 17,
+      "point": 89,
+      "phase": "draw",
+      "position": [
+        0.05328389296590592,
+        -0.4350790686081667,
+        0.11138001473642455
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.760000000015832,
+      "color": "green",
+      "stroke": 17,
+      "point": 90,
+      "phase": "draw",
+      "position": [
+        0.05387892510078657,
+        -0.43507328282217755,
+        0.1113228679875474
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.780000000015857,
+      "color": "green",
+      "stroke": 17,
+      "point": 91,
+      "phase": "draw",
+      "position": [
+        0.05450680328855416,
+        -0.4350653317488455,
+        0.11128679495702935
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.80000000001588,
+      "color": "green",
+      "stroke": 17,
+      "point": 92,
+      "phase": "draw",
+      "position": [
+        0.05511623457140163,
+        -0.4350636170568768,
+        0.11124429450121377
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.820000000015906,
+      "color": "green",
+      "stroke": 17,
+      "point": 93,
+      "phase": "draw",
+      "position": [
+        0.055703697143176974,
+        -0.4350668844498902,
+        0.11119090987214603
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.84000000001593,
+      "color": "green",
+      "stroke": 17,
+      "point": 94,
+      "phase": "draw",
+      "position": [
+        0.05629727177709944,
+        -0.43506909453521364,
+        0.1111382459436757
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.860000000015955,
+      "color": "green",
+      "stroke": 17,
+      "point": 95,
+      "phase": "draw",
+      "position": [
+        0.05690404371837596,
+        -0.4350690591552573,
+        0.11109070081493709
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.88000000001598,
+      "color": "green",
+      "stroke": 17,
+      "point": 96,
+      "phase": "draw",
+      "position": [
+        0.0575095331479368,
+        -0.43506946838552707,
+        0.11104379245945581
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.900000000016004,
+      "color": "green",
+      "stroke": 17,
+      "point": 97,
+      "phase": "draw",
+      "position": [
+        0.058107167878291,
+        -0.43507124796920893,
+        0.11099471612224286
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.920000000016028,
+      "color": "green",
+      "stroke": 17,
+      "point": 98,
+      "phase": "draw",
+      "position": [
+        0.058703925043337546,
+        -0.4350729890740355,
+        0.11094494765497934
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.940000000016052,
+      "color": "green",
+      "stroke": 17,
+      "point": 99,
+      "phase": "draw",
+      "position": [
+        0.059304836903458176,
+        -0.43507395072014815,
+        0.11089596711756032
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.960000000016077,
+      "color": "green",
+      "stroke": 17,
+      "point": 100,
+      "phase": "draw",
+      "position": [
+        0.05990691583314482,
+        -0.4350748726180573,
+        0.11084739632782249
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 31.9800000000161,
+      "color": "green",
+      "stroke": 17,
+      "point": 101,
+      "phase": "draw",
+      "position": [
+        0.06050673819908104,
+        -0.4350764034312751,
+        0.11079856293330996
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 32.00000000001612,
+      "color": "green",
+      "stroke": 17,
+      "point": 102,
+      "phase": "draw",
+      "position": [
+        0.06115010386379683,
+        -0.4350531682703635,
+        0.1107451504068772
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 58.85999999995352,
+      "color": "green",
+      "stroke": 17,
+      "point": 102,
+      "phase": "draw",
+      "position": [
+        0.06188100822409731,
+        -0.43571268033797184,
+        0.10416287932286683
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 58.879999999953476,
+      "color": "green",
+      "stroke": 17,
+      "point": 102,
+      "phase": "draw",
+      "position": [
+        0.0610452707968224,
+        -0.4350462185786794,
+        0.10563008907319747
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.23999999995264,
+      "color": "green",
+      "stroke": 17,
+      "point": 102,
+      "phase": "draw",
+      "position": [
+        0.06074222934496888,
+        -0.435146697275847,
+        0.11077528291216583
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.25999999995259,
+      "color": "green",
+      "stroke": 17,
+      "point": 103,
+      "phase": "draw",
+      "position": [
+        0.061126401696785515,
+        -0.4353818262714331,
+        0.11074022534951415
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.279999999952544,
+      "color": "green",
+      "stroke": 17,
+      "point": 104,
+      "phase": "draw",
+      "position": [
+        0.0620782805147345,
+        -0.43530671004038507,
+        0.11066196560729416
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.2999999999525,
+      "color": "green",
+      "stroke": 17,
+      "point": 105,
+      "phase": "draw",
+      "position": [
+        0.06281193906297942,
+        -0.43519899431738546,
+        0.11061968154258768
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.31999999995245,
+      "color": "green",
+      "stroke": 17,
+      "point": 106,
+      "phase": "draw",
+      "position": [
+        0.06318678806806587,
+        -0.4351572302786374,
+        0.11060990426799028
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.339999999952404,
+      "color": "green",
+      "stroke": 17,
+      "point": 107,
+      "phase": "draw",
+      "position": [
+        0.06360228610481952,
+        -0.435129913142869,
+        0.1106008633405959
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.35999999995236,
+      "color": "green",
+      "stroke": 17,
+      "point": 108,
+      "phase": "draw",
+      "position": [
+        0.0642260829313569,
+        -0.43508953671732553,
+        0.11057222455232613
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.37999999995231,
+      "color": "green",
+      "stroke": 17,
+      "point": 109,
+      "phase": "draw",
+      "position": [
+        0.06485352892843159,
+        -0.435065528235448,
+        0.11054158570975217
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.399999999952264,
+      "color": "green",
+      "stroke": 17,
+      "point": 110,
+      "phase": "draw",
+      "position": [
+        0.06536598802982822,
+        -0.43507011515615757,
+        0.11052052683768515
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.41999999995222,
+      "color": "green",
+      "stroke": 17,
+      "point": 111,
+      "phase": "draw",
+      "position": [
+        0.065864593714756,
+        -0.43507937502926797,
+        0.11050149548763027
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.43999999995217,
+      "color": "green",
+      "stroke": 17,
+      "point": 112,
+      "phase": "draw",
+      "position": [
+        0.06642695147963729,
+        -0.4350778495069815,
+        0.11047813782218073
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.459999999952124,
+      "color": "green",
+      "stroke": 17,
+      "point": 113,
+      "phase": "draw",
+      "position": [
+        0.06705193678054115,
+        -0.43506750286082335,
+        0.11047060412605779
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.47999999995208,
+      "color": "green",
+      "stroke": 17,
+      "point": 114,
+      "phase": "draw",
+      "position": [
+        0.06768140399146062,
+        -0.4350595546978159,
+        0.11048225484520464
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.49999999995203,
+      "color": "green",
+      "stroke": 17,
+      "point": 115,
+      "phase": "draw",
+      "position": [
+        0.0682749228057124,
+        -0.43505980227048935,
+        0.11048842653212189
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.519999999951985,
+      "color": "green",
+      "stroke": 17,
+      "point": 116,
+      "phase": "draw",
+      "position": [
+        0.06886165189793646,
+        -0.435061932365618,
+        0.11048424582763229
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.53999999995194,
+      "color": "green",
+      "stroke": 17,
+      "point": 117,
+      "phase": "draw",
+      "position": [
+        0.06946748098458229,
+        -0.4350611152215195,
+        0.11048100671320174
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.55999999995189,
+      "color": "green",
+      "stroke": 17,
+      "point": 118,
+      "phase": "draw",
+      "position": [
+        0.07007903335247634,
+        -0.4350596868822076,
+        0.11048306618815507
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.579999999951845,
+      "color": "green",
+      "stroke": 17,
+      "point": 119,
+      "phase": "draw",
+      "position": [
+        0.07068028842582709,
+        -0.4350601763461878,
+        0.11048549253472092
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.5999999999518,
+      "color": "green",
+      "stroke": 17,
+      "point": 120,
+      "phase": "draw",
+      "position": [
+        0.07127696574695376,
+        -0.43506128002286826,
+        0.11048534176718836
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.61999999995175,
+      "color": "green",
+      "stroke": 17,
+      "point": 121,
+      "phase": "draw",
+      "position": [
+        0.0718787203338084,
+        -0.43506132552162274,
+        0.11048457706640044
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.639999999951705,
+      "color": "green",
+      "stroke": 17,
+      "point": 122,
+      "phase": "draw",
+      "position": [
+        0.07248348842130749,
+        -0.43506084270289136,
+        0.11048500481384929
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.65999999995166,
+      "color": "green",
+      "stroke": 17,
+      "point": 123,
+      "phase": "draw",
+      "position": [
+        0.0730856291929499,
+        -0.4350608628190592,
+        0.11048593768477855
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.67999999995161,
+      "color": "green",
+      "stroke": 17,
+      "point": 124,
+      "phase": "draw",
+      "position": [
+        0.07368562583126742,
+        -0.43506123396187435,
+        0.11048635188964392
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.699999999951565,
+      "color": "green",
+      "stroke": 17,
+      "point": 125,
+      "phase": "draw",
+      "position": [
+        0.07428669488021046,
+        -0.4350613753696814,
+        0.11048642152097654
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.71999999995152,
+      "color": "green",
+      "stroke": 17,
+      "point": 126,
+      "phase": "draw",
+      "position": [
+        0.07488896246545655,
+        -0.4350613170012263,
+        0.1104866954384592
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.73999999995147,
+      "color": "green",
+      "stroke": 17,
+      "point": 127,
+      "phase": "draw",
+      "position": [
+        0.07549063681096474,
+        -0.43506139931450283,
+        0.11048717454136422
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.759999999951425,
+      "color": "green",
+      "stroke": 17,
+      "point": 128,
+      "phase": "draw",
+      "position": [
+        0.07609142218055862,
+        -0.4350616468512769,
+        0.11048758342061336
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.77999999995138,
+      "color": "green",
+      "stroke": 17,
+      "point": 129,
+      "phase": "draw",
+      "position": [
+        0.07669228121441951,
+        -0.43506187755896286,
+        0.11048786613719573
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.79999999995133,
+      "color": "green",
+      "stroke": 17,
+      "point": 130,
+      "phase": "draw",
+      "position": [
+        0.07729350097938976,
+        -0.4350620387311127,
+        0.11048816452970578
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.819999999951285,
+      "color": "green",
+      "stroke": 17,
+      "point": 131,
+      "phase": "draw",
+      "position": [
+        0.07789457763478148,
+        -0.4350622279915242,
+        0.11048853048065169
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.83999999995124,
+      "color": "green",
+      "stroke": 17,
+      "point": 132,
+      "phase": "draw",
+      "position": [
+        0.07849528514911498,
+        -0.4350624819936069,
+        0.11048889769173618
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.85999999995119,
+      "color": "green",
+      "stroke": 17,
+      "point": 133,
+      "phase": "draw",
+      "position": [
+        0.07909586934118562,
+        -0.4350627514148587,
+        0.11048922782228417
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.879999999951146,
+      "color": "green",
+      "stroke": 17,
+      "point": 134,
+      "phase": "draw",
+      "position": [
+        0.07969650223022606,
+        -0.43506300438757334,
+        0.11048955466847257
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.8999999999511,
+      "color": "green",
+      "stroke": 17,
+      "point": 135,
+      "phase": "draw",
+      "position": [
+        0.08029707208468854,
+        -0.43506326578562443,
+        0.11048990522927478
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.91999999995105,
+      "color": "green",
+      "stroke": 17,
+      "point": 136,
+      "phase": "draw",
+      "position": [
+        0.0808974533731068,
+        -0.4350635595437088,
+        0.11049026321034952
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.939999999951006,
+      "color": "green",
+      "stroke": 17,
+      "point": 137,
+      "phase": "draw",
+      "position": [
+        0.08149769758995813,
+        -0.435063874143335,
+        0.11049061593894419
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.95999999995096,
+      "color": "green",
+      "stroke": 17,
+      "point": 138,
+      "phase": "draw",
+      "position": [
+        0.08209788640776702,
+        -0.43506419630394183,
+        0.11049096939109068
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.97999999995091,
+      "color": "green",
+      "stroke": 17,
+      "point": 139,
+      "phase": "draw",
+      "position": [
+        0.08269800390274147,
+        -0.4350645324294747,
+        0.11049133106410253
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 59.999999999950866,
+      "color": "green",
+      "stroke": 17,
+      "point": 140,
+      "phase": "draw",
+      "position": [
+        0.08329800612234844,
+        -0.43506489202308696,
+        0.11049170125692002
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 60.01999999995082,
+      "color": "green",
+      "stroke": 17,
+      "point": 141,
+      "phase": "draw",
+      "position": [
+        0.08389788859915329,
+        -0.4350652758317442,
+        0.11049207701274855
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 60.03999999995077,
+      "color": "green",
+      "stroke": 17,
+      "point": 142,
+      "phase": "draw",
+      "position": [
+        0.08449768134881047,
+        -0.4350656811703742,
+        0.1104924551205956
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 60.059999999950726,
+      "color": "green",
+      "stroke": 17,
+      "point": 143,
+      "phase": "draw",
+      "position": [
+        0.08509739631761308,
+        -0.43506610975468757,
+        0.11049283812869644
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 60.07999999995068,
+      "color": "green",
+      "stroke": 17,
+      "point": 144,
+      "phase": "draw",
+      "position": [
+        0.08569701196962959,
+        -0.4350665697505254,
+        0.11049322491702009
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 60.09999999995063,
+      "color": "green",
+      "stroke": 17,
+      "point": 145,
+      "phase": "draw",
+      "position": [
+        0.08629653446883152,
+        -0.4350670655281942,
+        0.11049361695665369
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 60.119999999950586,
+      "color": "green",
+      "stroke": 17,
+      "point": 146,
+      "phase": "draw",
+      "position": [
+        0.08689596509892548,
+        -0.4350676019442379,
+        0.11049401151421094
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 60.13999999995054,
+      "color": "green",
+      "stroke": 17,
+      "point": 147,
+      "phase": "draw",
+      "position": [
+        0.08749530056480978,
+        -0.43506818260209484,
+        0.11049440764813521
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 60.15999999995049,
+      "color": "green",
+      "stroke": 17,
+      "point": 148,
+      "phase": "draw",
+      "position": [
+        0.08809454437189233,
+        -0.43506881134773073,
+        0.11049480536605336
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 60.17999999995045,
+      "color": "green",
+      "stroke": 17,
+      "point": 149,
+      "phase": "draw",
+      "position": [
+        0.08869369607362791,
+        -0.4350694936204111,
+        0.11049520409746139
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 60.1999999999504,
+      "color": "green",
+      "stroke": 17,
+      "point": 150,
+      "phase": "draw",
+      "position": [
+        0.08929275498090894,
+        -0.43507023848257415,
+        0.11049560111753902
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 60.21999999995035,
+      "color": "green",
+      "stroke": 17,
+      "point": 151,
+      "phase": "draw",
+      "position": [
+        0.08989172786552181,
+        -0.4350710557770164,
+        0.11049599413046382
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 60.23999999995031,
+      "color": "green",
+      "stroke": 17,
+      "point": 152,
+      "phase": "draw",
+      "position": [
+        0.09049060178545855,
+        -0.4350719582451666,
+        0.11049638264117433
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 60.25999999995026,
+      "color": "green",
+      "stroke": 17,
+      "point": 153,
+      "phase": "draw",
+      "position": [
+        0.09108937010929931,
+        -0.43507296037252025,
+        0.11049676393540155
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 60.27999999995021,
+      "color": "green",
+      "stroke": 17,
+      "point": 154,
+      "phase": "draw",
+      "position": [
+        0.09168803568049842,
+        -0.43507407919537583,
+        0.11049713354948819
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 60.29999999995017,
+      "color": "green",
+      "stroke": 17,
+      "point": 155,
+      "phase": "draw",
+      "position": [
+        0.09228659288217786,
+        -0.4350753377630942,
+        0.11049748661830355
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 60.31999999995012,
+      "color": "green",
+      "stroke": 17,
+      "point": 156,
+      "phase": "draw",
+      "position": [
+        0.09288502808479022,
+        -0.43507676796362116,
+        0.11049781906298184
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 60.339999999950074,
+      "color": "green",
+      "stroke": 17,
+      "point": 157,
+      "phase": "draw",
+      "position": [
+        0.09352837100119553,
+        -0.4350530565159377,
+        0.11049664670651359
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 87.18000000005222,
+      "color": "green",
+      "stroke": 17,
+      "point": 157,
+      "phase": "draw",
+      "position": [
+        0.09567397697171814,
+        -0.43502267593470956,
+        0.10394409063479591
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 87.20000000005231,
+      "color": "green",
+      "stroke": 17,
+      "point": 157,
+      "phase": "draw",
+      "position": [
+        0.09408989906655248,
+        -0.4357095682876832,
+        0.10387639473535461
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 87.22000000005241,
+      "color": "green",
+      "stroke": 17,
+      "point": 157,
+      "phase": "draw",
+      "position": [
+        0.09336251601772971,
+        -0.4350514712081668,
+        0.10533403026918134
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 87.58000000005413,
+      "color": "green",
+      "stroke": 17,
+      "point": 157,
+      "phase": "draw",
+      "position": [
+        0.09311884357819665,
+        -0.4351465625207192,
+        0.11048693047883591
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 87.60000000005422,
+      "color": "green",
+      "stroke": 17,
+      "point": 158,
+      "phase": "draw",
+      "position": [
+        0.0935007818675027,
+        -0.43538243772083024,
+        0.11047866528714424
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 87.62000000005432,
+      "color": "green",
+      "stroke": 17,
+      "point": 159,
+      "phase": "draw",
+      "position": [
+        0.09445034968756207,
+        -0.4353083739807958,
+        0.11048102340620587
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 87.64000000005441,
+      "color": "green",
+      "stroke": 17,
+      "point": 160,
+      "phase": "draw",
+      "position": [
+        0.09518336635014496,
+        -0.4352005678529175,
+        0.11050617487876437
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 87.66000000005451,
+      "color": "green",
+      "stroke": 17,
+      "point": 161,
+      "phase": "draw",
+      "position": [
+        0.0956052702514394,
+        -0.4351516038407998,
+        0.11051619424735543
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 87.6800000000546,
+      "color": "green",
+      "stroke": 17,
+      "point": 162,
+      "phase": "draw",
+      "position": [
+        0.09610683523673487,
+        -0.43511426163498157,
+        0.11050677791338953
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 87.7000000000547,
+      "color": "green",
+      "stroke": 17,
+      "point": 163,
+      "phase": "draw",
+      "position": [
+        0.09679312021773545,
+        -0.4350708650282757,
+        0.11049911892976552
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 87.7200000000548,
+      "color": "green",
+      "stroke": 17,
+      "point": 164,
+      "phase": "draw",
+      "position": [
+        0.09745758302467947,
+        -0.43504950817763127,
+        0.11050096639443815
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 87.74000000005489,
+      "color": "green",
+      "stroke": 17,
+      "point": 165,
+      "phase": "draw",
+      "position": [
+        0.09801737800992052,
+        -0.43505531852343077,
+        0.11050359758894746
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 87.76000000005499,
+      "color": "green",
+      "stroke": 17,
+      "point": 166,
+      "phase": "draw",
+      "position": [
+        0.09857884326315626,
+        -0.43506327064976863,
+        0.11050242160231537
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 87.78000000005508,
+      "color": "green",
+      "stroke": 17,
+      "point": 167,
+      "phase": "draw",
+      "position": [
+        0.0991999578971723,
+        -0.43506121258694175,
+        0.11050080360769027
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 87.80000000005518,
+      "color": "green",
+      "stroke": 17,
+      "point": 168,
+      "phase": "draw",
+      "position": [
+        0.0998273038797949,
+        -0.4350581733957896,
+        0.11050134890130882
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 87.82000000005527,
+      "color": "green",
+      "stroke": 17,
+      "point": 169,
+      "phase": "draw",
+      "position": [
+        0.10042207670400728,
+        -0.43506038922582585,
+        0.11050250806011291
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 87.84000000005537,
+      "color": "green",
+      "stroke": 17,
+      "point": 170,
+      "phase": "draw",
+      "position": [
+        0.1010097286856803,
+        -0.43506296587376175,
+        0.11050272926720366
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 87.86000000005546,
+      "color": "green",
+      "stroke": 17,
+      "point": 171,
+      "phase": "draw",
+      "position": [
+        0.10161483393493889,
+        -0.43506199162068293,
+        0.11050257200273819
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 87.88000000005556,
+      "color": "green",
+      "stroke": 17,
+      "point": 172,
+      "phase": "draw",
+      "position": [
+        0.10222589420881292,
+        -0.43506007951446407,
+        0.11050291646884267
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 87.90000000005566,
+      "color": "green",
+      "stroke": 17,
+      "point": 173,
+      "phase": "draw",
+      "position": [
+        0.1027991642988185,
+        -0.43506434824240453,
+        0.11054471777893032
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 87.92000000005575,
+      "color": "green",
+      "stroke": 17,
+      "point": 174,
+      "phase": "draw",
+      "position": [
+        0.10334370732715367,
+        -0.43507100409992466,
+        0.11062871640817475
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 87.94000000005585,
+      "color": "green",
+      "stroke": 17,
+      "point": 175,
+      "phase": "draw",
+      "position": [
+        0.10390478478741057,
+        -0.43507253931731266,
+        0.11069916700604948
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 87.96000000005594,
+      "color": "green",
+      "stroke": 17,
+      "point": 176,
+      "phase": "draw",
+      "position": [
+        0.10448452195946616,
+        -0.43507034317858834,
+        0.11074623768570989
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 87.98000000005604,
+      "color": "green",
+      "stroke": 17,
+      "point": 177,
+      "phase": "draw",
+      "position": [
+        0.1050577655769382,
+        -0.43506949648943716,
+        0.11079523333632967
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 88.00000000005613,
+      "color": "green",
+      "stroke": 17,
+      "point": 178,
+      "phase": "draw",
+      "position": [
+        0.10561967922595994,
+        -0.4350705240452707,
+        0.1108554942719424
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 88.02000000005623,
+      "color": "green",
+      "stroke": 17,
+      "point": 179,
+      "phase": "draw",
+      "position": [
+        0.10618340215329439,
+        -0.43507098846001696,
+        0.11091679541713048
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 88.04000000005632,
+      "color": "green",
+      "stroke": 17,
+      "point": 180,
+      "phase": "draw",
+      "position": [
+        0.10675354748509783,
+        -0.43507036798555393,
+        0.11097279384237997
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 88.06000000005642,
+      "color": "green",
+      "stroke": 17,
+      "point": 181,
+      "phase": "draw",
+      "position": [
+        0.10732344766892886,
+        -0.4350699802602895,
+        0.11102727130837207
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 88.08000000005651,
+      "color": "green",
+      "stroke": 17,
+      "point": 182,
+      "phase": "draw",
+      "position": [
+        0.10788959818891183,
+        -0.43507031652989614,
+        0.11108398935588458
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 88.10000000005661,
+      "color": "green",
+      "stroke": 17,
+      "point": 183,
+      "phase": "draw",
+      "position": [
+        0.10845519069462485,
+        -0.43507069664632053,
+        0.1111418490518826
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 88.1200000000567,
+      "color": "green",
+      "stroke": 17,
+      "point": 184,
+      "phase": "draw",
+      "position": [
+        0.10902263070060074,
+        -0.43507072715202383,
+        0.11119884622101832
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 88.1400000000568,
+      "color": "green",
+      "stroke": 17,
+      "point": 185,
+      "phase": "draw",
+      "position": [
+        0.10959048343529934,
+        -0.43507072052297746,
+        0.11125513344817702
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 88.1600000000569,
+      "color": "green",
+      "stroke": 17,
+      "point": 186,
+      "phase": "draw",
+      "position": [
+        0.1101572168561955,
+        -0.43507092499349503,
+        0.11131170714325464
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 88.18000000005699,
+      "color": "green",
+      "stroke": 17,
+      "point": 187,
+      "phase": "draw",
+      "position": [
+        0.11072341193072686,
+        -0.43507120247337033,
+        0.11136867566791538
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 88.20000000005709,
+      "color": "green",
+      "stroke": 17,
+      "point": 188,
+      "phase": "draw",
+      "position": [
+        0.11129000656074986,
+        -0.43507139036391407,
+        0.11142558672912355
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 88.22000000005718,
+      "color": "green",
+      "stroke": 17,
+      "point": 189,
+      "phase": "draw",
+      "position": [
+        0.11187206683210581,
+        -0.43506931006085175,
+        0.11143953694861229
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 88.24000000005728,
+      "color": "green",
+      "stroke": 17,
+      "point": 190,
+      "phase": "draw",
+      "position": [
+        0.11246701802989707,
+        -0.43506612824843566,
+        0.11141004398528817
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 88.26000000005737,
+      "color": "green",
+      "stroke": 17,
+      "point": 191,
+      "phase": "draw",
+      "position": [
+        0.11305407356041008,
+        -0.43506547266528295,
+        0.11139640193604954
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 88.28000000005747,
+      "color": "green",
+      "stroke": 17,
+      "point": 192,
+      "phase": "draw",
+      "position": [
+        0.1136328463300398,
+        -0.4350667729214005,
+        0.11140647720001208
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 88.30000000005757,
+      "color": "green",
+      "stroke": 17,
+      "point": 193,
+      "phase": "draw",
+      "position": [
+        0.1142148274302367,
+        -0.4350675419128629,
+        0.1114129976152898
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 88.32000000005766,
+      "color": "green",
+      "stroke": 17,
+      "point": 194,
+      "phase": "draw",
+      "position": [
+        0.1148018348793392,
+        -0.4350674819046291,
+        0.11140766009549892
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 88.34000000005776,
+      "color": "green",
+      "stroke": 17,
+      "point": 195,
+      "phase": "draw",
+      "position": [
+        0.11538752980594384,
+        -0.43506777799390306,
+        0.1114022919353905
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 88.36000000005785,
+      "color": "green",
+      "stroke": 17,
+      "point": 196,
+      "phase": "draw",
+      "position": [
+        0.11597004325109342,
+        -0.4350686442254501,
+        0.11140270793596993
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 88.38000000005795,
+      "color": "green",
+      "stroke": 17,
+      "point": 197,
+      "phase": "draw",
+      "position": [
+        0.11655269316112923,
+        -0.43506938680568924,
+        0.11140408713617031
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 88.40000000005804,
+      "color": "green",
+      "stroke": 17,
+      "point": 198,
+      "phase": "draw",
+      "position": [
+        0.11713702826675104,
+        -0.4350697622769384,
+        0.11140283091995455
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 88.42000000005814,
+      "color": "green",
+      "stroke": 17,
+      "point": 199,
+      "phase": "draw",
+      "position": [
+        0.11772140701759336,
+        -0.4350701355511434,
+        0.11140068171278325
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 88.44000000005823,
+      "color": "green",
+      "stroke": 17,
+      "point": 200,
+      "phase": "draw",
+      "position": [
+        0.11830470844535575,
+        -0.43507070649223895,
+        0.11139965419527469
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 88.46000000005833,
+      "color": "green",
+      "stroke": 17,
+      "point": 201,
+      "phase": "draw",
+      "position": [
+        0.1188876847641875,
+        -0.43507131353735906,
+        0.11139922791023192
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 88.48000000005842,
+      "color": "green",
+      "stroke": 17,
+      "point": 202,
+      "phase": "draw",
+      "position": [
+        0.11947109005879819,
+        -0.43507182864467625,
+        0.111398340340258
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 88.50000000005852,
+      "color": "green",
+      "stroke": 17,
+      "point": 203,
+      "phase": "draw",
+      "position": [
+        0.1200546335707911,
+        -0.43507232997846457,
+        0.11139707555969824
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 88.52000000005862,
+      "color": "green",
+      "stroke": 17,
+      "point": 204,
+      "phase": "draw",
+      "position": [
+        0.12063784432408103,
+        -0.43507291661378406,
+        0.11139596015256237
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 88.54000000005871,
+      "color": "green",
+      "stroke": 17,
+      "point": 205,
+      "phase": "draw",
+      "position": [
+        0.12122079634774548,
+        -0.4350735720362825,
+        0.1113950446807008
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 88.5600000000588,
+      "color": "green",
+      "stroke": 17,
+      "point": 206,
+      "phase": "draw",
+      "position": [
+        0.12176109106941817,
+        -0.43508029594045133,
+        0.11136154079565341
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 88.5800000000589,
+      "color": "green",
+      "stroke": 17,
+      "point": 207,
+      "phase": "draw",
+      "position": [
+        0.12226383765821458,
+        -0.4350897557136825,
+        0.1112943186077991
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 88.600000000059,
+      "color": "green",
+      "stroke": 17,
+      "point": 208,
+      "phase": "draw",
+      "position": [
+        0.12278407438488967,
+        -0.4350930010253077,
+        0.11123647827770716
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 88.6200000000591,
+      "color": "green",
+      "stroke": 17,
+      "point": 209,
+      "phase": "draw",
+      "position": [
+        0.12332900200958766,
+        -0.4350909956572621,
+        0.11119609106202029
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 88.64000000005919,
+      "color": "green",
+      "stroke": 17,
+      "point": 210,
+      "phase": "draw",
+      "position": [
+        0.12386873392507869,
+        -0.43509004349413216,
+        0.11115470662125415
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 88.66000000005928,
+      "color": "green",
+      "stroke": 17,
+      "point": 211,
+      "phase": "draw",
+      "position": [
+        0.12440188232015101,
+        -0.43509090853395255,
+        0.11113903612458043
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 88.68000000005938,
+      "color": "green",
+      "stroke": 17,
+      "point": 212,
+      "phase": "draw",
+      "position": [
+        0.12494225906684679,
+        -0.43509128415192405,
+        0.11115784214463678
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 88.70000000005948,
+      "color": "green",
+      "stroke": 17,
+      "point": 213,
+      "phase": "draw",
+      "position": [
+        0.1254863067454573,
+        -0.43509151665347195,
+        0.11116909273195305
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 88.72000000005957,
+      "color": "green",
+      "stroke": 17,
+      "point": 214,
+      "phase": "draw",
+      "position": [
+        0.1260723558425016,
+        -0.4350673360728137,
+        0.11116053743816001
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 115.58000000018782,
+      "color": "green",
+      "stroke": 17,
+      "point": 214,
+      "phase": "draw",
+      "position": [
+        0.12698275649314358,
+        -0.43570281509566366,
+        0.1044387314383422
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 115.60000000018792,
+      "color": "green",
+      "stroke": 17,
+      "point": 214,
+      "phase": "draw",
+      "position": [
+        0.1260116353035479,
+        -0.4350434335297433,
+        0.10586879880079549
+      ],
+      "visible": true,
+      "contact": true
+    },
+    {
+      "time_s": 115.96000000018964,
+      "color": "green",
+      "stroke": 17,
+      "point": 214,
+      "phase": "draw",
+      "position": [
+        0.12568287977479972,
+        -0.43514592049326356,
+        0.11114320243011946
+      ],
+      "visible": true,
+      "contact": true
+    }
+  ],
+  "events": [
+    {
+      "time_s": 0.0,
+      "phase": "navigate_pick",
+      "color": "green",
+      "stroke": 17
+    },
+    {
+      "time_s": 0.0,
+      "phase": "reach_pick",
+      "color": "green",
+      "stroke": 17
+    },
+    {
+      "time_s": 0.0,
+      "phase": "draw",
+      "color": "green",
+      "stroke": 17
+    },
+    {
+      "time_s": 1.1399999999999852,
+      "phase": "reposition",
+      "color": "green",
+      "stroke": 17
+    },
+    {
+      "time_s": 1.659999999999928,
+      "phase": "navigate_board",
+      "color": "green",
+      "stroke": 17
+    },
+    {
+      "time_s": 30.260000000014,
+      "phase": "draw",
+      "color": "green",
+      "stroke": 17
+    },
+    {
+      "time_s": 31.9800000000161,
+      "phase": "reposition",
+      "color": "green",
+      "stroke": 17
+    },
+    {
+      "time_s": 32.50000000001496,
+      "phase": "navigate_board",
+      "color": "green",
+      "stroke": 17
+    },
+    {
+      "time_s": 58.71999999995385,
+      "phase": "draw",
+      "color": "green",
+      "stroke": 17
+    },
+    {
+      "time_s": 60.31999999995012,
+      "phase": "reposition",
+      "color": "green",
+      "stroke": 17
+    },
+    {
+      "time_s": 60.83999999994891,
+      "phase": "navigate_board",
+      "color": "green",
+      "stroke": 17
+    },
+    {
+      "time_s": 87.06000000005164,
+      "phase": "draw",
+      "color": "green",
+      "stroke": 17
+    },
+    {
+      "time_s": 88.70000000005948,
+      "phase": "reposition",
+      "color": "green",
+      "stroke": 17
+    },
+    {
+      "time_s": 89.22000000006196,
+      "phase": "navigate_board",
+      "color": "green",
+      "stroke": 17
+    },
+    {
+      "time_s": 115.44000000018715,
+      "phase": "draw",
+      "color": "green",
+      "stroke": 17
+    },
+    {
+      "time_s": 115.96000000018964,
+      "phase": "done",
+      "color": "green",
+      "stroke": 17
+    }
+  ]
+}

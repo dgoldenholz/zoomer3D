@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.blend1
+*.blend2
+.DS_Store
+print/zoomer_static_body_raw.stl

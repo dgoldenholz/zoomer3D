@@ -1,2 +1,11 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Keep website downloads and images byte-for-byte when committing.
+docs/**/*.pdf binary
+docs/**/*.png binary
+docs/**/*.jpg binary
+docs/**/*.mp4 binary
+docs/**/*.blend binary
+docs/**/*.3mf binary
+docs/**/*.zip binary

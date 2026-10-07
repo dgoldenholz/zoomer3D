@@ -1,0 +1,110 @@
+{
+  "physical_print_test": "Not performed",
+  "slicer": "PrusaSlicer 2.9.6",
+  "jobs": [
+    {
+      "name": "01_XL_flat_wall_test_VASE",
+      "parts": [
+        "01_flat_wall_test_VASE_SOLID"
+      ],
+      "layer_comments": 81,
+      "stats": {
+        "filament used [mm]": "835.05, 0.00, 0.00, 0.00, 0.00",
+        "filament used [cm3]": "2.01, 0.00, 0.00, 0.00, 0.00",
+        "filament used [g]": "2.55, 0.00, 0.00, 0.00, 0.00",
+        "total filament used [g]": "2.55",
+        "total filament used for wipe tower [g]": "0.00",
+        "estimated printing time (normal mode)": "16m 17s",
+        "estimated printing time (silent mode)": "16m 19s"
+      },
+      "features": {
+        "External perimeter": 2459
+      },
+      "warnings": [],
+      "project_sha256": "7f35056c46adcbf653f51ea7c8790959623ed9ff54a2a2b181dfd0398053e344",
+      "continuous_spiral": true,
+      "bridge_segment_count": 0,
+      "longest_bridge_segment_mm": 0
+    },
+    {
+      "name": "02_XL_faceted_shell_VASE",
+      "parts": [
+        "02_faceted_shell_VASE_SOLID"
+      ],
+      "layer_comments": 105,
+      "stats": {
+        "filament used [mm]": "956.92, 0.00, 0.00, 0.00, 0.00",
+        "filament used [cm3]": "2.30, 0.00, 0.00, 0.00, 0.00",
+        "filament used [g]": "2.92, 0.00, 0.00, 0.00, 0.00",
+        "total filament used [g]": "2.92",
+        "total filament used for wipe tower [g]": "0.00",
+        "estimated printing time (normal mode)": "19m 50s",
+        "estimated printing time (silent mode)": "19m 52s"
+      },
+      "features": {
+        "External perimeter": 3062
+      },
+      "warnings": [],
+      "project_sha256": "4d321fee49ba9a0140d4d318ab7dc4bc799967ebacc55224c046083c69d23e3c",
+      "continuous_spiral": true,
+      "front_path_max_deviation_from_plane_mm": 0.032316923076916027,
+      "minimum_cap_clearance_from_shell_paths_mm": 0.20571389926828282,
+      "bridge_segment_count": 0,
+      "longest_bridge_segment_mm": 0
+    },
+    {
+      "name": "03_XL_shared_cap_and_adapter_NORMAL",
+      "parts": [
+        "03_shared_cap_NORMAL",
+        "04_shared_adapter_NORMAL"
+      ],
+      "layer_comments": 25,
+      "stats": {
+        "filament used [mm]": "2886.12, 0.00, 0.00, 0.00, 0.00",
+        "filament used [cm3]": "6.94, 0.00, 0.00, 0.00, 0.00",
+        "filament used [g]": "8.82, 0.00, 0.00, 0.00, 0.00",
+        "total filament used [g]": "8.82",
+        "total filament used for wipe tower [g]": "0.00",
+        "estimated printing time (normal mode)": "1h 3m 3s",
+        "estimated printing time (silent mode)": "1h 3m 25s"
+      },
+      "features": {
+        "Perimeter": 5663,
+        "External perimeter": 3937,
+        "Solid infill": 4172,
+        "Top solid infill": 514,
+        "Internal infill": 2475
+      },
+      "warnings": [],
+      "project_sha256": "518a787763ec9daddde68544df26707f524b6ef95eed921b594dc8104058012a",
+      "bridge_segment_count": 0,
+      "longest_bridge_segment_mm": 0
+    },
+    {
+      "name": "04_XL_sheet_hood_and_retainer_NORMAL",
+      "parts": [
+        "05_sheet_window_hood_NORMAL",
+        "06_sheet_retainer_NORMAL"
+      ],
+      "layer_comments": 104,
+      "stats": {
+        "filament used [mm]": "1622.39, 0.00, 0.00, 0.00, 0.00",
+        "filament used [cm3]": "3.90, 0.00, 0.00, 0.00, 0.00",
+        "filament used [g]": "4.96, 0.00, 0.00, 0.00, 0.00",
+        "total filament used [g]": "4.96",
+        "total filament used for wipe tower [g]": "0.00",
+        "estimated printing time (normal mode)": "47m 0s",
+        "estimated printing time (silent mode)": "47m 52s"
+      },
+      "features": {
+        "External perimeter": 5680,
+        "Perimeter": 1787
+      },
+      "warnings": [],
+      "project_sha256": "b212ceba3ae18cb86754f459fd5221cb990ae55447f6a9a747d7fa92bde2626c",
+      "bridge_segment_count": 0,
+      "longest_bridge_segment_mm": 0
+    }
+  ],
+  "passed": true
+}

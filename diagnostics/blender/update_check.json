@@ -1,0 +1,19 @@
+{
+  "blender_version": "4.5.14 LTS",
+  "source_file": "assets/zoomer_modular.blend",
+  "source_sha256": "ee9dbfe1af56cf62d9378825f7423f49447a3ad5752ab28d7333673fb6377992",
+  "source_unchanged": true,
+  "mesh_objects": 34,
+  "joint_controls_checked": [
+    "Head yaw",
+    "Left shoulder",
+    "Right shoulder"
+  ],
+  "render_engine": "CYCLES",
+  "render_device": "CPU",
+  "render_size": [
+    640,
+    800
+  ],
+  "render_completed": true
+}
