@@ -39,10 +39,14 @@ The Pages workflow uses the checkout, configure-pages, upload-pages-artifact and
 
 ## Publication status
 
-The local Zoomer3D repository has no remote. The authenticated GitHub connector identifies `dgoldenholz`; searches find the older `dgoldenholz/zoomer` repository, while `dgoldenholz/zoomer3D` is unavailable. The intended target remains unconfirmed. No remote write was attempted.
+The intended repository is <https://github.com/dgoldenholz/zoomer3D>. GitHub Desktop created it and configured the local `origin` remote. The first published website commit is `e5c0b2b74abc4e59175d625dd8e54f2b12e7f88d`. Its remote `main` SHA matched the local commit before deployment.
 
-GitHub CLI is signed out. Computer control reports that the Mac is locked, which prevents using GitHub Desktop or an authenticated browser. No push, remote commit verification, CI run, Pages activation or live GitHub URL has been completed.
+GitHub Pages is enabled with GitHub Actions as its build source. The [deployment workflow](https://github.com/dgoldenholz/zoomer3D/actions/runs/37564146142) passed checkout, Pages configuration, website validation, artifact upload and deployment. The initial push run stopped at Pages configuration before Pages had been enabled.
+
+The live URL is <https://dgoldenholz.github.io/zoomer3D/>. All 55 public website files returned HTTP 200 and matched the repository SHA-256 hashes, including HTML, CSS, JavaScript, images, example JSON, video and downloads. A request for video bytes 1000 through 1999 returned HTTP 206 and the exact expected bytes. The 54 original files other than `index.html` also retain their original hashes in the committed Git objects.
+
+After copying the standalone site into this repository, the desktop and mobile interaction checks passed at widths of 1440 and 390 pixels. They covered navigation, back and forward, expandable sections, image links, the drawing editor, replay, import and export, draft persistence and real touch drawing. No JavaScript errors occurred.
 
 The export needs no ChatGPT service. Google Fonts remains an external font dependency, matching the original. Browser drafts are scoped to each website origin and can be transferred through JSON export/import. MuJoCo training continues to run in the downloaded local simulator, as on the original site.
 
-Browser logs, source/export screenshots, pixel comparisons and HTTP results are saved in the task workspace's `output/playwright/` directory. The original project and nested website checkout were left unchanged.
+Browser logs, source/export screenshots and pixel comparisons are saved in the task workspace's `output/playwright/` directory. Transfer hashes, repository interaction checks, live HTTP results and deployment status are in `output/website-transfer/`. The standalone site is in `docs/`; the original nested source checkout in `website/` remains separate. The transfer added 63 files and preserved all 831 pre-existing project files. Git attributes gained binary rules scoped to `docs/`. A recoverable export copy remains in the task workspace's `zoomer3D-export/` directory.
